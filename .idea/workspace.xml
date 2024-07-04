@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-basic/src/ref/InitData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/ref/InitMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/ref/MethodChange1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/ref/ProductOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/ref/ProductOrderMain2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-basic/docs/a. 클래스와 데이터.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/docs/a. 클래스, 객체, 인스턴스.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-basic/docs/b. 기본형과 참조형.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/docs/b. 기본형과 참조형.md" afterDir="false" />
-    </list>
+    <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +140,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719986645732</updated>
-      <workItem from="1719986646968" duration="11351000" />
+      <workItem from="1719986646968" duration="12863000" />
     </task>
     <servers />
   </component>
