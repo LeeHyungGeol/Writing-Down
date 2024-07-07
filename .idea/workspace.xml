@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-basic/docs/c. 객체 지향 프로그래밍.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/oop1/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/oop1/MusicPlayerData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/oop1/MusicPlayerMain3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/oop1/MusicPlayerMain4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/oop1/ex/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/oop1/ex/RectangleOopMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-basic/ref/ProductOrderMain2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-basic/ref/ProductOrderMain2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/docs/1. JVM 이해하기.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/docs/1. JVM 이해하기.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AccountMain.executor": "Run",
     "Application.InitMain.executor": "Run",
     "Application.MethodChange1.executor": "Run",
     "Application.MovieReviewMain.executor": "Run",
@@ -154,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719986645732</updated>
-      <workItem from="1719986646968" duration="19469000" />
+      <workItem from="1719986646968" duration="29257000" />
     </task>
     <servers />
   </component>
