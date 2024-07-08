@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-basic/src/constructor/ex/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/constructor/ex/BookMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-basic/docs/d. 생성자.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/docs/d. 생성자.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/docs/f. 접근 제어자.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/BankAccountMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/a/AccessData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/a/AccessInnerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/a/PublicClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/a/PublicClassInnerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/b/AccessOuterMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/b/PublicClassOuterMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/ex/CounterMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/ex/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/ex/MaxCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/ex/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/access/ex/ShoppingCartMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +50,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AccessOuterMain.executor": "Run",
     "Application.AccountMain.executor": "Run",
+    "Application.BankAccountMain.executor": "Run",
     "Application.BookMain.executor": "Run",
+    "Application.CounterMain.executor": "Run",
     "Application.InitMain.executor": "Run",
     "Application.MethodChange1.executor": "Run",
     "Application.MovieReviewMain.executor": "Run",
@@ -46,7 +62,9 @@
     "Application.MusicPlayerMain4.executor": "Run",
     "Application.ProductOrderMain.executor": "Run",
     "Application.ProductOrderMain2.executor": "Run",
+    "Application.PublicClassInnerMain.executor": "Run",
     "Application.RectangleOopMain.executor": "Run",
+    "Application.ShoppingCartMain.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -66,13 +84,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BookMain">
-    <configuration name="AccountMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop1.ex.AccountMain" />
+  <component name="RunManager" selected="Application.ShoppingCartMain">
+    <configuration name="AccessOuterMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="access.b.AccessOuterMain" />
       <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oop1.ex.*" />
+          <option name="PATTERN" value="access.b.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="constructor.ex.BookMain" />
+    <configuration name="BankAccountMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="access.BankAccountMain" />
       <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="constructor.ex.*" />
+          <option name="PATTERN" value="access.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MusicPlayerMain3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop1.MusicPlayerMain3" />
+    <configuration name="CounterMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="access.ex.CounterMain" />
       <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oop1.*" />
+          <option name="PATTERN" value="access.ex.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MusicPlayerMain4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop1.MusicPlayerMain4" />
+    <configuration name="PublicClassInnerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="access.a.PublicClassInnerMain" />
       <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oop1.*" />
+          <option name="PATTERN" value="access.a.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleOopMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop1.ex.RectangleOopMain" />
+    <configuration name="ShoppingCartMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="access.ex.ShoppingCartMain" />
       <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oop1.ex.*" />
+          <option name="PATTERN" value="access.ex.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BookMain" />
-        <item itemvalue="Application.AccountMain" />
-        <item itemvalue="Application.RectangleOopMain" />
-        <item itemvalue="Application.MusicPlayerMain4" />
-        <item itemvalue="Application.MusicPlayerMain3" />
+        <item itemvalue="Application.ShoppingCartMain" />
+        <item itemvalue="Application.CounterMain" />
+        <item itemvalue="Application.BankAccountMain" />
+        <item itemvalue="Application.PublicClassInnerMain" />
+        <item itemvalue="Application.AccessOuterMain" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719986645732</updated>
       <workItem from="1719986646968" duration="29257000" />
-      <workItem from="1720362865348" duration="2563000" />
+      <workItem from="1720362865348" duration="13518000" />
     </task>
     <servers />
   </component>
