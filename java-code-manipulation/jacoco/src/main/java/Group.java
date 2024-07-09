@@ -1,0 +1,1 @@
+public class Group {    /* 최대 참가자 */    int maxNumberOfAttendees;    /* 현재 신청자 */    int numberOfEnrollment;    public boolean isFull () {        if (maxNumberOfAttendees == 0) {            return false;        }        if (numberOfEnrollment < maxNumberOfAttendees) {            return false;        }        return true;    }}

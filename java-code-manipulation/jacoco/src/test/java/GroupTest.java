@@ -1,0 +1,1 @@
+import static org.junit.jupiter.api.Assertions.*;import org.junit.jupiter.api.Assertions;import org.junit.jupiter.api.Test;class GroupTest {    @Test    void isFull() {        Group group = new Group();        group.maxNumberOfAttendees = 100;        group.numberOfEnrollment = 100;        assertTrue(group.isFull());    }}

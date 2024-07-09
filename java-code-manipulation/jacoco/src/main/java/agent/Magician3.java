@@ -1,0 +1,1 @@
+package agent;public class Magician3 {    public static void main(String[] args) {        System.out.println(new Hat3().pullOut());       //Rabbit!!!    }}

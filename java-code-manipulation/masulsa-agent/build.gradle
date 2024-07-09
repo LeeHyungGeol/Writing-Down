@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'com.brothergeol.masulsa-agent'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+//jar file manifest change
+jar {
+    manifest.attributes(
+            'Premain-Class' : 'MagicianAgent',
+            'Can-Redefine-Classes' : true,
+            'Can-Retransform-Classes' : true
+    )
+}
+
+dependencies {
+
+    //ByteBuddy - for bytecode manipulation
+    implementation 'net.bytebuddy:byte-buddy:1.14.0';
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}

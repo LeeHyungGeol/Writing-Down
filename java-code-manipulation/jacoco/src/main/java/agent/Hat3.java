@@ -1,0 +1,1 @@
+package agent;public class Hat3 {    public String pullOut() {        return "nothing";    }}
