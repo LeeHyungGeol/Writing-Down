@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/docs/2. 바이트코드 조작.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/jacoco/src/main/java/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/jacoco/src/main/java/Hat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/jacoco/src/main/java/Magician.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/jacoco/src/test/java/GroupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/docs/g. 자바 메모리 구조와 static.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/memory/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/memory/Data3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/memory/DataCountMain3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/src/memory/JavaMemoryMain1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-basic/access/ex/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-basic/access/ex/ShoppingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/docs/1. JVM 이해하기.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/docs/1. JVM 이해하기.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/masulsa-agent.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,21 +35,24 @@
         <task path="$PROJECT_DIR$/java-code-manipulation/jacoco">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/java-code-manipulation/masulsa-agent">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="jacoco" type="f1a62948:ProjectNode" />
+                <item name="masulsa-agent" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="jacoco" type="f1a62948:ProjectNode" />
+                <item name="masulsa-agent" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="jacoco" type="f1a62948:ProjectNode" />
+                <item name="masulsa-agent" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
@@ -89,7 +92,9 @@
     "Application.BankAccountMain.executor": "Run",
     "Application.BookMain.executor": "Run",
     "Application.CounterMain.executor": "Run",
+    "Application.DataCountMain3.executor": "Run",
     "Application.InitMain.executor": "Run",
+    "Application.JavaMemoryMain1.executor": "Run",
     "Application.MethodChange1.executor": "Run",
     "Application.MovieReviewMain.executor": "Run",
     "Application.MusicPlayerMain3.executor": "Run",
@@ -104,7 +109,10 @@
     "Gradle.GroupTest.isFull.executor": "Run",
     "Gradle.jacoco [:Magician.main()].executor": "Run",
     "Gradle.jacoco [:Magician2.main()].executor": "Run",
+    "Gradle.jacoco [:Magician3.main()].executor": "Run",
     "Gradle.jacoco [clean].executor": "Run",
+    "Gradle.jacoco [jar].executor": "Run",
+    "Gradle.masulsa-agent [jar].executor": "Run",
     "JavaScript Debug.Group.html.executor": "Run",
     "JavaScript Debug.index.html (1).executor": "Run",
     "JavaScript Debug.index.html (2).executor": "Run",
@@ -126,7 +134,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -138,22 +146,48 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Magician2">
-    <configuration name="Magician" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Magician" />
-      <module name="jacoco.main" />
+  <component name="RunManager" selected="Application.DataCountMain3">
+    <configuration name="DataCountMain3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="memory.DataCountMain3" />
+      <module name="java-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="memory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Magician2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Magician2" />
-      <module name="jacoco.main" />
+    <configuration name="JavaMemoryMain1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="memory.JavaMemoryMain1" />
+      <module name="java-basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="memory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jacoco [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Magician3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="agent.Magician3" />
+      <module name="jacoco.main" />
+      <option name="VM_PARAMETERS" value="-javaagent:$PROJECT_DIR$/java-code-manipulation/masulsa-agent/build/libs/masulsa-agent-1.0-SNAPSHOT.jar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jacoco [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/jacoco" />
@@ -164,7 +198,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,19 +209,42 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Group.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Writing-Down/java-code-manipulation/jacoco/build/customJacocoReportDir/test/html/default/Group.html" useBuiltInWebServerPort="true">
+    <configuration name="masulsa-agent [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/masulsa-agent" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Writing-Down/java-code-manipulation/jacoco/build/customJacocoReportDir/test/html/default/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Application.DataCountMain3" />
+      <item itemvalue="Application.JavaMemoryMain1" />
+      <item itemvalue="Application.Magician3" />
+      <item itemvalue="Gradle.jacoco [jar]" />
+      <item itemvalue="Gradle.masulsa-agent [jar]" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Magician2" />
-        <item itemvalue="Gradle.jacoco [clean]" />
-        <item itemvalue="Application.Magician" />
-        <item itemvalue="JavaScript Debug.index.html (2)" />
-        <item itemvalue="JavaScript Debug.Group.html" />
+        <item itemvalue="Application.DataCountMain3" />
+        <item itemvalue="Application.JavaMemoryMain1" />
+        <item itemvalue="Application.Magician3" />
+        <item itemvalue="Gradle.masulsa-agent [jar]" />
+        <item itemvalue="Gradle.jacoco [jar]" />
       </list>
     </recent_temporary>
   </component>
@@ -201,11 +258,15 @@
       <updated>1719986645732</updated>
       <workItem from="1719986646968" duration="29257000" />
       <workItem from="1720362865348" duration="21500000" />
-      <workItem from="1720508192559" duration="1815000" />
+      <workItem from="1720508192559" duration="11401000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
