@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-basic/docs/g. 자바 메모리 구조와 static.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/memory/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/memory/Data3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/memory/DataCountMain3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/memory/JavaMemoryMain1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/docs/1. JVM 이해하기.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/docs/1. JVM 이해하기.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/masulsa-agent.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic/docs/i. 상속.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,11 +139,11 @@
   </component>
   <component name="RunManager" selected="Application.DataCountMain3">
     <configuration name="DataCountMain3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="memory.DataCountMain3" />
+      <option name="MAIN_CLASS_NAME" value="static1.DataCountMain3" />
       <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="memory.*" />
+          <option name="PATTERN" value="static1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,7 +156,7 @@
       <module name="java-basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="memory.*" />
+          <option name="PATTERN" value="static1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -258,7 +249,7 @@
       <updated>1719986645732</updated>
       <workItem from="1719986646968" duration="29257000" />
       <workItem from="1720362865348" duration="21500000" />
-      <workItem from="1720508192559" duration="11401000" />
+      <workItem from="1720508192559" duration="24738000" />
     </task>
     <servers />
   </component>
