@@ -1,0 +1,1 @@
+package poly.basic;public class Child extends Parent {    public Child() {        System.out.println("Child 생성자");    }    public void childMethod() {        System.out.println("Child.childMethod");    }}
