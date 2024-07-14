@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-basic/docs/j. 다형성.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/poly/basic/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/poly/basic/Parent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/poly/basic/PolyMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/poly/diamond/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/poly/diamond/DiamondMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/poly/diamond/InterfaceA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic/src/poly/diamond/InterfaceB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-basic/docs/i. 상속.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic/docs/i. 상속.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-basic/memory/Data3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-basic/memory/DataCountMain3.class" beforeDir="false" />
-    </list>
+    <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +15,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/java-code-manipulation/masulsa-agent">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/java-code-manipulation/reflection">
       <ProjectState />
     </projectState>
   </component>
@@ -150,6 +140,9 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="poly.daiamond" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.DiamondMain">
     <configuration name="DataCountMain3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -247,7 +240,7 @@
       <workItem from="1720362865348" duration="21500000" />
       <workItem from="1720508192559" duration="24738000" />
       <workItem from="1720671810552" duration="8233000" />
-      <workItem from="1720682683964" duration="3086000" />
+      <workItem from="1720682683964" duration="8776000" />
     </task>
     <servers />
   </component>
