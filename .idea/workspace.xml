@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="" />
+    <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/reflection.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/com/brothergeol/reflection/reflection/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/com/brothergeol/reflection/reflection/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/resources/com/brothergeol/reflection/reflection/hello-view.fxml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,23 +56,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="masulsa-agent" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="masulsa-agent" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="masulsa-agent" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -78,61 +86,61 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AccessOuterMain.executor": "Run",
-    "Application.AccountMain.executor": "Run",
-    "Application.BankAccountMain.executor": "Run",
-    "Application.BookMain.executor": "Run",
-    "Application.CounterMain.executor": "Run",
-    "Application.DataCountMain3.executor": "Run",
-    "Application.DiamondMain.executor": "Run",
-    "Application.InitMain.executor": "Run",
-    "Application.JavaMemoryMain1.executor": "Run",
-    "Application.MethodChange1.executor": "Run",
-    "Application.MovieReviewMain.executor": "Run",
-    "Application.MusicPlayerMain3.executor": "Run",
-    "Application.MusicPlayerMain4.executor": "Run",
-    "Application.PolyMain.executor": "Run",
-    "Application.ProductOrderMain.executor": "Run",
-    "Application.ProductOrderMain2.executor": "Run",
-    "Application.PublicClassInnerMain.executor": "Run",
-    "Application.RectangleOopMain.executor": "Run",
-    "Application.ShoppingCartMain.executor": "Run",
-    "Gradle.Build jacoco.executor": "Run",
-    "Gradle.GroupTest.executor": "Run",
-    "Gradle.GroupTest.isFull.executor": "Run",
-    "Gradle.jacoco [:Magician.main()].executor": "Run",
-    "Gradle.jacoco [:Magician2.main()].executor": "Run",
-    "Gradle.jacoco [:Magician3.main()].executor": "Run",
-    "Gradle.jacoco [clean].executor": "Run",
-    "Gradle.jacoco [jar].executor": "Run",
-    "Gradle.masulsa-agent [jar].executor": "Run",
-    "JavaScript Debug.Group.html.executor": "Run",
-    "JavaScript Debug.index.html (1).executor": "Run",
-    "JavaScript Debug.index.html (2).executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/ihyeong-geol/Desktop/workspace/Writing-Down/java-basic/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AccessOuterMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AccountMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BankAccountMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BookMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CounterMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DataCountMain3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DiamondMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InitMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JavaMemoryMain1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MethodChange1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MovieReviewMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MusicPlayerMain3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MusicPlayerMain4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PolyMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProductOrderMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProductOrderMain2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PublicClassInnerMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RectangleOopMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShoppingCartMain.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build jacoco.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupTest.isFull.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [:Magician.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [:Magician2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [:Magician3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.masulsa-agent [jar].executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Group.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (2).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/ihyeong-geol/Desktop/workspace/Writing-Down/java-basic/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
