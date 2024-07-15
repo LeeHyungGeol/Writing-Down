@@ -1,0 +1,1 @@
+package com.brothergeol;import com.brothergeol.di.MyDiContainer;public class Main {    public static void main(String[] args) {        DiContainerTestService diContainerTestService = MyDiContainer.getObject(DiContainerTestService.class);        diContainerTestService.test();    }}

@@ -1,0 +1,1 @@
+package com.brothergeol;import com.brothergeol.di.DependencyInjection;public class DiContainerTestService {    @DependencyInjection DiContainerTestRepository diContainerTestRepository;    public void test() {        System.out.println("DiContainerTestService.test()");        diContainerTestRepository.test();    }}
