@@ -1,0 +1,1 @@
+package com.brothergeol;public interface MyInterface {}

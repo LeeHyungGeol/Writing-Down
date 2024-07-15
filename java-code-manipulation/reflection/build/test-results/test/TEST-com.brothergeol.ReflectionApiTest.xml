@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.brothergeol.ReflectionApiTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-15T10:39:51" hostname="ihyeong-geols-MacBook-Pro.local" time="0.009">
+  <properties/>
+  <testcase name="7. 생성자 가져오기" classname="com.brothergeol.ReflectionApiTest" time="0.009"/>
+  <system-out><![CDATA[public com.brothergeol.Sample()
+public com.brothergeol.Sample(java.lang.String,java.lang.String,java.lang.String)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

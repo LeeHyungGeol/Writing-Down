@@ -5,29 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/reflection.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/com/brothergeol/reflection/reflection/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/com/brothergeol/reflection/reflection/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/resources/com/brothergeol/reflection/reflection/hello-view.fxml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/src/main/java/com/brothergeol/di/DependencyInjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/src/main/java/com/brothergeol/di/MyDiContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/src/test/java/com/brothergeol/di/MyDiContainerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/src/test/java/com/brothergeol/di/SampleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/src/test/java/com/brothergeol/di/SampleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/com/brothergeol/ClassModificationSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/com/brothergeol/MyAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/com/brothergeol/MyInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/com/brothergeol/MySample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/com/brothergeol/Sample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/src/main/java/com/brothergeol/SecondAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/src/test/java/com/brothergeol/ClassModificationSampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/reflection/src/test/java/com/brothergeol/ReflectionApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/docs/3. reflection.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/docs/3. reflection.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +39,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/java-code-manipulation/di-containor-sample">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/java-code-manipulation/jacoco">
       <ProjectState />
     </projectState>
@@ -42,6 +49,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/java-code-manipulation/reflection">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/java-code-manipulation/spring-di">
       <ProjectState />
     </projectState>
   </component>
@@ -52,6 +62,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/java-code-manipulation/masulsa-agent">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/java-code-manipulation/reflection">
           <activation />
         </task>
         <projects_view>
@@ -66,9 +79,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -86,153 +100,242 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AccessOuterMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AccountMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BankAccountMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BookMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CounterMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DataCountMain3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DiamondMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.InitMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JavaMemoryMain1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MethodChange1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MovieReviewMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MusicPlayerMain3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MusicPlayerMain4.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PolyMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProductOrderMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProductOrderMain2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PublicClassInnerMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RectangleOopMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ShoppingCartMain.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build jacoco.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GroupTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GroupTest.isFull.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.jacoco [:Magician.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.jacoco [:Magician2.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.jacoco [:Magician3.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.jacoco [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.jacoco [jar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.masulsa-agent [jar].executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.Group.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html (2).executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/ihyeong-geol/Desktop/workspace/Writing-Down/java-basic/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AccessOuterMain.executor": "Run",
+    "Application.AccountMain.executor": "Run",
+    "Application.BankAccountMain.executor": "Run",
+    "Application.BookMain.executor": "Run",
+    "Application.CounterMain.executor": "Run",
+    "Application.DataCountMain3.executor": "Run",
+    "Application.DiamondMain.executor": "Run",
+    "Application.InitMain.executor": "Run",
+    "Application.JavaMemoryMain1.executor": "Run",
+    "Application.MethodChange1.executor": "Run",
+    "Application.MovieReviewMain.executor": "Run",
+    "Application.MusicPlayerMain3.executor": "Run",
+    "Application.MusicPlayerMain4.executor": "Run",
+    "Application.PolyMain.executor": "Run",
+    "Application.ProductOrderMain.executor": "Run",
+    "Application.ProductOrderMain2.executor": "Run",
+    "Application.PublicClassInnerMain.executor": "Run",
+    "Application.RectangleOopMain.executor": "Run",
+    "Application.ShoppingCartMain.executor": "Run",
+    "Gradle.Build jacoco.executor": "Run",
+    "Gradle.ClassModificationSampleTest.constructorInstance.executor": "Run",
+    "Gradle.ClassModificationSampleTest.createInstance.executor": "Run",
+    "Gradle.ClassModificationSampleTest.editInstanceFields.executor": "Run",
+    "Gradle.ClassModificationSampleTest.editStaticFields.executor": "Run",
+    "Gradle.ClassModificationSampleTest.methodExecution.executor": "Run",
+    "Gradle.GroupTest.executor": "Run",
+    "Gradle.GroupTest.isFull.executor": "Run",
+    "Gradle.MyDiContainerTest.getObject_sampleRepository.executor": "Run",
+    "Gradle.MyDiContainerTest.getObject_sampleService.executor": "Run",
+    "Gradle.MyDiContainerTest.getObject_userService.executor": "Run",
+    "Gradle.ReflectionApiTest.approachClass (1).executor": "Run",
+    "Gradle.ReflectionApiTest.approachClass.executor": "Run",
+    "Gradle.ReflectionApiTest.getAnnotation.executor": "Run",
+    "Gradle.ReflectionApiTest.getAnnotationList.executor": "Run",
+    "Gradle.ReflectionApiTest.getAnnotations.executor": "Run",
+    "Gradle.ReflectionApiTest.getConstructor.executor": "Run",
+    "Gradle.ReflectionApiTest.getFields.executor": "Run",
+    "Gradle.ReflectionApiTest.getFieldsModifier.executor": "Run",
+    "Gradle.ReflectionApiTest.getFieldsValue.executor": "Run",
+    "Gradle.ReflectionApiTest.getMethodInfos.executor": "Run",
+    "Gradle.ReflectionApiTest.getMethods.executor": "Run",
+    "Gradle.ReflectionApiTest.getSuperClass.executor": "Run",
+    "Gradle.ReflectionApiTest.getSuperClassAnnotation.executor": "Run",
+    "Gradle.ReflectionServiceTest.diTest.executor": "Run",
+    "Gradle.jacoco [:Magician.main()].executor": "Run",
+    "Gradle.jacoco [:Magician2.main()].executor": "Run",
+    "Gradle.jacoco [:Magician3.main()].executor": "Run",
+    "Gradle.jacoco [clean].executor": "Run",
+    "Gradle.jacoco [jar].executor": "Run",
+    "Gradle.masulsa-agent [jar].executor": "Run",
+    "JavaScript Debug.Group.html.executor": "Run",
+    "JavaScript Debug.index.html (1).executor": "Run",
+    "JavaScript Debug.index.html (2).executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/ihyeong-geol/Desktop/workspace/Writing-Down/java-basic/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.brothergeol.di" />
+      <recent name="com.brothergeol" />
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="poly.daiamond" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DiamondMain">
-    <configuration name="DataCountMain3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="static1.DataCountMain3" />
-      <module name="java-basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="static1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.MyDiContainerTest.getObject_sampleService">
+    <configuration name="MyDiContainerTest.getObject_sampleRepository" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/di-containor-sample" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.brothergeol.di.MyDiContainerTest.getObject_sampleRepository&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="DiamondMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="poly.diamond.DiamondMain" />
-      <module name="java-basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="poly.diamond.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="MyDiContainerTest.getObject_sampleService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/di-containor-sample" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.brothergeol.di.MyDiContainerTest.getObject_sampleService&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="JavaMemoryMain1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="memory.JavaMemoryMain1" />
-      <module name="java-basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="static1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="MyDiContainerTest.getObject_userService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/di-containor-sample" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.brothergeol.di.MyDiContainerTest.getObject_userService&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="Magician3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="agent.Magician3" />
-      <module name="jacoco.main" />
-      <option name="VM_PARAMETERS" value="-javaagent:$PROJECT_DIR$/java-code-manipulation/masulsa-agent/build/libs/masulsa-agent-1.0-SNAPSHOT.jar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="agent.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="ReflectionApiTest.getAnnotations" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/reflection" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.brothergeol.ReflectionApiTest.getAnnotations&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="PolyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="poly.basic.PolyMain" />
-      <module name="java-basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="poly.basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="ReflectionApiTest.getConstructor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/reflection" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.brothergeol.ReflectionApiTest.getConstructor&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringDiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-di.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.brothergeol.springdi.SpringDiApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DiamondMain" />
-      <item itemvalue="Application.PolyMain" />
-      <item itemvalue="Application.DataCountMain3" />
-      <item itemvalue="Application.JavaMemoryMain1" />
-      <item itemvalue="Application.Magician3" />
+      <item itemvalue="Gradle.MyDiContainerTest.getObject_sampleRepository" />
+      <item itemvalue="Gradle.MyDiContainerTest.getObject_sampleService" />
+      <item itemvalue="Gradle.MyDiContainerTest.getObject_userService" />
+      <item itemvalue="Gradle.ReflectionApiTest.getAnnotations" />
+      <item itemvalue="Gradle.ReflectionApiTest.getConstructor" />
+      <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DiamondMain" />
-        <item itemvalue="Application.PolyMain" />
-        <item itemvalue="Application.DataCountMain3" />
-        <item itemvalue="Application.JavaMemoryMain1" />
-        <item itemvalue="Application.Magician3" />
+        <item itemvalue="Gradle.MyDiContainerTest.getObject_sampleService" />
+        <item itemvalue="Gradle.MyDiContainerTest.getObject_userService" />
+        <item itemvalue="Gradle.MyDiContainerTest.getObject_sampleRepository" />
+        <item itemvalue="Gradle.ReflectionApiTest.getConstructor" />
+        <item itemvalue="Gradle.ReflectionApiTest.getAnnotations" />
       </list>
     </recent_temporary>
   </component>
@@ -249,6 +352,8 @@
       <workItem from="1720508192559" duration="24738000" />
       <workItem from="1720671810552" duration="8233000" />
       <workItem from="1720682683964" duration="8776000" />
+      <workItem from="1721022977483" duration="29000" />
+      <workItem from="1721023012857" duration="10214000" />
     </task>
     <servers />
   </component>

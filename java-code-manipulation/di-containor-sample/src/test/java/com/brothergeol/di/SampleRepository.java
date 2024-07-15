@@ -1,0 +1,1 @@
+package com.brothergeol.di;public class SampleRepository {}

@@ -4,6 +4,15 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/di-containor-sample" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-code-manipulation/di-containor-sample" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/jacoco" />
         <option name="modules">
           <set>
@@ -16,6 +25,23 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-code-manipulation/masulsa-agent" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/reflection" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-code-manipulation/reflection" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/spring-di" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-code-manipulation/spring-di" />
           </set>
         </option>
       </GradleProjectSettings>
