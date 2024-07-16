@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/src/main/java/com/brothergeol/DiContainerTestRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/src/main/java/com/brothergeol/DiContainerTestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/src/main/java/com/brothergeol/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/docs/3. reflection.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/docs/3. reflection.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/docs/4. Dynamic Proxy.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +49,23 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="di-containor-sample" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="di-containor-sample" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="di-containor-sample" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -194,7 +194,7 @@
       <recent name="poly.daiamond" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.di-containor-sample [jar]">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.brothergeol.Main" />
       <module name="di-containor-apply.main" />
@@ -343,6 +343,7 @@
       <workItem from="1721022977483" duration="29000" />
       <workItem from="1721023012857" duration="14043000" />
       <workItem from="1721061961385" duration="263000" />
+      <workItem from="1721062227604" duration="7371000" />
     </task>
     <servers />
   </component>

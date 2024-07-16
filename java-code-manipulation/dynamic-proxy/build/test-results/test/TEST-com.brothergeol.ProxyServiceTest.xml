@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.brothergeol.ProxyServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-16T08:56:29" hostname="ihyeong-geols-MacBook-Pro.local" time="0.006">
+  <properties/>
+  <testcase name="proxy_test()" classname="com.brothergeol.ProxyServiceTest" time="0.006"/>
+  <system-out><![CDATA[aaaa
+SampleService.test(): spring
+bbbb
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
