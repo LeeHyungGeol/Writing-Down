@@ -1,1 +1,1 @@
-package com.brothergeol;import jakarta.persistence.Entity;import jakarta.persistence.GeneratedValue;import jakarta.persistence.Id;@Entitypublic class Sample {    @Id @GeneratedValue    public Long id;    public String name;    public String getName() {        return name;    }    public void setName(String name) {        this.name = name;    }}
+package com.brothergeol;public class Sample {    public String name;    public String getName() {        return name;    }    public void setName(String name) {        this.name = name;    }}

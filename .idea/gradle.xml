@@ -24,6 +24,11 @@
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy" />
         <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy" />
+          </set>
+        </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/jacoco" />

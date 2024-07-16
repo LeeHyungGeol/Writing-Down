@@ -1,1 +1,1 @@
-package com.brothergeol;import org.springframework.beans.factory.annotation.Autowired;import org.springframework.stereotype.Service;public class DefaultSampleService implements SampleService {    public void test(Sample sample) {        System.out.println("SampleService.test(): " + sample.getName());    }}
+package com.brothergeol;public class DefaultSampleService implements SampleService {    public void test(Sample sample) {        System.out.println("SampleService.test(): " + sample.getName());    }}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.brothergeol.ClassProxyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-16T18:41:49" hostname="ihyeong-geols-MacBook-Pro.local" time="0.083">
+  <properties/>
+  <testcase name="byteBuddyProxy()" classname="com.brothergeol.ClassProxyTest" time="0.083"/>
+  <system-out><![CDATA[proxy start
+SampleClassService.before = com.brothergeol.Sample@435fb7b5
+proxy end
+SampleClassService.after = com.brothergeol.Sample@435fb7b5
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

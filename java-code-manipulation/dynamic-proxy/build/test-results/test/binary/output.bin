@@ -1,3 +1,5 @@
-aaaa
-SampleService.test(): spring
-bbbb
+proxy start
+<SampleClassService.before = com.brothergeol.Sample@435fb7b5
+
+proxy end
+;SampleClassService.after = com.brothergeol.Sample@435fb7b5

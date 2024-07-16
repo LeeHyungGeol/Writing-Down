@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/java-code-manipulation/di-containor-apply" />
     <file type="web" url="file://$PROJECT_DIR$/java-code-manipulation/di-containor-sample" />
+    <file type="web" url="file://$PROJECT_DIR$/java-code-manipulation/dynamic-proxy" />
     <file type="web" url="file://$PROJECT_DIR$/java-code-manipulation/jacoco" />
     <file type="web" url="file://$PROJECT_DIR$/java-code-manipulation/masulsa-agent" />
     <file type="web" url="file://$PROJECT_DIR$/java-code-manipulation/reflection" />
