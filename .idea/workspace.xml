@@ -5,46 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/main/java/com/brothergeol/SampleClassService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/test/java/com/brothergeol/ClassProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-code-manipulation/docs/5. Annotation Processor.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-code-manipulation/docs/4. Dynamic Proxy.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/docs/4. Dynamic Proxy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/main/com/brothergeol/DefaultSampleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/main/com/brothergeol/DefaultSampleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/main/com/brothergeol/DynamicProxyApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/main/com/brothergeol/Sample.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/main/com/brothergeol/Sample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/main/com/brothergeol/SampleRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/main/com/brothergeol/SampleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/main/com/brothergeol/SampleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/main/com/brothergeol/SampleServiceProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/main/com/brothergeol/SampleServiceProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/test/com/brothergeol/ProxyServiceTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/test/com/brothergeol/ProxyServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/test/com/brothergeol/SampleRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/test/com/brothergeol/SampleServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/classes/java/test/com/brothergeol/SampleServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/reports/tests/test/classes/com.brothergeol.ProxyServiceTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/reports/tests/test/packages/com.brothergeol.html" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/reports/tests/test/packages/com.brothergeol.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/test-results/test/TEST-com.brothergeol.ProxyServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/main/java/com/brothergeol/DefaultSampleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/main/java/com/brothergeol/DefaultSampleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/main/java/com/brothergeol/DynamicProxyApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/main/java/com/brothergeol/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/main/java/com/brothergeol/Sample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/main/java/com/brothergeol/SampleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/main/java/com/brothergeol/SampleServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/main/java/com/brothergeol/SampleServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/test/java/com/brothergeol/ProxyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/test/java/com/brothergeol/JavaDynamicProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/test/java/com/brothergeol/SampleRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/test/java/com/brothergeol/SampleServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/src/test/java/com/brothergeol/SampleServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +21,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/java-code-manipulation/annotation-processor">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/java-code-manipulation/di-containor-apply">
       <ProjectState />
     </projectState>
@@ -168,6 +140,7 @@
     "Gradle.ClassModificationSampleTest.editInstanceFields.executor": "Run",
     "Gradle.ClassModificationSampleTest.editStaticFields.executor": "Run",
     "Gradle.ClassModificationSampleTest.methodExecution.executor": "Run",
+    "Gradle.ClassProxyTest.byteBuddyProxy.executor": "Run",
     "Gradle.ClassProxyTest.cglibProxy.executor": "Run",
     "Gradle.ClassProxyTest.executor": "Run",
     "Gradle.GroupTest.executor": "Run",
@@ -219,7 +192,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/ihyeong-geol/Desktop/workspace/Writing-Down/java-code-manipulation/di-containor-apply/src/main/java/com/brothergeol/Main.java",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -245,7 +218,7 @@
       <recent name="poly.daiamond" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ClassProxyTest.cglibProxy">
+  <component name="RunManager" selected="Gradle.ClassProxyTest.byteBuddyProxy">
     <configuration name="ClassProxyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -260,6 +233,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.brothergeol.ClassProxyTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ClassProxyTest.byteBuddyProxy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.brothergeol.ClassProxyTest.byteBuddyProxy&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -342,30 +339,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SampleRepositoryTest.di_test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.brothergeol.SampleRepositoryTest.di_test&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="DynamicProxyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="dynamic-proxy.main" />
       <option name="PROGRAM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED" />
@@ -382,21 +355,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.ClassProxyTest.byteBuddyProxy" />
       <item itemvalue="Gradle.ClassProxyTest" />
       <item itemvalue="Gradle.ClassProxyTest.cglibProxy" />
       <item itemvalue="Gradle.JavaDynamicProxyTest.proxy_test" />
       <item itemvalue="Gradle.ProxyServiceTest.proxy_test" />
-      <item itemvalue="Gradle.SampleRepositoryTest.di_test" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ClassProxyTest.byteBuddyProxy" />
         <item itemvalue="Gradle.ClassProxyTest.cglibProxy" />
         <item itemvalue="Gradle.ClassProxyTest" />
         <item itemvalue="Gradle.JavaDynamicProxyTest.proxy_test" />
         <item itemvalue="Gradle.ProxyServiceTest.proxy_test" />
-        <item itemvalue="Gradle.SampleRepositoryTest.di_test" />
       </list>
     </recent_temporary>
   </component>
@@ -424,6 +397,7 @@
       <workItem from="1721023012857" duration="14043000" />
       <workItem from="1721061961385" duration="263000" />
       <workItem from="1721062227604" duration="18099000" />
+      <workItem from="1721155047582" duration="4744000" />
     </task>
     <servers />
   </component>
