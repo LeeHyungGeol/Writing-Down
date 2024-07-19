@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-code-manipulation/docs/5. Annotation Processor.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-code-manipulation/docs/4. Dynamic Proxy.md" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/docs/4. Dynamic Proxy.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,92 +105,92 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AccessOuterMain.executor": "Run",
-    "Application.AccountMain.executor": "Run",
-    "Application.BankAccountMain.executor": "Run",
-    "Application.BookMain.executor": "Run",
-    "Application.CounterMain.executor": "Run",
-    "Application.DataCountMain3.executor": "Run",
-    "Application.DiamondMain.executor": "Run",
-    "Application.InitMain.executor": "Run",
-    "Application.JavaMemoryMain1.executor": "Run",
-    "Application.MethodChange1.executor": "Run",
-    "Application.MovieReviewMain.executor": "Run",
-    "Application.MusicPlayerMain3.executor": "Run",
-    "Application.MusicPlayerMain4.executor": "Run",
-    "Application.PolyMain.executor": "Run",
-    "Application.ProductOrderMain.executor": "Run",
-    "Application.ProductOrderMain2.executor": "Run",
-    "Application.PublicClassInnerMain.executor": "Run",
-    "Application.RectangleOopMain.executor": "Run",
-    "Application.ShoppingCartMain.executor": "Run",
-    "Gradle.Build jacoco.executor": "Run",
-    "Gradle.ClassModificationSampleTest.constructorInstance.executor": "Run",
-    "Gradle.ClassModificationSampleTest.createInstance.executor": "Run",
-    "Gradle.ClassModificationSampleTest.editInstanceFields.executor": "Run",
-    "Gradle.ClassModificationSampleTest.editStaticFields.executor": "Run",
-    "Gradle.ClassModificationSampleTest.methodExecution.executor": "Run",
-    "Gradle.ClassProxyTest.byteBuddyProxy.executor": "Run",
-    "Gradle.ClassProxyTest.cglibProxy.executor": "Run",
-    "Gradle.ClassProxyTest.executor": "Run",
-    "Gradle.GroupTest.executor": "Run",
-    "Gradle.GroupTest.isFull.executor": "Run",
-    "Gradle.JavaDynamicProxyTest.proxy_test.executor": "Run",
-    "Gradle.MyDiContainerTest.getObject_sampleRepository.executor": "Run",
-    "Gradle.MyDiContainerTest.getObject_sampleService.executor": "Run",
-    "Gradle.MyDiContainerTest.getObject_userService.executor": "Run",
-    "Gradle.ProxyServiceTest.proxy_test.executor": "Run",
-    "Gradle.ReflectionApiTest.approachClass (1).executor": "Run",
-    "Gradle.ReflectionApiTest.approachClass.executor": "Run",
-    "Gradle.ReflectionApiTest.getAnnotation.executor": "Run",
-    "Gradle.ReflectionApiTest.getAnnotationList.executor": "Run",
-    "Gradle.ReflectionApiTest.getAnnotations.executor": "Run",
-    "Gradle.ReflectionApiTest.getConstructor.executor": "Run",
-    "Gradle.ReflectionApiTest.getFields.executor": "Run",
-    "Gradle.ReflectionApiTest.getFieldsModifier.executor": "Run",
-    "Gradle.ReflectionApiTest.getFieldsValue.executor": "Run",
-    "Gradle.ReflectionApiTest.getMethodInfos.executor": "Run",
-    "Gradle.ReflectionApiTest.getMethods.executor": "Run",
-    "Gradle.ReflectionApiTest.getSuperClass.executor": "Run",
-    "Gradle.ReflectionApiTest.getSuperClassAnnotation.executor": "Run",
-    "Gradle.ReflectionServiceTest.diTest.executor": "Run",
-    "Gradle.SampleRepositoryTest.di_test.executor": "Run",
-    "Gradle.SampleServiceTest.di_test.executor": "Run",
-    "Gradle.di-containor-apply [:Main.main()].executor": "Run",
-    "Gradle.di-containor-sample [jar].executor": "Run",
-    "Gradle.jacoco [:Magician.main()].executor": "Run",
-    "Gradle.jacoco [:Magician2.main()].executor": "Run",
-    "Gradle.jacoco [:Magician3.main()].executor": "Run",
-    "Gradle.jacoco [clean].executor": "Run",
-    "Gradle.jacoco [jar].executor": "Run",
-    "Gradle.masulsa-agent [jar].executor": "Run",
-    "JavaScript Debug.Group.html.executor": "Run",
-    "JavaScript Debug.index.html (1).executor": "Run",
-    "JavaScript Debug.index.html (2).executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/ihyeong-geol/Desktop/workspace/Writing-Down/java-code-manipulation/di-containor-apply/src/main/java/com/brothergeol/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AccessOuterMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AccountMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BankAccountMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BookMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CounterMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DataCountMain3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DiamondMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InitMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JavaMemoryMain1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MethodChange1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MovieReviewMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MusicPlayerMain3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MusicPlayerMain4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PolyMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProductOrderMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProductOrderMain2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PublicClassInnerMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RectangleOopMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShoppingCartMain.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build jacoco.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassModificationSampleTest.constructorInstance.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassModificationSampleTest.createInstance.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassModificationSampleTest.editInstanceFields.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassModificationSampleTest.editStaticFields.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassModificationSampleTest.methodExecution.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassProxyTest.byteBuddyProxy.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassProxyTest.cglibProxy.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassProxyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupTest.isFull.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JavaDynamicProxyTest.proxy_test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MyDiContainerTest.getObject_sampleRepository.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MyDiContainerTest.getObject_sampleService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MyDiContainerTest.getObject_userService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProxyServiceTest.proxy_test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.approachClass (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.approachClass.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getAnnotation.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getAnnotationList.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getAnnotations.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getConstructor.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getFields.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getFieldsModifier.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getFieldsValue.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getMethodInfos.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getMethods.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getSuperClass.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getSuperClassAnnotation.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionServiceTest.diTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SampleRepositoryTest.di_test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SampleServiceTest.di_test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.di-containor-apply [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.di-containor-sample [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [:Magician.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [:Magician2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [:Magician3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.masulsa-agent [jar].executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Group.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (2).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/ihyeong-geol/Desktop/workspace/Writing-Down/java-code-manipulation/di-containor-apply/src/main/java/com/brothergeol/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -398,6 +390,8 @@
       <workItem from="1721061961385" duration="263000" />
       <workItem from="1721062227604" duration="18099000" />
       <workItem from="1721155047582" duration="4744000" />
+      <workItem from="1721193236886" duration="11985000" />
+      <workItem from="1721361585096" duration="172000" />
     </task>
     <servers />
   </component>
