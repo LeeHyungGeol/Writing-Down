@@ -75,6 +75,11 @@
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-mid1" />
         <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-mid1" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>
