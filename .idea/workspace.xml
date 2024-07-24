@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-mid1/src/main/java/lang/immutable/address/ImmutableAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/java-mid1/불변 객체.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-mid1/불변 객체.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/java-mid1/c. String.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/java-mid1/불변 객체.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-mid1/b. 불변 객체.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +169,7 @@
     "Gradle.jacoco [:Magician3.main()].executor": "Run",
     "Gradle.jacoco [clean].executor": "Run",
     "Gradle.jacoco [jar].executor": "Run",
+    "Gradle.java-mid1 [:ImmutableMyDateMain.main()].executor": "Run",
     "Gradle.java-mid1 [:RectangleMain.main()].executor": "Run",
     "Gradle.java-mid1 [:ToStringMain.main()].executor": "Run",
     "Gradle.java-mid1 [:ToStringMain2.main()].executor": "Run",
@@ -220,7 +221,20 @@
       <recent name="poly.daiamond" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RectangleMain">
+  <component name="RunManager" selected="Application.ImmutableMyDateMain">
+    <configuration name="ImmutableMyDateMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lang.immutable.test.ImmutableMyDateMain" />
+      <module name="java-mid1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lang.immutable.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RectangleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lang.object.test.RectangleMain" />
       <module name="java-mid1.main" />
@@ -284,30 +298,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ClassProxyTest.cglibProxy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.brothergeol.ClassProxyTest.cglibProxy&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="DynamicProxyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="dynamic-proxy.main" />
       <option name="PROGRAM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED" />
@@ -324,21 +314,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ImmutableMyDateMain" />
       <item itemvalue="Application.RectangleMain" />
       <item itemvalue="Application.ToStringMain" />
       <item itemvalue="Application.ToStringMain2" />
       <item itemvalue="Gradle.ClassProxyTest.byteBuddyProxy" />
-      <item itemvalue="Gradle.ClassProxyTest.cglibProxy" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ImmutableMyDateMain" />
         <item itemvalue="Application.RectangleMain" />
         <item itemvalue="Application.ToStringMain2" />
         <item itemvalue="Application.ToStringMain" />
         <item itemvalue="Gradle.ClassProxyTest.byteBuddyProxy" />
-        <item itemvalue="Gradle.ClassProxyTest.cglibProxy" />
       </list>
     </recent_temporary>
   </component>
@@ -370,6 +360,7 @@
       <workItem from="1721193236886" duration="11985000" />
       <workItem from="1721361585096" duration="172000" />
       <workItem from="1721374620667" duration="43691000" />
+      <workItem from="1721668665380" duration="6756000" />
     </task>
     <servers />
   </component>
