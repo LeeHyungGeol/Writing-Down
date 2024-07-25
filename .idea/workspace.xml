@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/java-mid1/c. String.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/java-mid1/불변 객체.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-mid1/b. 불변 객체.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/java-mid1/Wrapper, Class.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +169,8 @@
     "Gradle.jacoco [clean].executor": "Run",
     "Gradle.jacoco [jar].executor": "Run",
     "Gradle.java-mid1 [:ImmutableMyDateMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:LoopStringBuilderMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:LoopStringMain.main()].executor": "Run",
     "Gradle.java-mid1 [:RectangleMain.main()].executor": "Run",
     "Gradle.java-mid1 [:ToStringMain.main()].executor": "Run",
     "Gradle.java-mid1 [:ToStringMain2.main()].executor": "Run",
@@ -221,13 +222,39 @@
       <recent name="poly.daiamond" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ImmutableMyDateMain">
+  <component name="RunManager" selected="Application.LoopStringBuilderMain">
     <configuration name="ImmutableMyDateMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lang.immutable.test.ImmutableMyDateMain" />
       <module name="java-mid1.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lang.immutable.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoopStringBuilderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lang.string.builder.LoopStringBuilderMain" />
+      <module name="java-mid1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lang.string.builder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoopStringMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lang.string.builder.LoopStringMain" />
+      <module name="java-mid1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lang.string.builder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -248,19 +275,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToStringMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lang.object.tostring.ToStringMain" />
-      <module name="java-mid1.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lang.object.tostring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ToStringMain2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lang.object.tostring.ToStringMain2" />
       <module name="java-mid1.main" />
@@ -273,30 +287,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="ClassProxyTest.byteBuddyProxy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.brothergeol.ClassProxyTest.byteBuddyProxy&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="DynamicProxyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="dynamic-proxy.main" />
@@ -314,21 +304,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.LoopStringBuilderMain" />
+      <item itemvalue="Application.LoopStringMain" />
       <item itemvalue="Application.ImmutableMyDateMain" />
       <item itemvalue="Application.RectangleMain" />
-      <item itemvalue="Application.ToStringMain" />
       <item itemvalue="Application.ToStringMain2" />
-      <item itemvalue="Gradle.ClassProxyTest.byteBuddyProxy" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoopStringBuilderMain" />
+        <item itemvalue="Application.LoopStringMain" />
         <item itemvalue="Application.ImmutableMyDateMain" />
         <item itemvalue="Application.RectangleMain" />
         <item itemvalue="Application.ToStringMain2" />
-        <item itemvalue="Application.ToStringMain" />
-        <item itemvalue="Gradle.ClassProxyTest.byteBuddyProxy" />
       </list>
     </recent_temporary>
   </component>
@@ -361,6 +351,7 @@
       <workItem from="1721361585096" duration="172000" />
       <workItem from="1721374620667" duration="43691000" />
       <workItem from="1721668665380" duration="6756000" />
+      <workItem from="1721725482535" duration="10491000" />
     </task>
     <servers />
   </component>
