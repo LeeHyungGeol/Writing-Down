@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/java-mid1/Wrapper, Class.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/java-mid1/Nested Class, Inner Class.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-mid1/h. Nested Class, Inner Class.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +90,7 @@
         <option value="Interface" />
         <option value="AnnotationType" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -168,12 +169,35 @@
     "Gradle.jacoco [:Magician3.main()].executor": "Run",
     "Gradle.jacoco [clean].executor": "Run",
     "Gradle.jacoco [jar].executor": "Run",
+    "Gradle.java-mid1 [:AutoboxingMain1.main()].executor": "Run",
+    "Gradle.java-mid1 [:AutoboxingMain2.main()].executor": "Run",
+    "Gradle.java-mid1 [:CarMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:CheckedCatchMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:CheckedThrowMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:ClassMetaMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:ClassRefMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:EnumEx3_1.main()].executor": "Run",
+    "Gradle.java-mid1 [:EnumMethodMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:EnumRefMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:EnumRefMain2.main()].executor": "Run",
+    "Gradle.java-mid1 [:EnumRefMain3_2.main()].executor": "Run",
+    "Gradle.java-mid1 [:EnumRefMain3_4.main()].executor": "Run",
+    "Gradle.java-mid1 [:HttpStatusMain.main()].executor": "Run",
     "Gradle.java-mid1 [:ImmutableMyDateMain.main()].executor": "Run",
     "Gradle.java-mid1 [:LoopStringBuilderMain.main()].executor": "Run",
     "Gradle.java-mid1 [:LoopStringMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:MainV1.main()].executor": "Run",
+    "Gradle.java-mid1 [:MainV2.main()].executor": "Run",
+    "Gradle.java-mid1 [:RandomMain.main()].executor": "Run",
     "Gradle.java-mid1 [:RectangleMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:StringGradeEx1_1.main()].executor": "Run",
+    "Gradle.java-mid1 [:StringGradeEx1_2.main()].executor": "Run",
     "Gradle.java-mid1 [:ToStringMain.main()].executor": "Run",
     "Gradle.java-mid1 [:ToStringMain2.main()].executor": "Run",
+    "Gradle.java-mid1 [:UncheckedCatchMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:UncheckedThrowMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:WrapperClassMain.main()].executor": "Run",
+    "Gradle.java-mid1 [:WrapperVsPrimitive.main()].executor": "Run",
     "Gradle.masulsa-agent [jar].executor": "Run",
     "JavaScript Debug.Group.html.executor": "Run",
     "JavaScript Debug.index.html (1).executor": "Run",
@@ -219,16 +243,19 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="exception.ex4" />
+      <recent name="exception.ex2" />
+      <recent name="exception.ex1" />
       <recent name="poly.daiamond" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LoopStringBuilderMain">
-    <configuration name="ImmutableMyDateMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lang.immutable.test.ImmutableMyDateMain" />
+  <component name="RunManager" selected="Application.MainV2">
+    <configuration name="CheckedCatchMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exception.basic.checked.CheckedCatchMain" />
       <module name="java-mid1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lang.immutable.test.*" />
+          <option name="PATTERN" value="exception.basic.checked.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -236,12 +263,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoopStringBuilderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lang.string.builder.LoopStringBuilderMain" />
+    <configuration name="CheckedThrowMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exception.basic.checked.CheckedThrowMain" />
       <module name="java-mid1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lang.string.builder.*" />
+          <option name="PATTERN" value="exception.basic.checked.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -249,12 +276,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoopStringMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lang.string.builder.LoopStringMain" />
+    <configuration name="MainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exception.ex2.MainV2" />
       <module name="java-mid1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lang.string.builder.*" />
+          <option name="PATTERN" value="exception.ex2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -262,12 +289,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lang.object.test.RectangleMain" />
+    <configuration name="UncheckedCatchMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exception.basic.unchecked.UncheckedCatchMain" />
       <module name="java-mid1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lang.object.test.*" />
+          <option name="PATTERN" value="exception.basic.unchecked.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -275,12 +302,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToStringMain2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lang.object.tostring.ToStringMain2" />
+    <configuration name="UncheckedThrowMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exception.basic.unchecked.UncheckedThrowMain" />
       <module name="java-mid1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lang.object.tostring.*" />
+          <option name="PATTERN" value="exception.basic.unchecked.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -304,21 +331,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LoopStringBuilderMain" />
-      <item itemvalue="Application.LoopStringMain" />
-      <item itemvalue="Application.ImmutableMyDateMain" />
-      <item itemvalue="Application.RectangleMain" />
-      <item itemvalue="Application.ToStringMain2" />
+      <item itemvalue="Application.CheckedCatchMain" />
+      <item itemvalue="Application.CheckedThrowMain" />
+      <item itemvalue="Application.MainV2" />
+      <item itemvalue="Application.UncheckedCatchMain" />
+      <item itemvalue="Application.UncheckedThrowMain" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoopStringBuilderMain" />
-        <item itemvalue="Application.LoopStringMain" />
-        <item itemvalue="Application.ImmutableMyDateMain" />
-        <item itemvalue="Application.RectangleMain" />
-        <item itemvalue="Application.ToStringMain2" />
+        <item itemvalue="Application.MainV2" />
+        <item itemvalue="Application.UncheckedCatchMain" />
+        <item itemvalue="Application.UncheckedThrowMain" />
+        <item itemvalue="Application.CheckedThrowMain" />
+        <item itemvalue="Application.CheckedCatchMain" />
       </list>
     </recent_temporary>
   </component>
@@ -352,6 +379,7 @@
       <workItem from="1721374620667" duration="43691000" />
       <workItem from="1721668665380" duration="6756000" />
       <workItem from="1721725482535" duration="10491000" />
+      <workItem from="1721833219779" duration="113823000" />
     </task>
     <servers />
   </component>
