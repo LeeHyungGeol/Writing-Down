@@ -1,0 +1,1 @@
+```main: main() startmain: start() 호출 전main: start() 호출 후Thread-0: run()main: main() end```
