@@ -1,0 +1,1 @@
+package thread.control;import static thread.util.MyLogger.log;public class ThreadStateMain {    public static void main(String[] args) {    }    static class MyRunnable implements Runnable {        @Override        public void run() {            log("start");            log("start");        }    }}
