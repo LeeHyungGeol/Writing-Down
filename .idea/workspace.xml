@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/control/printer/MyPrinterV4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/yield/YieldMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankAccountV4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankAccountV5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankAccountV6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/lock/LockSupportMainV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/lock/LockSupportMainV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/test/Immutable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,9 +19,9 @@
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/MyPrinterV2$Printer.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/MyPrinterV2.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +189,7 @@
     "Gradle.jacoco [clean].executor": "Run",
     "Gradle.jacoco [jar].executor": "Run",
     "Gradle.java-adv1 [:BadThreadMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:BankMain.main()].executor": "Run",
     "Gradle.java-adv1 [:DaemonThreadMain.main()].executor": "Run",
     "Gradle.java-adv1 [:HelloRunnableMain.main()].executor": "Run",
     "Gradle.java-adv1 [:HelloThreadMain.main()].executor": "Run",
@@ -195,6 +201,8 @@
     "Gradle.java-adv1 [:JoinMainV2.main()].executor": "Run",
     "Gradle.java-adv1 [:JoinTest1Main.main()].executor": "Run",
     "Gradle.java-adv1 [:JoinTest2Main.main()].executor": "Run",
+    "Gradle.java-adv1 [:LockSupportMainV1.main()].executor": "Run",
+    "Gradle.java-adv1 [:LockSupportMainV2.main()].executor": "Run",
     "Gradle.java-adv1 [:ManyThreadMainV1.main()].executor": "Run",
     "Gradle.java-adv1 [:ManyThreadMainV2.main()].executor": "Run",
     "Gradle.java-adv1 [:MyLoggerMain.main()].executor": "Run",
@@ -204,10 +212,15 @@
     "Gradle.java-adv1 [:StartTest2Main.main()].executor": "Run",
     "Gradle.java-adv1 [:StartTest3Main.main()].executor": "Run",
     "Gradle.java-adv1 [:StartTest4Main.main()].executor": "Run",
+    "Gradle.java-adv1 [:SyncTest1BadMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:SyncTest1Main.main()].executor": "Run",
+    "Gradle.java-adv1 [:SyncTest2Main.main()].executor": "Run",
     "Gradle.java-adv1 [:ThreadInfoMain.main()].executor": "Run",
     "Gradle.java-adv1 [:ThreadStopMainV2.main()].executor": "Run",
     "Gradle.java-adv1 [:ThreadStopMainV3.main()].executor": "Run",
     "Gradle.java-adv1 [:ThreadStopMainV4.main()].executor": "Run",
+    "Gradle.java-adv1 [:VolatileCountMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:VolatileFlagMain.main()].executor": "Run",
     "Gradle.java-adv1 [:YieldMain.main()].executor": "Run",
     "Gradle.java-mid1 [:AutoboxingMain1.main()].executor": "Run",
     "Gradle.java-mid1 [:AutoboxingMain2.main()].executor": "Run",
@@ -284,20 +297,20 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="thread.sync" />
+      <recent name="thread.sync.lock" />
+      <recent name="thread.sync.test" />
       <recent name="thread.control.printer" />
       <recent name="thread.interrupt" />
-      <recent name="thread.control" />
-      <recent name="thread.start.test" />
-      <recent name="thread.start" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.YieldMain">
-    <configuration name="MyPrinterV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.control.printer.MyPrinterV1" />
+  <component name="RunManager" selected="Application.BankMain">
+    <configuration name="BankMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.sync.BankMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.control.printer.*" />
+          <option name="PATTERN" value="thread.sync.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -305,12 +318,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyPrinterV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.control.printer.MyPrinterV2" />
+    <configuration name="LockSupportMainV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.sync.lock.LockSupportMainV1" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.control.printer.*" />
+          <option name="PATTERN" value="thread.sync.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -318,12 +331,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadStopMainV3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.interrupt.ThreadStopMainV3" />
+    <configuration name="LockSupportMainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.sync.lock.LockSupportMainV2" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.interrupt.*" />
+          <option name="PATTERN" value="thread.sync.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -331,12 +344,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadStopMainV4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.interrupt.ThreadStopMainV4" />
+    <configuration name="SyncTest1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.sync.test.SyncTest1Main" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.interrupt.*" />
+          <option name="PATTERN" value="thread.sync.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -344,12 +357,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="YieldMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.yield.YieldMain" />
+    <configuration name="SyncTest2Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.sync.test.SyncTest2Main" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.yield.*" />
+          <option name="PATTERN" value="thread.sync.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -373,21 +386,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MyPrinterV1" />
-      <item itemvalue="Application.MyPrinterV2" />
-      <item itemvalue="Application.ThreadStopMainV3" />
-      <item itemvalue="Application.ThreadStopMainV4" />
-      <item itemvalue="Application.YieldMain" />
+      <item itemvalue="Application.LockSupportMainV2" />
+      <item itemvalue="Application.BankMain" />
+      <item itemvalue="Application.LockSupportMainV1" />
+      <item itemvalue="Application.SyncTest1Main" />
+      <item itemvalue="Application.SyncTest2Main" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.YieldMain" />
-        <item itemvalue="Application.MyPrinterV2" />
-        <item itemvalue="Application.MyPrinterV1" />
-        <item itemvalue="Application.ThreadStopMainV4" />
-        <item itemvalue="Application.ThreadStopMainV3" />
+        <item itemvalue="Application.BankMain" />
+        <item itemvalue="Application.LockSupportMainV2" />
+        <item itemvalue="Application.LockSupportMainV1" />
+        <item itemvalue="Application.SyncTest2Main" />
+        <item itemvalue="Application.SyncTest1Main" />
       </list>
     </recent_temporary>
   </component>
@@ -427,6 +440,8 @@
       <workItem from="1723016407825" duration="2692000" />
       <workItem from="1723019148154" duration="1954000" />
       <workItem from="1723021105555" duration="34826000" />
+      <workItem from="1723286704219" duration="22806000" />
+      <workItem from="1723450206264" duration="3947000" />
     </task>
     <servers />
   </component>
