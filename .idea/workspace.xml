@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankAccountV4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankAccountV5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankAccountV6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/lock/LockSupportMainV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/lock/LockSupportMainV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/test/Immutable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedQueueV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedQueueV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedQueueV4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedQueueV5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/ConsumerTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/ProducerTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
@@ -19,9 +21,9 @@
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/BankAccountV6.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/BankMain.class.uniqueId1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +192,7 @@
     "Gradle.jacoco [jar].executor": "Run",
     "Gradle.java-adv1 [:BadThreadMain.main()].executor": "Run",
     "Gradle.java-adv1 [:BankMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:BoundedMain.main()].executor": "Run",
     "Gradle.java-adv1 [:DaemonThreadMain.main()].executor": "Run",
     "Gradle.java-adv1 [:HelloRunnableMain.main()].executor": "Run",
     "Gradle.java-adv1 [:HelloThreadMain.main()].executor": "Run",
@@ -297,20 +300,33 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="thread.bounded" />
       <recent name="thread.sync" />
       <recent name="thread.sync.lock" />
       <recent name="thread.sync.test" />
       <recent name="thread.control.printer" />
-      <recent name="thread.interrupt" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BankMain">
+  <component name="RunManager" selected="Application.BoundedMain">
     <configuration name="BankMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thread.sync.BankMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="thread.sync.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoundedMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.bounded.BoundedMain" />
+      <module name="java-adv1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread.bounded.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -337,19 +353,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="thread.sync.lock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SyncTest1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.sync.test.SyncTest1Main" />
-      <module name="java-adv1.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="thread.sync.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -386,21 +389,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.BoundedMain" />
       <item itemvalue="Application.LockSupportMainV2" />
       <item itemvalue="Application.BankMain" />
       <item itemvalue="Application.LockSupportMainV1" />
-      <item itemvalue="Application.SyncTest1Main" />
       <item itemvalue="Application.SyncTest2Main" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BoundedMain" />
         <item itemvalue="Application.BankMain" />
         <item itemvalue="Application.LockSupportMainV2" />
         <item itemvalue="Application.LockSupportMainV1" />
         <item itemvalue="Application.SyncTest2Main" />
-        <item itemvalue="Application.SyncTest1Main" />
       </list>
     </recent_temporary>
   </component>
@@ -441,7 +444,7 @@
       <workItem from="1723019148154" duration="1954000" />
       <workItem from="1723021105555" duration="34826000" />
       <workItem from="1723286704219" duration="22806000" />
-      <workItem from="1723450206264" duration="3947000" />
+      <workItem from="1723450206264" duration="18280000" />
     </task>
     <servers />
   </component>
