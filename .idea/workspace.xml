@@ -5,22 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedQueueV6_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedQueueV6_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedQueueV6_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedQueueV6_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/CasMainV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/CasMainV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/CasMainV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/increment/BasicInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/increment/IncrementInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/increment/IncrementPerformanceMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/increment/IncrementThreadMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/increment/MyAtomicInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/increment/ReentrantLockInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/increment/SyncInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/increment/VolatileInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/spinlock/SpinLockBad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/spinlock/SpinLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/spinlock/SpinLockMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/java/ListMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/java/MapMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/java/SetMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/java/SynchronizedListMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/SimpleListMainV0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/BasicList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/SimpleList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/SimpleListMainV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/SimpleListMainV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/SyncList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/SyncProxyList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
@@ -29,10 +26,10 @@
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/BoundedMain.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/CasMainV3$1.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/CasMainV3.class.uniqueId1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/spinlock/SpinLockBad.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/spinlock/SpinLockBad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,9 +218,14 @@
     "Gradle.java-adv1 [:LockSupportMainV2.main()].executor": "Run",
     "Gradle.java-adv1 [:ManyThreadMainV1.main()].executor": "Run",
     "Gradle.java-adv1 [:ManyThreadMainV2.main()].executor": "Run",
+    "Gradle.java-adv1 [:MapMain.main()].executor": "Run",
     "Gradle.java-adv1 [:MyLoggerMain.main()].executor": "Run",
     "Gradle.java-adv1 [:MyPrinterV1.main()].executor": "Run",
     "Gradle.java-adv1 [:MyPrinterV2.main()].executor": "Run",
+    "Gradle.java-adv1 [:SetMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:SimpleListMainV1.main()].executor": "Run",
+    "Gradle.java-adv1 [:SimpleListMainV2.main()].executor": "Run",
+    "Gradle.java-adv1 [:SpinLockMain.main()].executor": "Run",
     "Gradle.java-adv1 [:StartTest1Main.main()].executor": "Run",
     "Gradle.java-adv1 [:StartTest2Main.main()].executor": "Run",
     "Gradle.java-adv1 [:StartTest3Main.main()].executor": "Run",
@@ -231,6 +233,7 @@
     "Gradle.java-adv1 [:SyncTest1BadMain.main()].executor": "Run",
     "Gradle.java-adv1 [:SyncTest1Main.main()].executor": "Run",
     "Gradle.java-adv1 [:SyncTest2Main.main()].executor": "Run",
+    "Gradle.java-adv1 [:SynchronizedListMain.main()].executor": "Run",
     "Gradle.java-adv1 [:ThreadInfoMain.main()].executor": "Run",
     "Gradle.java-adv1 [:ThreadStopMainV2.main()].executor": "Run",
     "Gradle.java-adv1 [:ThreadStopMainV3.main()].executor": "Run",
@@ -313,20 +316,20 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="thread.collection.simple.list" />
+      <recent name="thread.cas.spinlock" />
       <recent name="thread.cas.increment" />
       <recent name="thread.bounded" />
       <recent name="thread.sync" />
-      <recent name="thread.sync.lock" />
-      <recent name="thread.sync.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CasMainV3">
-    <configuration name="BoundedMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.bounded.BoundedMain" />
+  <component name="RunManager" selected="Application.MapMain">
+    <configuration name="MapMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.collection.java.MapMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.bounded.*" />
+          <option name="PATTERN" value="thread.collection.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -334,12 +337,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CasMainV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.cas.CasMainV1" />
+    <configuration name="SetMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.collection.java.SetMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.cas.*" />
+          <option name="PATTERN" value="thread.collection.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -347,12 +350,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CasMainV3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.cas.CasMainV3" />
+    <configuration name="SimpleListMainV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.collection.simple.list.SimpleListMainV1" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.cas.*" />
+          <option name="PATTERN" value="thread.collection.simple.list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -360,12 +363,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IncrementPerformanceMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.cas.increment.IncrementPerformanceMain" />
+    <configuration name="SimpleListMainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.collection.simple.list.SimpleListMainV2" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.cas.increment.*" />
+          <option name="PATTERN" value="thread.collection.simple.list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -373,12 +376,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IncrementThreadMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.cas.increment.IncrementThreadMain" />
+    <configuration name="SynchronizedListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.collection.java.SynchronizedListMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.cas.increment.*" />
+          <option name="PATTERN" value="thread.collection.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -402,21 +405,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BoundedMain" />
-      <item itemvalue="Application.CasMainV1" />
-      <item itemvalue="Application.CasMainV3" />
-      <item itemvalue="Application.IncrementPerformanceMain" />
-      <item itemvalue="Application.IncrementThreadMain" />
+      <item itemvalue="Application.MapMain" />
+      <item itemvalue="Application.SetMain" />
+      <item itemvalue="Application.SimpleListMainV1" />
+      <item itemvalue="Application.SimpleListMainV2" />
+      <item itemvalue="Application.SynchronizedListMain" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CasMainV3" />
-        <item itemvalue="Application.CasMainV1" />
-        <item itemvalue="Application.IncrementPerformanceMain" />
-        <item itemvalue="Application.IncrementThreadMain" />
-        <item itemvalue="Application.BoundedMain" />
+        <item itemvalue="Application.MapMain" />
+        <item itemvalue="Application.SetMain" />
+        <item itemvalue="Application.SynchronizedListMain" />
+        <item itemvalue="Application.SimpleListMainV2" />
+        <item itemvalue="Application.SimpleListMainV1" />
       </list>
     </recent_temporary>
   </component>
@@ -457,7 +460,7 @@
       <workItem from="1723019148154" duration="1954000" />
       <workItem from="1723021105555" duration="34826000" />
       <workItem from="1723286704219" duration="22806000" />
-      <workItem from="1723450206264" duration="32899000" />
+      <workItem from="1723450206264" duration="45695000" />
     </task>
     <servers />
   </component>
