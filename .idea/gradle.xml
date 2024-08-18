@@ -5,7 +5,7 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-adv1" />
-        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-adv1" />
@@ -14,7 +14,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/annotation-processor" />
-        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-code-manipulation/annotation-processor" />
@@ -23,7 +23,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/di-containor-apply" />
-        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-code-manipulation/di-containor-apply" />
@@ -32,7 +32,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/di-containor-sample" />
-        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-code-manipulation/di-containor-sample" />
@@ -41,7 +41,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy" />
-        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy" />
@@ -50,6 +50,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/jacoco" />
+        <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-code-manipulation/jacoco" />
@@ -58,6 +59,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/masulsa-agent" />
+        <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-code-manipulation/masulsa-agent" />
@@ -66,7 +68,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/reflection" />
-        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-code-manipulation/reflection" />
@@ -75,6 +77,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/spring-di" />
+        <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-code-manipulation/spring-di" />
@@ -83,7 +86,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-mid1" />
-        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-mid1" />
@@ -91,5 +94,6 @@
         </option>
       </GradleProjectSettings>
     </option>
+    <option name="parallelModelFetch" value="true" />
   </component>
 </project>

@@ -5,19 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/spinlock/SpinLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/spinlock/SpinLockMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/java/ListMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/java/MapMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/java/SetMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/java/SynchronizedListMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/SimpleListMainV0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/BasicList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/SimpleList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/SimpleListMainV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/SimpleListMainV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/SyncList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/collection/simple/list/SyncProxyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/CallableTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/ExecutorBasicMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/RunnableTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/future/CallableMainV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/future/CallableMainV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/future/FutureCancelMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/future/FutureExceptionMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/future/InvokeAllMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/future/InvokeAnyMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/future/RunnableMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/future/SumTaskMainV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/future/SumTaskMainV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/future/SumTaskMainV2_Bad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/test/NewOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/test/NewOrderServiceTestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/test/OldOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/test/OldOrderServiceTestMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
@@ -25,11 +31,147 @@
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/CasMainV3$1.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/CasMainV3.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV3.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV4.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV5.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV6_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV6_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV6_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV6_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV6_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV6_3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV6_4.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV6_4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/ConsumerTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/ConsumerTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/ProducerTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/ProducerTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/CasMainV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/CasMainV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/CasMainV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/CasMainV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/CasMainV3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/CasMainV3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/CasMainV3.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/CasMainV3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/BasicInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/BasicInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/IncrementInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/IncrementInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/IncrementPerformanceMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/IncrementPerformanceMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/IncrementThreadMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/IncrementThreadMain$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/IncrementThreadMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/IncrementThreadMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/MyAtomicInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/MyAtomicInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/ReentrantLockInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/ReentrantLockInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/SyncInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/SyncInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/VolatileInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/increment/VolatileInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/spinlock/SpinLock.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/spinlock/SpinLock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/spinlock/SpinLockBad.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/spinlock/SpinLockBad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/spinlock/SpinLockMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/spinlock/SpinLockMain$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/spinlock/SpinLockMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/cas/spinlock/SpinLockMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/java/ListMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/java/ListMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/java/MapMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/java/MapMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/java/SetMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/java/SetMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/java/SynchronizedListMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/java/SynchronizedListMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/SimpleListMainV0.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/SimpleListMainV0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/BasicList.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/BasicList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SimpleList.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SimpleList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SimpleListMainV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SimpleListMainV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SimpleListMainV2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SimpleListMainV2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SimpleListMainV2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SimpleListMainV2$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SimpleListMainV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SimpleListMainV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SyncList.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SyncList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SyncProxyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/collection/simple/list/SyncProxyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/CheckedExceptionMain$CheckedRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/CheckedExceptionMain$CheckedRunnable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/CheckedExceptionMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/CheckedExceptionMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV0$Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV0$Job.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV0.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV1$SumTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV1$SumTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV2$SumTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV2$SumTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV3$SumTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV3$SumTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV3.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/JoinMainV3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/ThreadInfoMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/ThreadInfoMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/ThreadStateMain$MyRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/ThreadStateMain$MyRunnable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/ThreadStateMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/ThreadStateMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV1$MyTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV1$MyTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV2$MyTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV2$MyTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV3$MyTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV3$MyTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV3.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV4$MyTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV4$MyTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV4.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV1$Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV1$Printer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV2$Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV2$Printer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV3$Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV3$Printer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV3.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV4$Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV4$Printer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV4.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/printer/MyPrinterV4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/test/JoinTest1Main$MyTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/test/JoinTest1Main$MyTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/test/JoinTest1Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/test/JoinTest1Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/test/JoinTest2Main$MyTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/test/JoinTest2Main$MyTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/test/JoinTest2Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/test/JoinTest2Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/yield/YieldMain$MyRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/yield/YieldMain$MyRunnable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/yield/YieldMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/yield/YieldMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/BadThreadMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/BadThreadMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/DaemonThreadMain$DaemonThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/DaemonThreadMain$DaemonThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/DaemonThreadMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/DaemonThreadMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/HelloRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/HelloRunnable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/HelloRunnableMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/HelloRunnableMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/HelloThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/HelloThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/HelloThreadMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/HelloThreadMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV1$MyRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV1$MyRunnable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV3.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV4.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/InnerRunnableMainV4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/ManyThreadMainV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/ManyThreadMainV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/ManyThreadMainV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/ManyThreadMainV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest1Main$CounterThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest1Main$CounterThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest1Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest1Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest2Main$CounterRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest2Main$CounterRunnable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest2Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest2Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest3Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest3Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest3Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest3Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest4Main$Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest4Main$Printer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest4Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/start/test/StartTest4Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV3.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV4.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV5.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV6.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankAccountV6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/WithdrawTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/WithdrawTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/lock/LockSupportMainV1$ParkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/lock/LockSupportMainV1$ParkTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/lock/LockSupportMainV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/lock/LockSupportMainV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/lock/LockSupportMainV2$ParkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/lock/LockSupportMainV2$ParkTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/lock/LockSupportMainV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/lock/LockSupportMainV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/Immutable.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/Immutable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1BadMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1BadMain$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1BadMain$Counter.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1BadMain$Counter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1BadMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1BadMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1Main$Counter.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1Main$Counter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest1Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest2Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest2Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest2Main$MyCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest2Main$MyCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest2Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/test/SyncTest2Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/volatile1/VolatileCountMain$MyTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/volatile1/VolatileCountMain$MyTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/volatile1/VolatileCountMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/volatile1/VolatileCountMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/volatile1/VolatileFlagMain$MyTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/volatile1/VolatileFlagMain$MyTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/volatile1/VolatileFlagMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/volatile1/VolatileFlagMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/util/MyLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/util/MyLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/util/MyLoggerMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/util/MyLoggerMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/util/ThreadUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/util/ThreadUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/spinlock/SpinLockBad.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/cas/spinlock/SpinLockBad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,23 +228,32 @@
         <task path="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/java-adv1">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="di-containor-sample" type="f1a62948:ProjectNode" />
+                <item name="annotation-processor" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="di-containor-sample" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="annotation-processor" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="di-containor-sample" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="annotation-processor" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="annotation-processor" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -199,9 +350,14 @@
     "Gradle.java-adv1 [:BadThreadMain.main()].executor": "Run",
     "Gradle.java-adv1 [:BankMain.main()].executor": "Run",
     "Gradle.java-adv1 [:BoundedMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:CallableMainV1.main()].executor": "Run",
+    "Gradle.java-adv1 [:CallableMainV2.main()].executor": "Run",
     "Gradle.java-adv1 [:CasMainV1.main()].executor": "Run",
     "Gradle.java-adv1 [:CasMainV3.main()].executor": "Run",
     "Gradle.java-adv1 [:DaemonThreadMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:ExecutorBasicMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:FutureCancelMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:FutureExceptionMain.main()].executor": "Run",
     "Gradle.java-adv1 [:HelloRunnableMain.main()].executor": "Run",
     "Gradle.java-adv1 [:HelloThreadMain.main()].executor": "Run",
     "Gradle.java-adv1 [:IncrementPerformanceMain.main()].executor": "Run",
@@ -209,6 +365,8 @@
     "Gradle.java-adv1 [:InnerRunnableMainV1.main()].executor": "Run",
     "Gradle.java-adv1 [:InnerRunnableMainV3.main()].executor": "Run",
     "Gradle.java-adv1 [:InnerRunnableMainV4.main()].executor": "Run",
+    "Gradle.java-adv1 [:InvokeAllMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:InvokeAnyMain.main()].executor": "Run",
     "Gradle.java-adv1 [:JoinMainV0.main()].executor": "Run",
     "Gradle.java-adv1 [:JoinMainV1.main()].executor": "Run",
     "Gradle.java-adv1 [:JoinMainV2.main()].executor": "Run",
@@ -222,6 +380,9 @@
     "Gradle.java-adv1 [:MyLoggerMain.main()].executor": "Run",
     "Gradle.java-adv1 [:MyPrinterV1.main()].executor": "Run",
     "Gradle.java-adv1 [:MyPrinterV2.main()].executor": "Run",
+    "Gradle.java-adv1 [:NewOrderServiceTestMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:OldOrderServiceTestMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:RunnableMain.main()].executor": "Run",
     "Gradle.java-adv1 [:SetMain.main()].executor": "Run",
     "Gradle.java-adv1 [:SimpleListMainV1.main()].executor": "Run",
     "Gradle.java-adv1 [:SimpleListMainV2.main()].executor": "Run",
@@ -230,6 +391,9 @@
     "Gradle.java-adv1 [:StartTest2Main.main()].executor": "Run",
     "Gradle.java-adv1 [:StartTest3Main.main()].executor": "Run",
     "Gradle.java-adv1 [:StartTest4Main.main()].executor": "Run",
+    "Gradle.java-adv1 [:SumTaskMainV1.main()].executor": "Run",
+    "Gradle.java-adv1 [:SumTaskMainV2.main()].executor": "Run",
+    "Gradle.java-adv1 [:SumTaskMainV2_Bad.main()].executor": "Run",
     "Gradle.java-adv1 [:SyncTest1BadMain.main()].executor": "Run",
     "Gradle.java-adv1 [:SyncTest1Main.main()].executor": "Run",
     "Gradle.java-adv1 [:SyncTest2Main.main()].executor": "Run",
@@ -241,6 +405,7 @@
     "Gradle.java-adv1 [:VolatileCountMain.main()].executor": "Run",
     "Gradle.java-adv1 [:VolatileFlagMain.main()].executor": "Run",
     "Gradle.java-adv1 [:YieldMain.main()].executor": "Run",
+    "Gradle.java-adv1 [build].executor": "Run",
     "Gradle.java-mid1 [:AutoboxingMain1.main()].executor": "Run",
     "Gradle.java-mid1 [:AutoboxingMain2.main()].executor": "Run",
     "Gradle.java-mid1 [:CarMain.main()].executor": "Run",
@@ -293,7 +458,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -316,20 +481,20 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="thread.executor.test" />
+      <recent name="thread.executor.future" />
       <recent name="thread.collection.simple.list" />
       <recent name="thread.cas.spinlock" />
       <recent name="thread.cas.increment" />
-      <recent name="thread.bounded" />
-      <recent name="thread.sync" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MapMain">
-    <configuration name="MapMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.collection.java.MapMain" />
+  <component name="RunManager" selected="Application.NewOrderServiceTestMain">
+    <configuration name="FutureExceptionMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.executor.future.FutureExceptionMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.collection.java.*" />
+          <option name="PATTERN" value="thread.executor.future.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -337,12 +502,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.collection.java.SetMain" />
+    <configuration name="InvokeAllMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.executor.future.InvokeAllMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.collection.java.*" />
+          <option name="PATTERN" value="thread.executor.future.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -350,12 +515,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleListMainV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.collection.simple.list.SimpleListMainV1" />
+    <configuration name="InvokeAnyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.executor.future.InvokeAnyMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.collection.simple.list.*" />
+          <option name="PATTERN" value="thread.executor.future.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -363,12 +528,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleListMainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.collection.simple.list.SimpleListMainV2" />
+    <configuration name="NewOrderServiceTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.executor.test.NewOrderServiceTestMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.collection.simple.list.*" />
+          <option name="PATTERN" value="thread.executor.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -376,12 +541,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronizedListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.collection.java.SynchronizedListMain" />
+    <configuration name="OldOrderServiceTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.executor.test.OldOrderServiceTestMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.collection.java.*" />
+          <option name="PATTERN" value="thread.executor.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -405,21 +570,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MapMain" />
-      <item itemvalue="Application.SetMain" />
-      <item itemvalue="Application.SimpleListMainV1" />
-      <item itemvalue="Application.SimpleListMainV2" />
-      <item itemvalue="Application.SynchronizedListMain" />
+      <item itemvalue="Application.FutureExceptionMain" />
+      <item itemvalue="Application.InvokeAllMain" />
+      <item itemvalue="Application.InvokeAnyMain" />
+      <item itemvalue="Application.NewOrderServiceTestMain" />
+      <item itemvalue="Application.OldOrderServiceTestMain" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MapMain" />
-        <item itemvalue="Application.SetMain" />
-        <item itemvalue="Application.SynchronizedListMain" />
-        <item itemvalue="Application.SimpleListMainV2" />
-        <item itemvalue="Application.SimpleListMainV1" />
+        <item itemvalue="Application.NewOrderServiceTestMain" />
+        <item itemvalue="Application.OldOrderServiceTestMain" />
+        <item itemvalue="Application.InvokeAnyMain" />
+        <item itemvalue="Application.InvokeAllMain" />
+        <item itemvalue="Application.FutureExceptionMain" />
       </list>
     </recent_temporary>
   </component>
@@ -460,7 +625,7 @@
       <workItem from="1723019148154" duration="1954000" />
       <workItem from="1723021105555" duration="34826000" />
       <workItem from="1723286704219" duration="22806000" />
-      <workItem from="1723450206264" duration="45695000" />
+      <workItem from="1723450206264" duration="68197000" />
     </task>
     <servers />
   </component>
