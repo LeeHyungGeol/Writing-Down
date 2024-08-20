@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/ExecutorShutdownMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/poolsize/PoolSizeMainV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/PrestartPoolMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/poolsize/PoolSizeMainV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/poolsize/PoolSizeMainV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/poolsize/PoolSizeMainV4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/reject/RejectMainV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/reject/RejectMainV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/reject/RejectMainV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/reject/RejectMainV4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
@@ -15,14 +21,8 @@
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/executor/ExecutorUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/executor/ExecutorUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/NewOrderService$AccountingWork.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/NewOrderService$InventoryWork.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/NewOrderService$ShippingWork.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/NewOrderService.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/NewOrderServiceTestMain.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/PoolSizeMainV1.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/ExecutorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/executor/ExecutorUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,6 +235,14 @@
     "Gradle.java-adv1 [:NewOrderServiceTestMain.main()].executor": "Run",
     "Gradle.java-adv1 [:OldOrderServiceTestMain.main()].executor": "Run",
     "Gradle.java-adv1 [:PoolSizeMainV1.main()].executor": "Run",
+    "Gradle.java-adv1 [:PoolSizeMainV2.main()].executor": "Run",
+    "Gradle.java-adv1 [:PoolSizeMainV3.main()].executor": "Run",
+    "Gradle.java-adv1 [:PoolSizeMainV4.main()].executor": "Run",
+    "Gradle.java-adv1 [:PrestartPoolMain.main()].executor": "Run",
+    "Gradle.java-adv1 [:RejectMainV1.main()].executor": "Run",
+    "Gradle.java-adv1 [:RejectMainV2.main()].executor": "Run",
+    "Gradle.java-adv1 [:RejectMainV3.main()].executor": "Run",
+    "Gradle.java-adv1 [:RejectMainV4.main()].executor": "Run",
     "Gradle.java-adv1 [:RunnableMain.main()].executor": "Run",
     "Gradle.java-adv1 [:SetMain.main()].executor": "Run",
     "Gradle.java-adv1 [:SimpleListMainV1.main()].executor": "Run",
@@ -334,72 +342,72 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="thread.executor.reject" />
+      <recent name="thread.executor.poolsize" />
       <recent name="thread.executor.test" />
       <recent name="thread.executor.future" />
       <recent name="thread.collection.simple.list" />
-      <recent name="thread.cas.spinlock" />
-      <recent name="thread.cas.increment" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PoolSizeMainV1">
-    <configuration name="ExecutorShutdownMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.executor.ExecutorShutdownMain" />
-      <module name="java-adv1.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="thread.executor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InvokeAnyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.executor.future.InvokeAnyMain" />
-      <module name="java-adv1.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="thread.executor.future.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewOrderServiceTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.executor.test.NewOrderServiceTestMain" />
-      <module name="java-adv1.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="thread.executor.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OldOrderServiceTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.executor.test.OldOrderServiceTestMain" />
-      <module name="java-adv1.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="thread.executor.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PoolSizeMainV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.executor.poolsize.PoolSizeMainV1" />
+  <component name="RunManager" selected="Application.RejectMainV4">
+    <configuration name="PoolSizeMainV4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.executor.poolsize.PoolSizeMainV4" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="thread.executor.poolsize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RejectMainV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.executor.reject.RejectMainV1" />
+      <module name="java-adv1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread.executor.reject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RejectMainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.executor.reject.RejectMainV2" />
+      <module name="java-adv1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread.executor.reject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RejectMainV3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.executor.reject.RejectMainV3" />
+      <module name="java-adv1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread.executor.reject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RejectMainV4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.executor.reject.RejectMainV4" />
+      <module name="java-adv1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread.executor.reject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -423,21 +431,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ExecutorShutdownMain" />
-      <item itemvalue="Application.InvokeAnyMain" />
-      <item itemvalue="Application.NewOrderServiceTestMain" />
-      <item itemvalue="Application.OldOrderServiceTestMain" />
-      <item itemvalue="Application.PoolSizeMainV1" />
+      <item itemvalue="Application.PoolSizeMainV4" />
+      <item itemvalue="Application.RejectMainV1" />
+      <item itemvalue="Application.RejectMainV2" />
+      <item itemvalue="Application.RejectMainV3" />
+      <item itemvalue="Application.RejectMainV4" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PoolSizeMainV1" />
-        <item itemvalue="Application.ExecutorShutdownMain" />
-        <item itemvalue="Application.NewOrderServiceTestMain" />
-        <item itemvalue="Application.OldOrderServiceTestMain" />
-        <item itemvalue="Application.InvokeAnyMain" />
+        <item itemvalue="Application.RejectMainV4" />
+        <item itemvalue="Application.RejectMainV3" />
+        <item itemvalue="Application.RejectMainV2" />
+        <item itemvalue="Application.RejectMainV1" />
+        <item itemvalue="Application.PoolSizeMainV4" />
       </list>
     </recent_temporary>
   </component>
@@ -478,7 +486,7 @@
       <workItem from="1723019148154" duration="1954000" />
       <workItem from="1723021105555" duration="34826000" />
       <workItem from="1723286704219" duration="22806000" />
-      <workItem from="1723450206264" duration="72797000" />
+      <workItem from="1723450206264" duration="81962000" />
     </task>
     <servers />
   </component>
