@@ -5,26 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/java-adv1/c. 스레드 제어와 생명 주기.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/control/JoinMainV4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/java-adv1/b. Thread  start &amp; run.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-adv1/b. Thread  start &amp; run.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.2/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.7/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.7/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.7/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV4.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/control/interrupt/ThreadStopMainV4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/HelloThreadMain.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/src/main/java/thread/control/interrupt/ThreadStopMainV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/control/interrupt/ThreadStopMainV4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,6 +219,7 @@
     "Gradle.java-adv1 [:JoinMainV0.main()].executor": "Run",
     "Gradle.java-adv1 [:JoinMainV1.main()].executor": "Run",
     "Gradle.java-adv1 [:JoinMainV2.main()].executor": "Run",
+    "Gradle.java-adv1 [:JoinMainV4.main()].executor": "Run",
     "Gradle.java-adv1 [:JoinTest1Main.main()].executor": "Run",
     "Gradle.java-adv1 [:JoinTest2Main.main()].executor": "Run",
     "Gradle.java-adv1 [:LockSupportMainV1.main()].executor": "Run",
@@ -351,13 +347,13 @@
       <recent name="thread.collection.simple.list" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ManyThreadMainV1">
-    <configuration name="BoundedMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.bounded.BoundedMain" />
+  <component name="RunManager" selected="Application.YieldMain">
+    <configuration name="JoinMainV4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.control.JoinMainV4" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.bounded.*" />
+          <option name="PATTERN" value="thread.control.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -365,12 +361,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaemonThreadMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.start.DaemonThreadMain" />
+    <configuration name="ThreadInfoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.control.ThreadInfoMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.start.*" />
+          <option name="PATTERN" value="thread.control.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -378,12 +374,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloThreadMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.start.HelloThreadMain" />
+    <configuration name="ThreadStopMainV3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.control.interrupt.ThreadStopMainV3" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.start.*" />
+          <option name="PATTERN" value="thread.control.interrupt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -391,12 +387,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManyThreadMainV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.start.ManyThreadMainV1" />
+    <configuration name="ThreadStopMainV4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.control.interrupt.ThreadStopMainV4" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.start.*" />
+          <option name="PATTERN" value="thread.control.interrupt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -404,12 +400,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleListMainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.collection.simple.list.SimpleListMainV2" />
+    <configuration name="YieldMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.control.yield.YieldMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.collection.simple.list.*" />
+          <option name="PATTERN" value="thread.control.yield.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -433,21 +429,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BoundedMain" />
-      <item itemvalue="Application.DaemonThreadMain" />
-      <item itemvalue="Application.HelloThreadMain" />
-      <item itemvalue="Application.ManyThreadMainV1" />
-      <item itemvalue="Application.SimpleListMainV2" />
+      <item itemvalue="Application.JoinMainV4" />
+      <item itemvalue="Application.ThreadInfoMain" />
+      <item itemvalue="Application.ThreadStopMainV3" />
+      <item itemvalue="Application.ThreadStopMainV4" />
+      <item itemvalue="Application.YieldMain" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ManyThreadMainV1" />
-        <item itemvalue="Application.DaemonThreadMain" />
-        <item itemvalue="Application.HelloThreadMain" />
-        <item itemvalue="Application.BoundedMain" />
-        <item itemvalue="Application.SimpleListMainV2" />
+        <item itemvalue="Application.YieldMain" />
+        <item itemvalue="Application.ThreadStopMainV3" />
+        <item itemvalue="Application.ThreadStopMainV4" />
+        <item itemvalue="Application.JoinMainV4" />
+        <item itemvalue="Application.ThreadInfoMain" />
       </list>
     </recent_temporary>
   </component>
@@ -488,7 +484,7 @@
       <workItem from="1723019148154" duration="1954000" />
       <workItem from="1723021105555" duration="34826000" />
       <workItem from="1723286704219" duration="22806000" />
-      <workItem from="1723450206264" duration="108279000" />
+      <workItem from="1723450206264" duration="120665000" />
     </task>
     <servers />
   </component>
