@@ -5,18 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/java-adv1/d. 메모리 가시성.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/java-adv1/d. 메모리 가시성 - volatile.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/java-adv1/e. 동기화 - synchonized.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/java-adv1/b. Thread  start &amp; run.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-adv1/b. Thread  start &amp; run.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/java-adv1/c. 스레드 제어와 생명 주기.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-adv1/c. 스레드 제어와 생명 주기.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/java-adv1/d. Memory Visibility.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/ThreadStopMainV4$MyTask.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/ThreadStopMainV4.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/VolatileCountMain$MyTask.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/VolatileCountMain.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,13 +349,13 @@
       <recent name="thread.collection.simple.list" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.VolatileCountMain (2)">
-    <configuration name="ThreadStopMainV3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.control.interrupt.ThreadStopMainV3" />
+  <component name="RunManager" selected="Application.BankMain">
+    <configuration name="BankMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.sync.BankMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.control.interrupt.*" />
+          <option name="PATTERN" value="thread.sync.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -426,21 +431,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ThreadStopMainV3" />
       <item itemvalue="Application.VolatileCountMain" />
       <item itemvalue="Application.VolatileCountMain (1)" />
       <item itemvalue="Application.VolatileCountMain (2)" />
       <item itemvalue="Application.YieldMain" />
+      <item itemvalue="Application.BankMain" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BankMain" />
         <item itemvalue="Application.VolatileCountMain (2)" />
         <item itemvalue="Application.VolatileCountMain (1)" />
         <item itemvalue="Application.VolatileCountMain" />
         <item itemvalue="Application.YieldMain" />
-        <item itemvalue="Application.ThreadStopMainV3" />
       </list>
     </recent_temporary>
   </component>
@@ -481,7 +486,7 @@
       <workItem from="1723019148154" duration="1954000" />
       <workItem from="1723021105555" duration="34826000" />
       <workItem from="1723286704219" duration="22806000" />
-      <workItem from="1723450206264" duration="128033000" />
+      <workItem from="1723450206264" duration="132846000" />
     </task>
     <servers />
   </component>
