@@ -5,23 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/java-adv1/d. 메모리 가시성 - volatile.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/java-adv1/e. 동기화 - synchonized.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/java-adv1/b. Thread  start &amp; run.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-adv1/b. Thread  start &amp; run.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/java-adv1/c. 스레드 제어와 생명 주기.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-adv1/c. 스레드 제어와 생명 주기.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/java-adv1/d. Memory Visibility.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/java-adv1/g. 생산자 소비자 문제.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/java-adv1/f. 고급 동기화 - LockSupport, ReentrantLock.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-adv1/f. 고급 동기화 - LockSupport, ReentrantLock.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/sync/BankMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/VolatileCountMain$MyTask.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/VolatileCountMain.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/classes/java/main/thread/bounded/BoundedQueueV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/compileTransaction/stash-dir/BankMain.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/sync/BankMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedQueueV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/src/main/java/thread/bounded/BoundedQueueV2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,192 +135,192 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AccessOuterMain.executor": "Run",
-    "Application.AccountMain.executor": "Run",
-    "Application.BankAccountMain.executor": "Run",
-    "Application.BookMain.executor": "Run",
-    "Application.CounterMain.executor": "Run",
-    "Application.DataCountMain3.executor": "Run",
-    "Application.DiamondMain.executor": "Run",
-    "Application.InitMain.executor": "Run",
-    "Application.JavaMemoryMain1.executor": "Run",
-    "Application.MethodChange1.executor": "Run",
-    "Application.MovieReviewMain.executor": "Run",
-    "Application.MusicPlayerMain3.executor": "Run",
-    "Application.MusicPlayerMain4.executor": "Run",
-    "Application.PolyMain.executor": "Run",
-    "Application.ProductOrderMain.executor": "Run",
-    "Application.ProductOrderMain2.executor": "Run",
-    "Application.PublicClassInnerMain.executor": "Run",
-    "Application.RectangleOopMain.executor": "Run",
-    "Application.ShoppingCartMain.executor": "Run",
-    "Gradle.Build jacoco.executor": "Run",
-    "Gradle.ClassModificationSampleTest.constructorInstance.executor": "Run",
-    "Gradle.ClassModificationSampleTest.createInstance.executor": "Run",
-    "Gradle.ClassModificationSampleTest.editInstanceFields.executor": "Run",
-    "Gradle.ClassModificationSampleTest.editStaticFields.executor": "Run",
-    "Gradle.ClassModificationSampleTest.methodExecution.executor": "Run",
-    "Gradle.ClassProxyTest.byteBuddyProxy.executor": "Run",
-    "Gradle.ClassProxyTest.cglibProxy.executor": "Run",
-    "Gradle.ClassProxyTest.executor": "Run",
-    "Gradle.GroupTest.executor": "Run",
-    "Gradle.GroupTest.isFull.executor": "Run",
-    "Gradle.JavaDynamicProxyTest.proxy_test.executor": "Run",
-    "Gradle.MyDiContainerTest.getObject_sampleRepository.executor": "Run",
-    "Gradle.MyDiContainerTest.getObject_sampleService.executor": "Run",
-    "Gradle.MyDiContainerTest.getObject_userService.executor": "Run",
-    "Gradle.ProxyServiceTest.proxy_test.executor": "Run",
-    "Gradle.ReflectionApiTest.approachClass (1).executor": "Run",
-    "Gradle.ReflectionApiTest.approachClass.executor": "Run",
-    "Gradle.ReflectionApiTest.getAnnotation.executor": "Run",
-    "Gradle.ReflectionApiTest.getAnnotationList.executor": "Run",
-    "Gradle.ReflectionApiTest.getAnnotations.executor": "Run",
-    "Gradle.ReflectionApiTest.getConstructor.executor": "Run",
-    "Gradle.ReflectionApiTest.getFields.executor": "Run",
-    "Gradle.ReflectionApiTest.getFieldsModifier.executor": "Run",
-    "Gradle.ReflectionApiTest.getFieldsValue.executor": "Run",
-    "Gradle.ReflectionApiTest.getMethodInfos.executor": "Run",
-    "Gradle.ReflectionApiTest.getMethods.executor": "Run",
-    "Gradle.ReflectionApiTest.getSuperClass.executor": "Run",
-    "Gradle.ReflectionApiTest.getSuperClassAnnotation.executor": "Run",
-    "Gradle.ReflectionServiceTest.diTest.executor": "Run",
-    "Gradle.SampleRepositoryTest.di_test.executor": "Run",
-    "Gradle.SampleServiceTest.di_test.executor": "Run",
-    "Gradle.di-containor-apply [:Main.main()].executor": "Run",
-    "Gradle.di-containor-sample [jar].executor": "Run",
-    "Gradle.jacoco [:Magician.main()].executor": "Run",
-    "Gradle.jacoco [:Magician2.main()].executor": "Run",
-    "Gradle.jacoco [:Magician3.main()].executor": "Run",
-    "Gradle.jacoco [clean].executor": "Run",
-    "Gradle.jacoco [jar].executor": "Run",
-    "Gradle.java-adv1 [:BadThreadMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:BankMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:BoundedMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:CallableMainV1.main()].executor": "Run",
-    "Gradle.java-adv1 [:CallableMainV2.main()].executor": "Run",
-    "Gradle.java-adv1 [:CasMainV1.main()].executor": "Run",
-    "Gradle.java-adv1 [:CasMainV3.main()].executor": "Run",
-    "Gradle.java-adv1 [:DaemonThreadMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:ExecutorBasicMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:ExecutorShutdownMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:FutureCancelMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:FutureExceptionMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:HelloRunnableMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:HelloThreadMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:IncrementPerformanceMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:IncrementThreadMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:InnerRunnableMainV1.main()].executor": "Run",
-    "Gradle.java-adv1 [:InnerRunnableMainV3.main()].executor": "Run",
-    "Gradle.java-adv1 [:InnerRunnableMainV4.main()].executor": "Run",
-    "Gradle.java-adv1 [:InvokeAllMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:InvokeAnyMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:JoinMainV0.main()].executor": "Run",
-    "Gradle.java-adv1 [:JoinMainV1.main()].executor": "Run",
-    "Gradle.java-adv1 [:JoinMainV2.main()].executor": "Run",
-    "Gradle.java-adv1 [:JoinMainV4.main()].executor": "Run",
-    "Gradle.java-adv1 [:JoinTest1Main.main()].executor": "Run",
-    "Gradle.java-adv1 [:JoinTest2Main.main()].executor": "Run",
-    "Gradle.java-adv1 [:LockSupportMainV1.main()].executor": "Run",
-    "Gradle.java-adv1 [:LockSupportMainV2.main()].executor": "Run",
-    "Gradle.java-adv1 [:ManyThreadMainV1.main()].executor": "Run",
-    "Gradle.java-adv1 [:ManyThreadMainV2.main()].executor": "Run",
-    "Gradle.java-adv1 [:MapMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:MyLoggerMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:MyPrinterV1.main()].executor": "Run",
-    "Gradle.java-adv1 [:MyPrinterV2.main()].executor": "Run",
-    "Gradle.java-adv1 [:NewOrderServiceTestMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:OldOrderServiceTestMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:PoolSizeMainV1.main()].executor": "Run",
-    "Gradle.java-adv1 [:PoolSizeMainV2.main()].executor": "Run",
-    "Gradle.java-adv1 [:PoolSizeMainV3.main()].executor": "Run",
-    "Gradle.java-adv1 [:PoolSizeMainV4.main()].executor": "Run",
-    "Gradle.java-adv1 [:PrestartPoolMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:RejectMainV1.main()].executor": "Run",
-    "Gradle.java-adv1 [:RejectMainV2.main()].executor": "Run",
-    "Gradle.java-adv1 [:RejectMainV3.main()].executor": "Run",
-    "Gradle.java-adv1 [:RejectMainV4.main()].executor": "Run",
-    "Gradle.java-adv1 [:RunnableMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:SetMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:SimpleListMainV1.main()].executor": "Run",
-    "Gradle.java-adv1 [:SimpleListMainV2.main()].executor": "Run",
-    "Gradle.java-adv1 [:SpinLockMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:StartTest1Main.main()].executor": "Run",
-    "Gradle.java-adv1 [:StartTest2Main.main()].executor": "Run",
-    "Gradle.java-adv1 [:StartTest3Main.main()].executor": "Run",
-    "Gradle.java-adv1 [:StartTest4Main.main()].executor": "Run",
-    "Gradle.java-adv1 [:SumTaskMainV1.main()].executor": "Run",
-    "Gradle.java-adv1 [:SumTaskMainV2.main()].executor": "Run",
-    "Gradle.java-adv1 [:SumTaskMainV2_Bad.main()].executor": "Run",
-    "Gradle.java-adv1 [:SyncTest1BadMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:SyncTest1Main.main()].executor": "Run",
-    "Gradle.java-adv1 [:SyncTest2Main.main()].executor": "Run",
-    "Gradle.java-adv1 [:SynchronizedListMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:ThreadInfoMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:ThreadStopMainV2.main()].executor": "Run",
-    "Gradle.java-adv1 [:ThreadStopMainV3.main()].executor": "Run",
-    "Gradle.java-adv1 [:ThreadStopMainV4.main()].executor": "Run",
-    "Gradle.java-adv1 [:VolatileCountMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:VolatileFlagMain.main()].executor": "Run",
-    "Gradle.java-adv1 [:YieldMain.main()].executor": "Run",
-    "Gradle.java-adv1 [build].executor": "Run",
-    "Gradle.java-mid1 [:AutoboxingMain1.main()].executor": "Run",
-    "Gradle.java-mid1 [:AutoboxingMain2.main()].executor": "Run",
-    "Gradle.java-mid1 [:CarMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:CheckedCatchMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:CheckedThrowMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:ClassMetaMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:ClassRefMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:EnumEx3_1.main()].executor": "Run",
-    "Gradle.java-mid1 [:EnumMethodMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:EnumRefMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:EnumRefMain2.main()].executor": "Run",
-    "Gradle.java-mid1 [:EnumRefMain3_2.main()].executor": "Run",
-    "Gradle.java-mid1 [:EnumRefMain3_4.main()].executor": "Run",
-    "Gradle.java-mid1 [:HttpStatusMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:ImmutableMyDateMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:LocalOuterV3.main()].executor": "Run",
-    "Gradle.java-mid1 [:LoopStringBuilderMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:LoopStringMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:MainV1.main()].executor": "Run",
-    "Gradle.java-mid1 [:MainV2.main()].executor": "Run",
-    "Gradle.java-mid1 [:RandomMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:RectangleMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:StringGradeEx1_1.main()].executor": "Run",
-    "Gradle.java-mid1 [:StringGradeEx1_2.main()].executor": "Run",
-    "Gradle.java-mid1 [:ToStringMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:ToStringMain2.main()].executor": "Run",
-    "Gradle.java-mid1 [:UncheckedCatchMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:UncheckedThrowMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:WrapperClassMain.main()].executor": "Run",
-    "Gradle.java-mid1 [:WrapperVsPrimitive.main()].executor": "Run",
-    "Gradle.masulsa-agent [jar].executor": "Run",
-    "JavaScript Debug.Group.html.executor": "Run",
-    "JavaScript Debug.index.html (1).executor": "Run",
-    "JavaScript Debug.index.html (2).executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/ihyeong-geol/Desktop/workspace/Writing-Down/java-code-manipulation/di-containor-apply/src/main/java/com/brothergeol/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AccessOuterMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AccountMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BankAccountMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BookMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CounterMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DataCountMain3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DiamondMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InitMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JavaMemoryMain1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MethodChange1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MovieReviewMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MusicPlayerMain3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MusicPlayerMain4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PolyMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProductOrderMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProductOrderMain2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PublicClassInnerMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RectangleOopMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShoppingCartMain.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build jacoco.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassModificationSampleTest.constructorInstance.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassModificationSampleTest.createInstance.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassModificationSampleTest.editInstanceFields.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassModificationSampleTest.editStaticFields.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassModificationSampleTest.methodExecution.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassProxyTest.byteBuddyProxy.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassProxyTest.cglibProxy.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClassProxyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupTest.isFull.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JavaDynamicProxyTest.proxy_test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MyDiContainerTest.getObject_sampleRepository.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MyDiContainerTest.getObject_sampleService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MyDiContainerTest.getObject_userService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProxyServiceTest.proxy_test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.approachClass (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.approachClass.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getAnnotation.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getAnnotationList.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getAnnotations.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getConstructor.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getFields.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getFieldsModifier.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getFieldsValue.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getMethodInfos.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getMethods.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getSuperClass.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionApiTest.getSuperClassAnnotation.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ReflectionServiceTest.diTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SampleRepositoryTest.di_test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SampleServiceTest.di_test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.di-containor-apply [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.di-containor-sample [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [:Magician.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [:Magician2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [:Magician3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jacoco [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:BadThreadMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:BankMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:BoundedMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:CallableMainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:CallableMainV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:CasMainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:CasMainV3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:DaemonThreadMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:ExecutorBasicMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:ExecutorShutdownMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:FutureCancelMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:FutureExceptionMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:HelloRunnableMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:HelloThreadMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:IncrementPerformanceMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:IncrementThreadMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:InnerRunnableMainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:InnerRunnableMainV3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:InnerRunnableMainV4.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:InvokeAllMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:InvokeAnyMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:JoinMainV0.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:JoinMainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:JoinMainV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:JoinMainV4.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:JoinTest1Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:JoinTest2Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:LockSupportMainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:LockSupportMainV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:ManyThreadMainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:ManyThreadMainV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:MapMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:MyLoggerMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:MyPrinterV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:MyPrinterV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:NewOrderServiceTestMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:OldOrderServiceTestMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:PoolSizeMainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:PoolSizeMainV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:PoolSizeMainV3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:PoolSizeMainV4.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:PrestartPoolMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:RejectMainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:RejectMainV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:RejectMainV3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:RejectMainV4.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:RunnableMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:SetMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:SimpleListMainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:SimpleListMainV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:SpinLockMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:StartTest1Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:StartTest2Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:StartTest3Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:StartTest4Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:SumTaskMainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:SumTaskMainV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:SumTaskMainV2_Bad.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:SyncTest1BadMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:SyncTest1Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:SyncTest2Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:SynchronizedListMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:ThreadInfoMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:ThreadStopMainV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:ThreadStopMainV3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:ThreadStopMainV4.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:VolatileCountMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:VolatileFlagMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [:YieldMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv1 [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:AutoboxingMain1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:AutoboxingMain2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:CarMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:CheckedCatchMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:CheckedThrowMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:ClassMetaMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:ClassRefMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:EnumEx3_1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:EnumMethodMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:EnumRefMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:EnumRefMain2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:EnumRefMain3_2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:EnumRefMain3_4.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:HttpStatusMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:ImmutableMyDateMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:LocalOuterV3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:LoopStringBuilderMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:LoopStringMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:MainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:MainV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:RandomMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:RectangleMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:StringGradeEx1_1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:StringGradeEx1_2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:ToStringMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:ToStringMain2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:UncheckedCatchMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:UncheckedThrowMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:WrapperClassMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid1 [:WrapperVsPrimitive.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.masulsa-agent [jar].executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Group.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html (2).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/ihyeong-geol/Desktop/workspace/Writing-Down/java-code-manipulation/di-containor-apply/src/main/java/com/brothergeol/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -349,7 +347,7 @@
       <recent name="thread.collection.simple.list" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BankMain">
+  <component name="RunManager" selected="Application.BoundedMain">
     <configuration name="BankMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thread.sync.BankMain" />
       <module name="java-adv1.main" />
@@ -363,12 +361,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolatileCountMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.volatile1.VolatileCountMain" />
+    <configuration name="BoundedMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.bounded.BoundedMain" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.volatile1.*" />
+          <option name="PATTERN" value="thread.bounded.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -376,12 +374,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolatileCountMain (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.volatile1.VolatileCountMain" />
+    <configuration name="LockSupportMainV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.sync.lock.LockSupportMainV1" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.volatile1.*" />
+          <option name="PATTERN" value="thread.sync.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -389,12 +387,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolatileCountMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.volatile1.VolatileCountMain" />
+    <configuration name="LockSupportMainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.sync.lock.LockSupportMainV2" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.volatile1.*" />
+          <option name="PATTERN" value="thread.sync.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -402,12 +400,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="YieldMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.control.yield.YieldMain" />
+    <configuration name="SyncTest2Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.sync.test.SyncTest2Main" />
       <module name="java-adv1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.control.yield.*" />
+          <option name="PATTERN" value="thread.sync.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -431,21 +429,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.VolatileCountMain" />
-      <item itemvalue="Application.VolatileCountMain (1)" />
-      <item itemvalue="Application.VolatileCountMain (2)" />
-      <item itemvalue="Application.YieldMain" />
+      <item itemvalue="Application.BoundedMain" />
+      <item itemvalue="Application.LockSupportMainV1" />
+      <item itemvalue="Application.LockSupportMainV2" />
+      <item itemvalue="Application.SyncTest2Main" />
       <item itemvalue="Application.BankMain" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BoundedMain" />
+        <item itemvalue="Application.LockSupportMainV2" />
+        <item itemvalue="Application.LockSupportMainV1" />
+        <item itemvalue="Application.SyncTest2Main" />
         <item itemvalue="Application.BankMain" />
-        <item itemvalue="Application.VolatileCountMain (2)" />
-        <item itemvalue="Application.VolatileCountMain (1)" />
-        <item itemvalue="Application.VolatileCountMain" />
-        <item itemvalue="Application.YieldMain" />
       </list>
     </recent_temporary>
   </component>
@@ -487,6 +485,7 @@
       <workItem from="1723021105555" duration="34826000" />
       <workItem from="1723286704219" duration="22806000" />
       <workItem from="1723450206264" duration="132846000" />
+      <workItem from="1725606521672" duration="28194000" />
     </task>
     <servers />
   </component>
