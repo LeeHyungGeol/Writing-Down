@@ -93,6 +93,11 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-mid2" />
+        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="corretto-22" />
+      </GradleProjectSettings>
     </option>
     <option name="parallelModelFetch" value="true" />
   </component>
