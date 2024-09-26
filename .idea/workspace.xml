@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/java-adv1/j. 스레드 풀과 Executor 프레임워크.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/TIL/OpenSource Contribution.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-mid2/src/main/java/generic/ex4/MethodMain2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/java-adv1/i. 동시성 컬렉션.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/java-adv1/i. 동시성 컬렉션.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/java-adv1/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-mid2/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-mid2/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-mid2/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-mid2/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-mid2/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/java-mid2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/java-mid2/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/build/classes/java/main/generic/ex4/AnimalMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-mid2/build/classes/java/main/generic/ex4/AnimalMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/build/classes/java/main/generic/ex4/ComplexBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/java-mid2/build/classes/java/main/generic/ex4/ComplexBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/build/tmp/compileJava/compileTransaction/stash-dir/ComplexBox.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/java-mid2/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid2/src/main/java/generic/ex4/AnimalMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-mid2/src/main/java/generic/ex4/AnimalMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +298,17 @@
     &quot;Gradle.java-mid1 [:UncheckedThrowMain.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.java-mid1 [:WrapperClassMain.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.java-mid1 [:WrapperVsPrimitive.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid2 [:AnimalHospitalMainV0.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid2 [:AnimalHospitalMainV1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid2 [:AnimalHospitalMainV2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid2 [:AnimalMain1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid2 [:AnimalMain2.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.java-mid2 [:BoxMain1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid2 [:ContainerTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid2 [:MethodMain1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid2 [:MethodMain2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid2 [:MethodMain3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-mid2 [:PairTest.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.masulsa-agent [jar].executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.Group.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
@@ -338,20 +354,20 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="generic.ex3" />
       <recent name="thread.executor.reject" />
       <recent name="thread.executor.poolsize" />
       <recent name="thread.executor.test" />
       <recent name="thread.executor.future" />
-      <recent name="thread.collection.simple.list" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ExecutorBasicMain">
-    <configuration name="BoxMain1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generic.ex1.BoxMain1" />
+  <component name="RunManager" selected="Application.MethodMain2">
+    <configuration name="AnimalHospitalMainV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic.ex3.AnimalHospitalMainV1" />
       <module name="java-mid2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="generic.ex1.*" />
+          <option name="PATTERN" value="generic.ex3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -359,12 +375,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExecutorBasicMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.executor.ExecutorBasicMain" />
-      <module name="java-adv1.main" />
+    <configuration name="AnimalHospitalMainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic.ex3.AnimalHospitalMainV2" />
+      <module name="java-mid2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.executor.*" />
+          <option name="PATTERN" value="generic.ex3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -372,12 +388,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleListMainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.collection.simple.list.SimpleListMainV2" />
-      <module name="java-adv1.main" />
+    <configuration name="MethodMain1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic.ex4.MethodMain1" />
+      <module name="java-mid2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.collection.simple.list.*" />
+          <option name="PATTERN" value="generic.ex4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -385,12 +401,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpinLockMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.cas.spinlock.SpinLockMain" />
-      <module name="java-adv1.main" />
+    <configuration name="MethodMain2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic.ex4.MethodMain2" />
+      <module name="java-mid2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.cas.spinlock.*" />
+          <option name="PATTERN" value="generic.ex4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -398,12 +414,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpinLockMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.cas.spinlock.SpinLockMain" />
-      <module name="java-adv1.main" />
+    <configuration name="MethodMain3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic.ex4.MethodMain3" />
+      <module name="java-mid2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.cas.spinlock.*" />
+          <option name="PATTERN" value="generic.ex4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -427,21 +443,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ExecutorBasicMain" />
-      <item itemvalue="Application.BoxMain1" />
-      <item itemvalue="Application.SimpleListMainV2" />
-      <item itemvalue="Application.SpinLockMain" />
-      <item itemvalue="Application.SpinLockMain (1)" />
+      <item itemvalue="Application.AnimalHospitalMainV1" />
+      <item itemvalue="Application.AnimalHospitalMainV2" />
+      <item itemvalue="Application.MethodMain1" />
+      <item itemvalue="Application.MethodMain2" />
+      <item itemvalue="Application.MethodMain3" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExecutorBasicMain" />
-        <item itemvalue="Application.SimpleListMainV2" />
-        <item itemvalue="Application.BoxMain1" />
-        <item itemvalue="Application.SpinLockMain (1)" />
-        <item itemvalue="Application.SpinLockMain" />
+        <item itemvalue="Application.MethodMain2" />
+        <item itemvalue="Application.MethodMain3" />
+        <item itemvalue="Application.MethodMain1" />
+        <item itemvalue="Application.AnimalHospitalMainV2" />
+        <item itemvalue="Application.AnimalHospitalMainV1" />
       </list>
     </recent_temporary>
   </component>
@@ -488,6 +504,8 @@
       <workItem from="1725961229000" duration="38559000" />
       <workItem from="1726212218073" duration="23528000" />
       <workItem from="1726724860030" duration="2608000" />
+      <workItem from="1726727472050" duration="25899000" />
+      <workItem from="1727101857495" duration="1281000" />
     </task>
     <servers />
   </component>
