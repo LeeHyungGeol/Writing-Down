@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="" />
+    <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/Readable Code/a. Readable Code 란.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -315,7 +317,7 @@
     "onboarding.tips.debug.path": "/Users/ihyeong-geol/Desktop/workspace/Writing-Down/java-code-manipulation/di-containor-apply/src/main/java/com/brothergeol/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.45747125",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -493,6 +495,7 @@
       <workItem from="1727101857495" duration="1281000" />
       <workItem from="1727365010710" duration="276000" />
       <workItem from="1727365289238" duration="662000" />
+      <workItem from="1727365953730" duration="5090000" />
     </task>
     <servers />
   </component>

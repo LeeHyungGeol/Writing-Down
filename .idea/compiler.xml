@@ -4,5 +4,11 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aws-msa-monolithic-prac.main" target="17" />
+      <module name="aws-msa-monolithic-prac.test" target="17" />
+      <module name="com.prac.monolithic.aws-msa-monolithic-prac.main" target="17" />
+      <module name="com.prac.monolithic.aws-msa-monolithic-prac.test" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
