@@ -8,7 +8,7 @@
 
 - 멀티태스킹은 사실상 뇌의 입장에서 본다면 매 순간순간마다 뇌를 그 해당 작업에 맞게 재설정하는 작업을 하므로 그만큼에 시간 비용이 드므로 이는 전체적인 수행 능력을 떨어트리고 속도를 저하시킨다.
 
-***`인지적 경제성`: 최소한의 인지만 우리가 가져가서 최대의 효율을 내보자.***
+***`인지적 경제성`: `최소한의 인지`만 우리가 가져가서 `최대의 효율`을 내보자.***
 
 > **결론적으로, 우리가 작성한 코드를 다른 사람이 읽을 때, 읽는 사람의 `뇌 메모리를 효과적으로 사용할 수 있도록` 논리 구조를 짜거나 가독성을 높여야 하는 것이 핵심이다.**
 
@@ -647,8 +647,8 @@ private static boolean isAllCellOpened() {
 
 ```java
 private static boolean isAllCellOpened() {
-        return Arrays.stream(BOARD)
-                .flatMap(Arrays::stream)
-                .noneMatch(cell -> CLOSED_CELL_SIGN.equals(cell));
-    }
+	return Arrays.stream(BOARD)
+            .flatMap(Arrays::stream)
+            .noneMatch(cell -> CLOSED_CELL_SIGN.equals(cell));
+}
 ```

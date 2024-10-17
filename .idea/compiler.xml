@@ -9,6 +9,7 @@
       <module name="aws-msa-monolithic-prac.test" target="17" />
       <module name="com.prac.monolithic.aws-msa-monolithic-prac.main" target="17" />
       <module name="com.prac.monolithic.aws-msa-monolithic-prac.test" target="17" />
+      <module name="PS" target="22" />
     </bytecodeTargetLevel>
   </component>
 </project>

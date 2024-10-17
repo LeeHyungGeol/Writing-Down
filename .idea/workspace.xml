@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/Readable Code/c. 논리, 사고의 흐름(코드).md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Readable Code/b. 추상.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Readable Code/b. 추상(데이터).md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readable-code" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Readable Code/객체 지향 패러다임.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Readable Code/c. 논리, 사고의 흐름(코드).md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Readable Code/c. 논리, 사고의 흐름(코드).md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +18,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/PS">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/java-adv1">
       <ProjectState />
     </projectState>
@@ -309,7 +315,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-21&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -499,6 +505,8 @@
       <workItem from="1727365289238" duration="662000" />
       <workItem from="1727365953730" duration="5090000" />
       <workItem from="1728036540815" duration="13712000" />
+      <workItem from="1728061707210" duration="6545000" />
+      <workItem from="1728111772611" duration="25633000" />
     </task>
     <servers />
   </component>
