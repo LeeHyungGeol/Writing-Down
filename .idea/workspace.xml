@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/Readable Code/객체 지향 패러다임.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Readable Code/객체 지향 패러다임.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/aws/AWS VPC(Virtual Private Cloud).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/aws/모노리식 아키텍쳐 vs 마이크로서비스 아키텍쳐(MSA).md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/aws/모노리식 아키텍쳐 vs 마이크로서비스 아키텍쳐(MSA).md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -502,6 +504,8 @@
       <workItem from="1728036540815" duration="13712000" />
       <workItem from="1728061707210" duration="6545000" />
       <workItem from="1728111772611" duration="48301000" />
+      <workItem from="1729168557135" duration="2643000" />
+      <workItem from="1729174411114" duration="1625000" />
     </task>
     <servers />
   </component>
