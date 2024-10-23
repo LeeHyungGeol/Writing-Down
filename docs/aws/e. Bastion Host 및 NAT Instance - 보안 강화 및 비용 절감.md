@@ -101,7 +101,7 @@ sudo java -jar build/libs/aws-msa-monolithic-prac-0.1.jar
 3. Cloud Shell 에 복사해놓은 PEM키를 복사한다.
 4. 명령어 실행 후에 나온 내용을 복사한다.
 5. `Bastion Host terminal` 에서 `vi` 로 파일 생성 후에, 내용을 붙여 넣은 후에 `:wq` 로 저장한다.
-6. `sudo ssh -i goopang-key-pair.pem ec2-user@10.0.1.101`
+6. `sudo ssh -i goopang-key-pair.pem ec2-user@private-ec2-instance-private-ipv4-address`
 7. 서버에 `User Data` 로 입력한 스크립트가 잘 실행되었는지 `CURL` 명령어를 통해 확인한다.
 8. `curl -XGET 'localhost/health_check'`
 9. 테스트가 정상적으로 작동하지 않는다면 `cat /var/log/cloud-init-output.log` 로 EC2 인스턴스의 User Data 스크립트 실행 로그를 확인할 수 있다.

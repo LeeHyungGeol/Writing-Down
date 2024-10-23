@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/aws/e. Bastion Host 및 NAT Instance - 보안 강화 및 비용 절감.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/aws/d. EC2 - 전세계에 서비스 배포.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/aws/d. EC2 - 전세계에 서비스 배포.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/aws/f. Elastic Load Balancer - 고가용성을 위한 로드밸런싱.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/aws/e. Bastion Host 및 NAT Instance - 보안 강화 및 비용 절감.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/aws/e. Bastion Host 및 NAT Instance - 보안 강화 및 비용 절감.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,9 +118,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -509,6 +510,8 @@
       <workItem from="1729168557135" duration="2643000" />
       <workItem from="1729174411114" duration="1625000" />
       <workItem from="1729176045361" duration="38764000" />
+      <workItem from="1729620012568" duration="10756000" />
+      <workItem from="1729685795842" duration="5076000" />
     </task>
     <servers />
   </component>
