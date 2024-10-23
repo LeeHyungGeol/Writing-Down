@@ -94,7 +94,7 @@ EC2 스토리지는 일반적으로 2가지가 사용된다.
 <img width="500" alt="스크린샷 2024-10-18 오후 10 43 00" src="https://github.com/user-attachments/assets/b5abf9ac-a091-45ef-b849-e5557f221264">
 
 - `Key Pair Type` 은 `암호화 방식`을 선택하는 옵션이다. 여기서는 `RSA` 를 선택한다.
-- `Private Key File Format` 은 윈도우 7,8 과 같은 옛날 버젼일 경우 PPK 를 사용하고, 
+- `Private Key File Format` 은 윈도우 7,8 과 같은 옛날 버젼일 경우 `PPK` 를 사용하고, 
   - 원도우 10 이상, Linux, Mac OS 는 `PEM` 을 사용한다. 
 
 ---
