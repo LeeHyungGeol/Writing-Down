@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/aws/f. Elastic Load Balancer - 고가용성을 위한 로드밸런싱.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/aws/e. Bastion Host 및 NAT Instance - 보안 강화 및 비용 절감.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/aws/e. Bastion Host 및 NAT Instance - 보안 강화 및 비용 절감.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Readable Code/e. 객체 지향 적용하기.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Readable Code/객체 지향 패러다임.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Readable Code/d. 객체 지향 패러다임.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -512,6 +511,7 @@
       <workItem from="1729176045361" duration="38764000" />
       <workItem from="1729620012568" duration="10756000" />
       <workItem from="1729685795842" duration="5076000" />
+      <workItem from="1729704530436" duration="2105000" />
     </task>
     <servers />
   </component>
