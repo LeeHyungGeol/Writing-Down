@@ -213,18 +213,19 @@
 <img width="500" alt="스크린샷 2024-10-23 오후 9 47 26" src="https://github.com/user-attachments/assets/9aaef526-334b-4710-bd10-f5c7743e90f7">
 
 `Advanced health check settings` 
-- 하나씩 설명드리면, 헬스체크 포트는 헬스체크 요청을 보낼 포트를 지정하고, 
-- Healthy threshold는 헬스체크 요청을 입력된 숫자만큼 연속으로 정상 응답을 받아야 정상으로 지급하는 횟수입니다.
-- Unhealthy threshold는 반대로 입력된 숫자만큼 연속으로 비정상 응답을 받으면 타겟을 비정상으로 지급하는 횟수입니다.
-- 타임아웃은 요청의 타임아웃을 초로 입력할 수 있고, 인터벌은 HealthCheck 요청 간격을 설정할 수 있습니다.
-- Success 코드는 정상 응답의 응답 코드를 지정할 수 있습니다.
+- `Health check port`: 헬스체크 요청을 보낼 포트를 지정하고, 
+- `Healthy threshold`: 헬스체크 요청을 입력된 숫자만큼 연속으로 정상 응답을 받아야 정상으로 지급하는 횟수입니다.
+- `Unhealthy threshold`: 반대로 입력된 숫자만큼 연속으로 비정상 응답을 받으면 타겟을 비정상으로 지급하는 횟수입니다.
+- `Timeout`: 요청의 타임아웃을 초로 입력할 수 있고, 
+- `Interval`: HealthCheck 요청 간격을 설정할 수 있습니다.
+- `Success code`: 정상 응답의 응답 코드를 지정할 수 있습니다.
 
 HealthCheck 설정을 기본값으로 두면 검사시간이 오래 걸려 서버가 실행되기까지 오래 걸릴 수 있다.
-- Healthy threshold, Unhealthy threshold를 2로 설정하고, interval을 15초로 설정해준다.
+- `Healthy threshold`, `Unhealthy threshold`를 2로 설정하고, `interval`을 15초로 설정해준다.
 
 <img width="1000" alt="스크린샷 2024-10-23 오후 9 50 28" src="https://github.com/user-attachments/assets/6c49fddd-1e96-44b7-99ff-fb71bc504010">
 
-- Target Instance 를 private-ec2-instance 를 선택해주고, Include as pending below 를 체크해준 다음 Target Group 을 생성해준다.
+- `Target Instance` 를 `private-ec2-instance` 를 선택해주고, `Include as pending below` 를 체크해준 다음 Target Group 을 생성해준다.
 
 ---
 
@@ -242,8 +243,53 @@ HealthCheck 설정을 기본값으로 두면 검사시간이 오래 걸려 서�
 <img width="1000" alt="스크린샷 2024-10-23 오후 9 58 17" src="https://github.com/user-attachments/assets/f5bf2c19-7ac5-4293-9591-48970d155db5">
 
 - 대상 Instance 가 Unhealthy 상태로 되어 있다.
-- Application Load Balancer 에서 보내는 health check 트래픽이 인스턴스의 보안 그룹에 허용되지 않았기 때문이다.
+- Application Load Balancer 에서 보내는 health check 트래픽이 Private-ec2-instance 의 보안 그룹(sg)에 허용되지 않았기 때문이다.
 
 <img width="1000" alt="스크린샷 2024-10-23 오후 10 05 48" src="https://github.com/user-attachments/assets/8f09f18c-b442-4d6d-bf29-f756c5bbedd5">
 
 - Private-ec2-instance-sg 의 Inbound-rules 를 수정해서 Load-Balancer 보안그룹을 HTTP 트래픽을 허용하도록 설정해주고 저장하겠습니다. 
+
+<br/>
+
+<br/>
+
+<br/>
+
+## ⚡️ Application Load Balancer 수동으로 수평확장
+
+> 수동으로 수평 확장을 하는 방법은 아주 간단하다. 서버가 배포된 EC2 인스턴스를 하나 더 만들어서 `Target Group` 에 추가해주면 된다.
+
+<img width="500" alt="스크린샷 2024-10-31 오전 1 31 42" src="https://github.com/user-attachments/assets/3ee825f8-939d-4829-a026-d8dc575784b5">
+
+- `Network Setting`
+
+<img width="500" alt="스크린샷 2024-10-31 오전 1 32 56" src="https://github.com/user-attachments/assets/8fc93402-7611-4840-955f-dafe48a5d1ad">
+
+- `Advanced Setting` > `User Data`
+
+인스턴스를 생성한 후에 Application Load Balancer의 Target Group 에 추가해주면 된다.
+
+<br/>
+
+<br/>
+
+<br/>
+
+## ⚡️ 정리
+
+<img width="500" alt="스크린샷 2024-10-31 오후 11 41 15" src="https://github.com/user-attachments/assets/0bd98a82-085a-4ecd-83a1-a4d41dfa73e8">
+
+**도입하는 과정**
+
+- HTTP, HTTPS 에 최적화된 `Application Load Balancer` 를 `Public Subnet` 에 배치
+- Target Group 을 Private Subnet 의 EC2(private-ec2-instance)로 지정
+- ALB 의 엔드포인트로 요청 테스트
+- 인스턴스 하나를 수동으로 추가하여 수평 확장을 구현 및 로드밸런싱 확인
+
+### 🔋 개선이 필요한 부분
+
+- 수동으로 해야하는 수평 확장(수동으로 확장하는것은 사실상 불가능)
+  - 트래픽은 언제 늘어날지 예측하기 어려움
+  - 24시간 모니터링은 굉장히 비효율적
+
+`Auto Scaling Group: 자동으로 확장해주는 서비스` 으로 문제를 해결한다.

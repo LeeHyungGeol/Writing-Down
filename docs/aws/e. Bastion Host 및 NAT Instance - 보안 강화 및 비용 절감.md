@@ -115,6 +115,16 @@ cat goopang-key-pair.pem
 vi goopang-key-pair.pem
 ```
 
+```shell
+# Re-run this script on every boot
+
+echo "@reboot root /path/to/script.sh" | sudo tee -a /etc/crontab > /dev/null
+
+# Re-run User Data on every reboot
+echo "cloud_final_modules:
+  - [scripts-user, always]" | sudo tee -a /etc/cloud/cloud.cfg.d/01_run_always.cfg
+```
+
 <br/>
 
 <br/>
@@ -254,8 +264,8 @@ Private Subnet 의 Routing Table 에 NAT Instance 로 가는 라우팅을 추가
 
 <img width="1000" alt="스크린샷 2024-10-23 오전 4 08 13" src="https://github.com/user-attachments/assets/39307f64-22d6-414e-b9d8-6abd6fcf8378">
 
-- 인터넷으로 가는 경로의 Target 을 Instance 로 설정하고,
-- NAT Instance 를 선택해준다.
+- 인터넷으로 가는 경로의 Target 을 `Instance` 로 설정하고,
+- `NAT Instance` 를 선택해준다.
 
 ping test instance 에 접속해서 아래 명령어로 테스트해본다.
 
