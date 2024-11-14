@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/aws/g. Auto Scaling Group - 서비스 자동 확장.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/aws/i. S3와 CloudFront - 파일 저장 및 콘텐츠 배포 최적화.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -515,6 +515,17 @@
       <workItem from="1729751607880" duration="32368000" />
       <workItem from="1730386015806" duration="2801000" />
       <workItem from="1730388821639" duration="19000" />
+      <workItem from="1730388841965" duration="47853000" />
+      <workItem from="1730825575511" duration="15157000" />
+      <workItem from="1730906889258" duration="5077000" />
+      <workItem from="1730917534745" duration="1895000" />
+      <workItem from="1730919434048" duration="8001000" />
+      <workItem from="1730967072121" duration="312000" />
+      <workItem from="1730967386871" duration="20833000" />
+      <workItem from="1731348303919" duration="1746000" />
+      <workItem from="1731350154993" duration="461000" />
+      <workItem from="1731350618063" duration="2838000" />
+      <workItem from="1731500019690" duration="2406000" />
     </task>
     <servers />
   </component>
