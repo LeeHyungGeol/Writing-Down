@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/aws/j. MSA 로 전환.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/aws/k. MSA를 AWS 클라우드로 이전 1 - 컨테이너화와 ECR.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -526,6 +526,8 @@
       <workItem from="1731350154993" duration="461000" />
       <workItem from="1731350618063" duration="2838000" />
       <workItem from="1731500019690" duration="3833000" />
+      <workItem from="1731583934995" duration="3102000" />
+      <workItem from="1731589075928" duration="4851000" />
     </task>
     <servers />
   </component>
