@@ -284,10 +284,6 @@ docker run -p 8000:8000 --name cart-service-container \
 
 key 를 생성하면 `Access Key` 와 `Secret Access Key` 를 알려주는데, `Secret Access Key` 는 여기서 한번만 알려주기 때문에 안전한 곳에 저장해두어야 한다.
 
-AKIARJV6GE6NEURBZ5JA
-
-DpKEiJI3k2xl6croZ+do1PvG5HzlCLVa4yhuLnNO
-
 ---
 
 ### 🔋 AWS CLI 를 통해 image 를 push
