@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/aws/m. MSA를 AWS 클라우드로 이전 3 - ASG, ALB.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/aws/n. VPC Endpoint - NAT Gateway없이 프라이빗 서브넷 사용.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/aws/ㅣ. MSA를 AWS 클라우드로 이전 2 - RDS, S3, CloudFront.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/aws/l. MSA를 AWS 클라우드로 이전 2 - RDS, S3, CloudFront.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/java-mid2">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/stock">
       <ProjectState />
     </projectState>
   </component>
@@ -130,6 +134,7 @@
   <component name="ProjectId" id="2iiwKzUCsb7F0wfX1xjWBvddmpb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
@@ -315,7 +320,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-22&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -326,6 +331,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.45747125&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -355,6 +361,15 @@
       <recent name="thread.executor.test" />
       <recent name="thread.executor.future" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Application.ShuttleTest">
     <configuration name="AnimalHospitalMainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -437,12 +452,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StockApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="stock.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.brothergeol.stock.StockApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.ShuttleTest" />
       <item itemvalue="Application.AnimalHospitalMainV2" />
       <item itemvalue="Application.MethodMain1" />
       <item itemvalue="Application.MethodMain2" />
       <item itemvalue="Application.MethodMain3" />
+      <item itemvalue="Spring Boot.StockApplication" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
     </list>
@@ -535,6 +558,9 @@
       <workItem from="1732608961645" duration="17000" />
       <workItem from="1732609097133" duration="10163000" />
       <workItem from="1732624742312" duration="1165000" />
+      <workItem from="1732698936151" duration="3191000" />
+      <workItem from="1732702238958" duration="18289000" />
+      <workItem from="1733748077869" duration="4976000" />
     </task>
     <servers />
   </component>
