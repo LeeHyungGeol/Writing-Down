@@ -105,7 +105,7 @@
 <img width="500" alt="스크린샷 2025-01-09 오후 7 21 45" src="https://github.com/user-attachments/assets/1f698be8-1a84-47f5-b020-900900ec01db" />
 
 
-> append-only log에 consumer groups과 같은 기능을 더한 자료 구조(append-only log: 데이터를 추가만 할 수 있는 로그(데이터베이스나 분산 시스템에 주로 사용되는 데이터 저장 알고리즘))  
+> **append-only log에 consumer groups과 같은 기능을 더한 자료 구조**(append-only log: 데이터를 추가만 할 수 있는 로그(데이터베이스나 분산 시스템에 주로 사용되는 데이터 저장 알고리즘))  
 > 
 > kafka 와 같은 이벤트 스트림 플랫폼과 어느정도 유사한 부분이 있다.
 
@@ -128,45 +128,89 @@
 
 <img width="500" alt="스크린샷 2025-01-09 오후 7 22 00" src="https://github.com/user-attachments/assets/fdfbfd2a-4c32-42ed-8523-e3add64ea49c" />
 
-Geospatial Indexes 좌표를 저장하고, 검색하는 데이터 타입 거리 계산, 범위 탐색 등 지원
-명령어
-$ GEOADD seoul:station
-126.923917 37.556944 hong-dae 127.027583 37.497928 gang-nam
-$ GEODIST seoul:station hong-dae gang-nam KM
+> `Geospatial Indexes`: 좌표를 저장하고, 검색하는 데이터 타입 거리 계산, 범위 탐색 등 지원
 
+### 📝 명령어
 
-Bitmaps
+- `$ GEOADD seoul:station 126.923917 37.556944 hong-dae 127.027583 37.497928 gang-nam`
+  - redis 의 `Geospatial` 에 데이터를 추가할 때는 위도가 아닌 **경도를 먼저 쓰고 위도를 써줘야 한다.** 
+- `$ GEODIST seoul:station hong-dae gang-nam KM`: 두 지점 사이의 거리를 계산할 수 있다.
+
+---
+
+## 📌 **Bitmaps**
 
 <img width="500" alt="스크린샷 2025-01-09 오후 7 23 41" src="https://github.com/user-attachments/assets/2a85b0f3-2c24-4851-928d-7b521d9b486d" />
 
-Bitmaps 실제 데이터 타입은 아니고, String에 binary operation을 적용한 것 최대 42억개 binary 데이터 표현 = 2^32(4,294,967,296)
-명령어 $ SETBIT user:log-in:23-01-01 123 1 $ SETBIT user:log-in:23-01-01 456 1 $ SETBIT user:log-in:23-01-02 123 1
-$ BITCOUNT user:log-in:23-01-01
-$ BITOP AND result
-user:log-in:23-01-01 user:log-in:23-01-02
-$ GETBIT result 123
+> `Bitmaps`: 실제 데이터 타입은 아니고, **String에 binary operation을 쉽게 사용할 수 있도록 만들어놓은 인터페이스**이다. 
+> 
+> 최대 42억개 binary 데이터 표현 = 2^32(4,294,967,296)
 
-HyperLogLog
+**`Bitmap` 은 `적은 메모리`를 사용하여 `Binary 상태값`을 저장하는데 많이 활용된다.**
+
+### 📝 명령어
+
+- `$ SETBIT user:log-in:23-01-01 123 1`: `SETBIT key offset value`: **key 에 대한 offset 위치에 value 를 저장**
+- `$ SETBIT user:log-in:23-01-01 456 1` 
+- `$ SETBIT user:log-in:23-01-02 123 1`
+- `$ BITCOUNT user:log-in:23-01-01`: 해당 key 에서 1의 개수를 세어준다.
+- `$ BITOP AND result user:log-in:23-01-01 user:log-in:23-01-02`: 두 개의 key 에 대한 `AND` 연산을 수행한다. 결과는 바로 출력되는 것이 아닌 여기서는 result 라는 `destKey` 의 `Bitmap` 에 저장된다.
+  - `BITOP operation destkey key [key ...]`: `operation` 은 `AND`, `OR`, `XOR`, `NOT` 중 하나를 선택할 수 있다.
+- `$ GETBIT result 123`
+
+---
+
+## 📌 **HyperLogLog**
 
 <img width="500" alt="스크린샷 2025-01-09 오후 7 24 22" src="https://github.com/user-attachments/assets/18cf7442-1406-4480-8fd2-92aeefaac96a" />
 
-HyperLogLog 집합의 cardinality를 추정할 수 있는 확률형 자료구조
-정확성을 일부 포기하는 대신 저장공간을 효율적으로 사용(평균 에러 0.81%)
-vs. Set
-명령어
-실제 값을 저장하지 않기 때문에 매우 적은 메모리 사용
-$ PFADD fruits apple orange grape kiwi $ PFCOUNT fruits
+> `HyperLogLog`: **집합의 `cardinality`를 추정할 수 있는 확률형 자료구조**(확률형 자료구조라는 말은 결과값이 실제와 일정 부분 오차가 발생할 수 있다는 의미)
+> 
+> 정확성을 일부 포기하는 대신 **저장공간을 효율적으로 사용**(평균 에러 **0.81%**)
+
+- `HyperLogLog`의 원리를 간단하게 설명하자면,
+  - HyperLogLog는 멤버의 값을 해싱하여 bucket이라는 단위로 분류해서 해시 값에 맞게 표시합니다.
+  - 동일한 아이템이 추가된 경우 동일한 해시를 갖기 때문에 카디널리티를 일정하게 계산할 수 있습니다. 
+- 다만, HyperLogLog는 근간에 확률적인 계산식이 들어가 있기 때문에 최종 결과 값은 실제와 다를 수 있습니다.
+- 예를 들어 다음과 같이 해시 충돌이 발생하는 경우 HyperLogLog는 정확하지 않은 Cardinality 를 반환합니다.
+- `Set`을 이용해서도 카디널리티를 계산할 수 있는데 Set은 중복 검사를 위해 실제 값을 메모리에 모두 저장합니다. 
+  - 만약, 만 개의 아이템이 존재한다면 아이템 개수에 비례해서 저장 공간이 증가하는데 HyperLogLog를 이용하면 상대적으로 매우 적은 메모리로 카디널리티를 계산할 수 있습니다. 
+  - 다만 HyperLogLog는 실제 값을 저장하지 않기 때문에 모든 아이템을 다시 출력해야 하는 경우에는 활용할 수 없습니다.
+
+`Cardinality`: **집합에서 중복을 제거한 후 남아 있는 고유한 값의 개수를 나타냅니다.**
+
+### 📝 명령어
+
+- `$ PFADD fruits apple orange grape kiwi` 
+- `$ PFCOUNT fruits`
 
 
-섹션 3. 데이터 타입 알아보기 BloomFilter
+## 📌 **BloomFilter**
 
 <img width="500" alt="스크린샷 2025-01-09 오후 7 25 00" src="https://github.com/user-attachments/assets/bd5670a9-0e92-4951-a66d-7b9346de0449" />
 
-BloomFilter element가 집합 안에 포함되었는지 확인할 수 있는 확률형 자료 구조 (=membership test)
-정확성을 일부 포기하는 대신 저장공간을 효율적으로 사용
-false positive element가 집합에 실제로 포함되지 않은데 포함되었다고 잘못 예측하는 경우
-vs. Set
-명령어
-실제 값을 저장하지 않기 때문에 매우 적은 메모리 사용
-$ BF.MADD fruits apple orange $ BF.EXISTS fruits apple
-$ BF.EXISTS fruits grape
+> `BloomFilter`: **element가 집합 안에 포함되었는지 확인할 수 있는 확률형 자료 구조 (=membership test)**
+> 
+> 정확성을 일부 포기하는 대신 `저장공간을 효율적`으로 사용, **실제 값을 저장하지 않기 때문에 Set 자료구조에 비해 매우 적은 메모리 사용**
+> 
+> `false positive`: element가 집합에 실제로 포함되지 않은데 포함되었다고 잘못 예측하는 경우
+
+반대의 상황에서 ***반드시 있는 아이템이 없다고 반환하는 경우는 없다!!!***
+
+### 💡 블룸필터가 데이터를 저장하는 원리
+
+- 블룸필터는 값을 해싱하여 여러 개의 해시 키를 만들어냅니다.
+- 여러 개의 키에 해당하는 위치를 블룸필터에 표시하게 됩니다.
+- 이후에 어떤 아이템이 존재하는지 여부를 확인할 때는 다시 해시키를 생성하여 해당 위치를 확인하면 됩니다.
+- 만약 애플과 오렌지를 블룸필터에 먼저 추가한 다음 그레이프라는 값이 블룸필터에 이미 추가되었는지를 확인해 본다고 하겠습니다.
+- 그레이프의 경우 왼쪽 하나의 해시키는 표시가 되어 있지만 오른쪽 다른 해시키는 표시되어 있지 않기 때문에 해당 값이 집합에 포함되지 않았다는 것을 확인할 수 있습니다.
+- 대신 문제가 되는 부분은 키위의 예시처럼 다른 해시키의 조합으로 키위에 해당하는 해당 키가 이미 표시된 경우입니다.
+- 이때는 앞서 설명드린 false positive로 실제로는 해당 아이템이 집합에 포함되지 않지만 Bloomfilter는 해당 아이템을 포함하고 있다고 잘못된 결과를 반환합니다.
+- 따라서 블룸필터를 사용하는 경우에는 반드시 false positive에 대한 문제를 인지하고 있어야 합니다.
+
+
+### 📝 명령어
+
+- `$ BF.MADD fruits apple orange` 
+- `$ BF.EXISTS fruits apple`
+- `$ BF.EXISTS fruits grape`
