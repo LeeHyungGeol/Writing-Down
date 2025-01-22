@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/Redis/Redis 특수 명령어.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Redis/Redis 특수 명령어.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Redis/Redis 특수 명령어.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -562,6 +563,8 @@
       <workItem from="1734676395548" duration="16969000" />
       <workItem from="1736443321648" duration="510000" />
       <workItem from="1736443834705" duration="10105000" />
+      <workItem from="1736929669321" duration="1829000" />
+      <workItem from="1737533715294" duration="1804000" />
     </task>
     <servers />
   </component>
