@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Readable Code/e. 객체 지향 적용하기.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Readable Code/e. 객체 지향 적용하기.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -566,7 +567,9 @@
       <workItem from="1737533715294" duration="1804000" />
       <workItem from="1737536020701" duration="2651000" />
       <workItem from="1739372016443" duration="607000" />
-      <workItem from="1741093666990" duration="2671000" />
+      <workItem from="1741093666990" duration="21285000" />
+      <workItem from="1741877331464" duration="2233000" />
+      <workItem from="1741880417221" duration="2206000" />
     </task>
     <servers />
   </component>

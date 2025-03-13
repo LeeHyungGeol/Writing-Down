@@ -560,3 +560,191 @@ public enum CellSnapshotStatus {
 	}
 }
 ```
+
+---
+
+# 💡 다형성 활용하기
+
+### 🔋 반복적인 if 문을 단순하게 만들어볼 수 없을까?
+
+> 어떤 `조건`을 만족하면, 그 조건에 해당하는 `행위`를 수행한다.
+
+<img width="500" src="https://github.com/user-attachments/assets/ebe86504-f0e6-4cb2-ab0a-1e2f52e3715e" alt="">
+
+<img width="500" src="https://github.com/user-attachments/assets/ee833818-2440-4cc5-962d-604a426f0b6b" alt="">
+
+**_OCP 를 적용해보자_**
+- **변화하는 것** > ***구체***
+- **스펙의 하위 구현체들이 조건과 행위를 바꿔가면서 이 추상화된 스펙을 만족시키고 있다.**
+  - **조건 & 행위**
+- **변하지 않는 것** > ***추상***
+- **어떤 스펙, 상위 레벨의, 추상화 레빌이 높은 스펙이다.**
+  1. 조건을 만족하는가?
+  2. 행위를 수행한다.
+
+<img width="700" src="https://github.com/user-attachments/assets/a4a5f5c2-5bea-49d8-a884-c7dd1e19ba76" alt="">
+
+**AS-IS**
+
+<img width="500" src="https://github.com/user-attachments/assets/fdfe869e-cb2b-41d4-81f1-17d05ad2257d" alt="">
+
+```java
+private static String decideCellSignFrom(CellSnapshot snapshot) {
+		CellSnapshotStatus status = snapshot.getStatus();
+		if (status == CellSnapshotStatus.EMPTY) {
+			return EMPTY_SIGN;
+		}
+		if (status == CellSnapshotStatus.FLAG) {
+			return FLAG_SIGN;
+		}
+		if (status == CellSnapshotStatus.LAND_MINE) {
+			return LAND_MINE_SIGN;
+		}
+		if (status == CellSnapshotStatus.NUMBER) {
+			return String.valueOf(snapshot.getNearbyLandMineCount());
+		}
+		if (status == CellSnapshotStatus.UNCHECKED) {
+			return UNCHECKED_SIGN;
+		}
+		throw new IllegalArgumentException("확인할 수 없는 셀입니다.");
+	}
+```
+
+**TO-BE**
+
+<img width="500" src="https://github.com/user-attachments/assets/d2252470-7296-44fa-9aa4-042f5cffb679" alt="">
+
+- `CellSignProvidable`: CellSign 을 제공할 수 있는 `스펙` 을 만들었다. -> **추상화**
+  1. `조건`: `boolean supports(...)` 을 만족하는가?
+  2. `행위`: `String provide(...)` 를 제공
+- 각각의 EmptyCellSignProvider, FlagCellSignProvider, ... 를 따로 놓지 않고 CellSignFinder 를 통해 관리한다.
+
+```java
+public interface CellSignProvidable {
+	boolean supports(CellSnapshot cellSnapshot);
+	String provide(CellSnapshot cellSnapshot);
+}
+```
+
+```java
+public class EmptyCellSignProvider implements CellSignProvidable{
+
+	private static final String EMPTY_SIGN = "■";
+
+	@Override
+	public boolean supports(CellSnapshot cellSnapshot) {
+		return cellSnapshot.isSameStatus(CellSnapshotStatus.EMPTY);
+	}
+
+	@Override
+	public String provide(CellSnapshot cellSnapshot) {
+		return EMPTY_SIGN;
+	}
+}
+```
+
+```java
+public class CellSignFinder {
+	public static final List<CellSignProvidable> CELL_SIGN_PROVIDERS = List.of(
+		new EmptyCellSignProvider(),
+		new FlagCellSignProvider(),
+		new LandMineCellSignProvider(),
+		new NumberCellSignProvider(),
+		new UncheckedCellSignProvider()
+	);
+
+	public String findCellSignFrom(CellSnapshot snapshot) {
+		return CELL_SIGN_PROVIDERS.stream()
+			.filter(provider -> provider.supports(snapshot))
+			.findFirst()
+			.map(provider -> provider.provide(snapshot))
+			.orElseThrow(() -> new IllegalArgumentException("확인할 수 없는 셀입니다."));
+	}
+}
+```
+
+```java
+String cellSign = cellSignFinder.findCellSignFrom(snapshot);
+```
+
+#### ⚛️ 하지만 이렇게 하면, CellSnapshotStatus 가 추가될 때마다 CellSignFinder 에도 추가해야 한다!!!
+
+- 상태가 추가될 때 마다 구현체(xxxCellSignProvider)도 추가해야 하고, `CellSignFinder`에도 등록해야 한다.**
+
+---
+
+### 🔋 Enum 을 활용해보자!!!
+
+> `CellSignProvider` 라는 `Enum` 으로 만들어보자!!!
+
+1. 조건을 만족하는지 확인하고 행위를 수행하는 역할을 하는 메서드를 만든다.
+2. 조건과 행위를 각각 Enum 으로 하나씩 다 갖고 있다.
+- `CellSignProvider Enum` 자체가 `interface` 를 구현함으로써 **구현체도 갖고 있고, 추상화된 스펙도 같이 갖고 있는 형태이다.**
+
+<img width="500" src="https://github.com/user-attachments/assets/aef86a87-a9ba-4f6a-889b-0ff2289d6946" alt="">
+
+```java
+public enum CellSignProvider implements CellSignProvidable{
+	EMPTY(CellSnapshotStatus.EMPTY) {
+		@Override
+		public String provide(CellSnapshot cellSnapshot) {
+			return EMPTY_SIGN;
+		}
+	},
+	FLAG(CellSnapshotStatus.FLAG) {
+		@Override
+		public String provide(CellSnapshot cellSnapshot) {
+			return FLAG_SIGN;
+		}
+	},
+	LAND_MINE(CellSnapshotStatus.LAND_MINE) {
+		@Override
+		public String provide(CellSnapshot cellSnapshot) {
+			return LAND_MINE_SIGN;
+		}
+	},
+	NUMBER(CellSnapshotStatus.NUMBER) {
+		@Override
+		public String provide(CellSnapshot cellSnapshot) {
+			return String.valueOf(cellSnapshot.getNearbyLandMineCount());
+		}
+	},
+	UNKNOWN(CellSnapshotStatus.UNCHECKED) {
+		@Override
+		public String provide(CellSnapshot cellSnapshot) {
+			return UNCHECKED_SIGN;
+		}
+	}
+	;
+
+	private static final String EMPTY_SIGN = "■";
+	private static final String FLAG_SIGN = "⚑";
+	private static final String LAND_MINE_SIGN = "☼";
+	private static final String UNCHECKED_SIGN = "□";
+
+	private final CellSnapshotStatus status;
+
+	CellSignProvider(CellSnapshotStatus status) {
+		this.status = status;
+	}
+
+	@Override
+	public boolean supports(CellSnapshot cellSnapshot) {
+		return cellSnapshot.isSameStatus(status);
+	}
+
+	public static String findCellSignFrom(CellSnapshot snapshot) {
+		CellSignProvider cellSignProvider = findBy(snapshot);
+		return cellSignProvider.provide(snapshot);
+	}
+
+	private static CellSignProvider findBy(CellSnapshot snapshot) {
+		return Arrays.stream(values())
+			.filter(provider -> provider.supports(snapshot))
+			.findFirst()
+			.orElseThrow(() -> new IllegalArgumentException("확인할 수 없는 셀입니다."));
+	}
+}
+```
+
+### 🔋 변하는 것과 변하지 않는 것을 분리하여 추상화하고, OCP 를 지키는 구조
