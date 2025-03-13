@@ -683,6 +683,8 @@ String cellSign = cellSignFinder.findCellSignFrom(snapshot);
 
 <img width="500" src="https://github.com/user-attachments/assets/aef86a87-a9ba-4f6a-889b-0ff2289d6946" alt="">
 
+### 🔋 변하는 것과 변하지 않는 것을 분리하여 추상화하고, OCP 를 지키는 구조
+
 ```java
 public enum CellSignProvider implements CellSignProvidable{
 	EMPTY(CellSnapshotStatus.EMPTY) {
@@ -746,5 +748,3 @@ public enum CellSignProvider implements CellSignProvidable{
 	}
 }
 ```
-
-### 🔋 변하는 것과 변하지 않는 것을 분리하여 추상화하고, OCP 를 지키는 구조
