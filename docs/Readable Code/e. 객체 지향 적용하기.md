@@ -748,3 +748,62 @@ public enum CellSignProvider implements CellSignProvidable{
 	}
 }
 ```
+
+---
+
+# 💡 숨겨져 있는 도메인 개념 도출하기
+
+#### ⚛️ 도메인 지식은 만드는 것이 아니라 발견하는 것
+
+#### ⚛️ 객체 지향은 현실을 완벽하게 반영하는 도구가 아니라, 흉내내는 것이다.
+- 현실 세계에서 쉽게 인지하지 못하는 개념도 도출해서 사용해야 할 떄가 있다.
+
+#### ⚛️ 설계할 때는 근시적, 거시적 관점에서 최대한 미래를 예측하고, 시간이 지나 만약 틀렸다는 것을 인지하면 언제든 돌아올 수 있도록 코드를 만들어야 한다.
+- 완벽한 설계는 없다. 그 당시의 최선이 있을 뿐이다.
+
+지뢰찾기 게임 도메인에서는 게임 설정 정보가 계속 추가될 수 있다는 도메인 지식을 발견함
+- 생성자의 변경이 없도록 하기 위해 게임 설정 정보를 한번 포장하자.
+- 파라미터들을 포장해서 게임 설정 정보라는 숨겨진 도메인 개념을 도출했다.
+
+```java
+public class GameApplication {
+
+    // 이 클래스는 딱 프로그램 실행에 진입점만 가지게 된다.
+    // 이름도 MinesweeperGame 에서 GameApplication 으로 변경한다. -> 이렇게 변경하면 지뢰찾기게임(Minesweeper 뿐만이 아닌 다른 게임도 실행할 수 있게 된다.)
+    // 게임 실행에 대한 책임과 지뢰찾기 도메인 자체, 지뢰찾기 게임을 담당하는 역할을 분리했다.
+    public static void main(String[] args) {
+        GameConfig gameConfig = new GameConfig(new Beginner(), new ConsoleInputHandler(), new ConsoleOutputHandler());
+
+        Minesweeper minesweeper = new Minesweeper(gameConfig);
+        minesweeper.initialize();
+        minesweeper.run();
+    }
+}
+```
+
+```java
+public class GameConfig {
+	private final GameLevel gameLevel;
+	private final InputHandler inputHandler;
+	private final OutputHandler outputHandler;
+
+	public GameConfig(GameLevel gameLevel, InputHandler inputHandler, OutputHandler outputHandler) {
+		this.gameLevel = gameLevel;
+		this.inputHandler = inputHandler;
+		this.outputHandler = outputHandler;
+	}
+
+	public GameLevel getGameLevel() {
+		return gameLevel;
+	}
+
+	public InputHandler getInputHandler() {
+		return inputHandler;
+	}
+
+	public OutputHandler getOutputHandler() {
+		return outputHandler;
+	}
+}
+```
+
