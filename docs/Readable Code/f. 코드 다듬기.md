@@ -693,3 +693,10 @@ public class GameBoard {
 
 > `포맷 규칙`: `.editorconfig`
 
+---
+
+# 💡 Minesweeper에 추가해볼 만한 기능!
+- 남은 지뢰 수, 깃발 수 표시하기
+- 깃발 제거 기능
+- 게임 패배 시 Board 에 존재하는 모든 지뢰 보여주기
+- ...
