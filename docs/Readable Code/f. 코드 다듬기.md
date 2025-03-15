@@ -674,11 +674,22 @@ public class GameBoard {
 
 **AS-IS**
 
-<img width="700" alt="Image" src="https://github.com/user-attachments/assets/2a1de192-1836-4c9f-9778-e3a401e4e05f" />
+<img width="450" alt="Image" src="https://github.com/user-attachments/assets/2a1de192-1836-4c9f-9778-e3a401e4e05f" />
 
 **TO-BE**
 
-<img width="700" alt="Image" src="https://github.com/user-attachments/assets/ed75ce2b-befa-4361-80ff-4bdfd1f38fd4" />
+<img width="400" alt="Image" src="https://github.com/user-attachments/assets/ed75ce2b-befa-4361-80ff-4bdfd1f38fd4" />
 
 ---
+
+# 💡 IDE 도움 받기
+
+## ⚡️ 결국 읽기 좋은 코드란 가독성이 좋은 코드다! > IDE 의 도움을 받아보자!
+
+> `코드 포맷 정렬`: Mac > IntelliJ > `Option + Command + L`
+
+> `코드 품질`: `SonarCube`
+- `lint`: 잠재적인 문제가 될 수 잇는 오류, 버그, 스타일 등을 미리 알려주는 코드 품질 체크 도구(ex: ESLint, SonarLint, ktlint)
+
+> `포맷 규칙`: `.editorconfig`
 
