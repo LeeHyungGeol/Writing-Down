@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/unit/beverage/AmericanoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/unit/CafeKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/unit/CafeKiosk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/unit/CafeKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/unit/CafeKioskTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/Practical Testing/b. 단위 테스트.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Practical Testing/b. 단위 테스트.md" afterDir="false" />
     </list>
@@ -78,6 +78,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/java-adv1">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/cafekiosk">
           <activation />
         </task>
         <projects_view>
@@ -178,6 +181,8 @@
     "Gradle.Build cafekiosk.executor": "Run",
     "Gradle.Build jacoco.executor": "Run",
     "Gradle.CafeKioskTest.add.executor": "Run",
+    "Gradle.CafeKioskTest.addSeveralBeverages.executor": "Run",
+    "Gradle.CafeKioskTest.addZeroBeverages.executor": "Run",
     "Gradle.CafeKioskTest.add_manual_test.executor": "Run",
     "Gradle.CafeKioskTest.executor": "Run",
     "Gradle.ClassModificationSampleTest.constructorInstance.executor": "Run",
@@ -401,55 +406,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CafeKioskTest">
-    <configuration name="AmericanoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;sample.cafekiosk.unit.beverage.AmericanoTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="AmericanoTest.getName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;sample.cafekiosk.unit.beverage.AmericanoTest.getName&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.CafeKioskTest.addZeroBeverages">
     <configuration name="CafeKioskTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -488,6 +445,54 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;sample.cafekiosk.unit.CafeKioskTest.add&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CafeKioskTest.addSeveralBeverages" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;sample.cafekiosk.unit.CafeKioskTest.addSeveralBeverages&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CafeKioskTest.addZeroBeverages" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;sample.cafekiosk.unit.CafeKioskTest.addZeroBeverages&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -552,10 +557,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.AmericanoTest" />
-      <item itemvalue="Gradle.AmericanoTest.getName" />
       <item itemvalue="Gradle.CafeKioskTest" />
       <item itemvalue="Gradle.CafeKioskTest.add" />
+      <item itemvalue="Gradle.CafeKioskTest.addSeveralBeverages" />
+      <item itemvalue="Gradle.CafeKioskTest.addZeroBeverages" />
       <item itemvalue="Gradle.CafeKioskTest.add_manual_test" />
       <item itemvalue="Spring Boot.CafekioskApplication" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
@@ -564,11 +569,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CafeKioskTest.addZeroBeverages" />
+        <item itemvalue="Gradle.CafeKioskTest.addSeveralBeverages" />
         <item itemvalue="Gradle.CafeKioskTest" />
         <item itemvalue="Gradle.CafeKioskTest.add_manual_test" />
         <item itemvalue="Gradle.CafeKioskTest.add" />
-        <item itemvalue="Gradle.AmericanoTest" />
-        <item itemvalue="Gradle.AmericanoTest.getName" />
       </list>
     </recent_temporary>
   </component>
@@ -665,7 +670,7 @@
       <workItem from="1741093666990" duration="21285000" />
       <workItem from="1741877331464" duration="2233000" />
       <workItem from="1741880417221" duration="3263000" />
-      <workItem from="1742113704998" duration="2363000" />
+      <workItem from="1742113704998" duration="4670000" />
     </task>
     <servers />
   </component>
