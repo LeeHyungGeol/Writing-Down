@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Writing-Down.iml" filepath="$PROJECT_DIR$/.idea/Writing-Down.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cafekiosk/cafekiosk.iml" filepath="$PROJECT_DIR$/cafekiosk/cafekiosk.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-basic/java-basic.iml" filepath="$PROJECT_DIR$/java-basic/java-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-code-manipulation/java-code-manipulation.iml" filepath="$PROJECT_DIR$/java-code-manipulation/java-code-manipulation.iml" />
     </modules>
