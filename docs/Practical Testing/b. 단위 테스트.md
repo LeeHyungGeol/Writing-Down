@@ -152,3 +152,9 @@ class CafeKioskTest {
 - **외부 세상과 단절된 형태**
 
 이런 조건들을 만족하는 것이 `테스트하기 쉬운 코드`이다.
+
+---
+
+# 💡 키워드 정리
+
+<img width="500" alt="Image" src="https://github.com/user-attachments/assets/0c891551-445a-45ae-9a90-330d60f88995"/>
