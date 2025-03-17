@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/unit/CafeKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/unit/CafeKiosk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/unit/CafeKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/unit/CafeKioskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Practical Testing/b. 단위 테스트.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Practical Testing/b. 단위 테스트.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Practical Testing/d. 테스트는 []다.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Practical Testing/d. 테스트는 []다.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +182,7 @@
     "Gradle.CafeKioskTest.addSeveralBeverages.executor": "Run",
     "Gradle.CafeKioskTest.addZeroBeverages.executor": "Run",
     "Gradle.CafeKioskTest.add_manual_test.executor": "Run",
+    "Gradle.CafeKioskTest.calculateTotalPrice.executor": "Run",
     "Gradle.CafeKioskTest.createOrder.executor": "Run",
     "Gradle.CafeKioskTest.executor": "Run",
     "Gradle.ClassModificationSampleTest.constructorInstance.executor": "Run",
@@ -338,6 +337,7 @@
     "Gradle.java-mid2 [:PairTest.main()].executor": "Run",
     "Gradle.java-mid2 [:ShuttleTest.main()].executor": "Run",
     "Gradle.masulsa-agent [jar].executor": "Run",
+    "JUnit.CafeKioskTest.add.executor": "Run",
     "JavaScript Debug.Group.html.executor": "Run",
     "JavaScript Debug.index.html (1).executor": "Run",
     "JavaScript Debug.index.html (2).executor": "Run",
@@ -366,7 +366,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45747125",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -407,7 +407,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CafeKioskTest">
+  <component name="RunManager" selected="JUnit.CafeKioskTest.add">
     <configuration name="CafeKioskTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -432,7 +432,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CafeKioskTest.addSeveralBeverages" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CafeKioskTest.add" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
@@ -445,7 +445,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;sample.cafekiosk.unit.CafeKioskTest.addSeveralBeverages&quot;" />
+            <option value="&quot;sample.cafekiosk.unit.CafeKioskTest.add&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -456,7 +456,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CafeKioskTest.addZeroBeverages" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CafeKioskTest.calculateTotalPrice" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
@@ -469,31 +469,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;sample.cafekiosk.unit.CafeKioskTest.addZeroBeverages&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CafeKioskTest.add_manual_test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;sample.cafekiosk.unit.CafeKioskTest.add_manual_test&quot;" />
+            <option value="&quot;sample.cafekiosk.unit.CafeKioskTest.calculateTotalPrice&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -528,6 +504,22 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="CafeKioskTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafekiosk.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.cafekiosk.unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample.cafekiosk.unit" />
+      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.unit.CafeKioskTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CafekioskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="cafekiosk.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="sample.cafekiosk.spring.CafekioskApplication" />
@@ -558,11 +550,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.CafeKioskTest.add" />
+      <item itemvalue="Gradle.CafeKioskTest.calculateTotalPrice" />
       <item itemvalue="Gradle.CafeKioskTest" />
-      <item itemvalue="Gradle.CafeKioskTest.addSeveralBeverages" />
-      <item itemvalue="Gradle.CafeKioskTest.addZeroBeverages" />
-      <item itemvalue="Gradle.CafeKioskTest.add_manual_test" />
       <item itemvalue="Gradle.CafeKioskTest.createOrder" />
+      <item itemvalue="JUnit.CafeKioskTest.add" />
       <item itemvalue="Spring Boot.CafekioskApplication" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
@@ -570,11 +562,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CafeKioskTest.add" />
+        <item itemvalue="Gradle.CafeKioskTest.add" />
+        <item itemvalue="Gradle.CafeKioskTest.calculateTotalPrice" />
         <item itemvalue="Gradle.CafeKioskTest" />
         <item itemvalue="Gradle.CafeKioskTest.createOrder" />
-        <item itemvalue="Gradle.CafeKioskTest.addZeroBeverages" />
-        <item itemvalue="Gradle.CafeKioskTest.addSeveralBeverages" />
-        <item itemvalue="Gradle.CafeKioskTest.add_manual_test" />
       </list>
     </recent_temporary>
   </component>
@@ -672,6 +664,7 @@
       <workItem from="1741877331464" duration="2233000" />
       <workItem from="1741880417221" duration="3263000" />
       <workItem from="1742113704998" duration="11208000" />
+      <workItem from="1742195946134" duration="7621000" />
     </task>
     <servers />
   </component>

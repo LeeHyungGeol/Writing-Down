@@ -4,6 +4,8 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
         <option name="modules">
           <set>
@@ -21,6 +23,8 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-code-manipulation/annotation-processor" />
         <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
@@ -103,7 +107,6 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-mid2" />
-        <option name="gradleHome" value="" />
         <option name="gradleJvm" value="corretto-22" />
         <option name="modules">
           <set>
