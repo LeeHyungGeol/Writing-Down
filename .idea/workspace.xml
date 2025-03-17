@@ -184,6 +184,7 @@
     "Gradle.CafeKioskTest.addSeveralBeverages.executor": "Run",
     "Gradle.CafeKioskTest.addZeroBeverages.executor": "Run",
     "Gradle.CafeKioskTest.add_manual_test.executor": "Run",
+    "Gradle.CafeKioskTest.createOrder.executor": "Run",
     "Gradle.CafeKioskTest.executor": "Run",
     "Gradle.ClassModificationSampleTest.constructorInstance.executor": "Run",
     "Gradle.ClassModificationSampleTest.createInstance.executor": "Run",
@@ -406,7 +407,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CafeKioskTest.addZeroBeverages">
+  <component name="RunManager" selected="Gradle.CafeKioskTest">
     <configuration name="CafeKioskTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -421,30 +422,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;sample.cafekiosk.unit.CafeKioskTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CafeKioskTest.add" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;sample.cafekiosk.unit.CafeKioskTest.add&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -527,6 +504,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="CafeKioskTest.createOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;sample.cafekiosk.unit.CafeKioskTest.createOrder&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="CafekioskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="cafekiosk.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="sample.cafekiosk.spring.CafekioskApplication" />
@@ -558,10 +559,10 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.CafeKioskTest" />
-      <item itemvalue="Gradle.CafeKioskTest.add" />
       <item itemvalue="Gradle.CafeKioskTest.addSeveralBeverages" />
       <item itemvalue="Gradle.CafeKioskTest.addZeroBeverages" />
       <item itemvalue="Gradle.CafeKioskTest.add_manual_test" />
+      <item itemvalue="Gradle.CafeKioskTest.createOrder" />
       <item itemvalue="Spring Boot.CafekioskApplication" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
@@ -569,11 +570,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CafeKioskTest" />
+        <item itemvalue="Gradle.CafeKioskTest.createOrder" />
         <item itemvalue="Gradle.CafeKioskTest.addZeroBeverages" />
         <item itemvalue="Gradle.CafeKioskTest.addSeveralBeverages" />
-        <item itemvalue="Gradle.CafeKioskTest" />
         <item itemvalue="Gradle.CafeKioskTest.add_manual_test" />
-        <item itemvalue="Gradle.CafeKioskTest.add" />
       </list>
     </recent_temporary>
   </component>
@@ -670,7 +671,7 @@
       <workItem from="1741093666990" duration="21285000" />
       <workItem from="1741877331464" duration="2233000" />
       <workItem from="1741880417221" duration="3263000" />
-      <workItem from="1742113704998" duration="4670000" />
+      <workItem from="1742113704998" duration="11208000" />
     </task>
     <servers />
   </component>

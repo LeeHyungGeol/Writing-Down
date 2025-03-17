@@ -5,11 +5,15 @@ import sample.cafekiosk.unit.beverage.Beverage;
 import sample.cafekiosk.unit.order.Order;
 
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
 @Getter
 public class CafeKiosk {
+	private static final LocalTime SHOP_OPEN_TIME = LocalTime.of(10, 0);
+	private static final LocalTime SHOP_CLOSE_TIME = LocalTime.of(22, 0);
+
 	private final List<Beverage> beverages = new ArrayList<>();
 	public void add(Beverage beverage) {
 		beverages.add(beverage);
@@ -37,6 +41,19 @@ public class CafeKiosk {
 	}
 
 	public Order createorder() {
+		LocalDateTime now = LocalDateTime.now();
+		LocalTime currentTime = now.toLocalTime();
+		if (currentTime.isBefore(SHOP_OPEN_TIME) || currentTime.isAfter(SHOP_CLOSE_TIME)) {
+			throw new IllegalStateException("주문 시간이 아닙니다. 관리자에게 문의하세요.");
+		}
+		return new Order(LocalDateTime.now(), beverages);
+	}
+
+	public Order createorder(LocalDateTime currentDateTime) {
+		LocalTime currentTime = currentDateTime.toLocalTime();
+		if (currentTime.isBefore(SHOP_OPEN_TIME) || currentTime.isAfter(SHOP_CLOSE_TIME)) {
+			throw new IllegalStateException("주문 시간이 아닙니다. 관리자에게 문의하세요.");
+		}
 		return new Order(LocalDateTime.now(), beverages);
 	}
 }
