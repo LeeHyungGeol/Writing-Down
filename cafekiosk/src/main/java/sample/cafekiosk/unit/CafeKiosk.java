@@ -36,7 +36,7 @@ public class CafeKiosk {
 		beverages.clear();
 	}
 
-	public int getTotalPrice() {
+	public int calculateTotalPrice() {
 		return beverages.stream().mapToInt(Beverage::getPrice).sum();
 	}
 
