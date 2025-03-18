@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/unit/CafeKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/unit/CafeKioskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Practical Testing/d. 테스트는 []다.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Practical Testing/d. 테스트는 []다.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/controller/product/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/service/product/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/service/product/response/ProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/product/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/product/ProductSellingStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/product/ProductType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/domain/product/ProductRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/CafekioskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/CafekioskApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Practical Testing/Spring &amp; JPA 기반 테스트.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Practical Testing/Spring &amp; JPA 기반 테스트.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,6 +351,7 @@
     "Gradle.java-mid2 [:ShuttleTest.main()].executor": "Run",
     "Gradle.masulsa-agent [jar].executor": "Run",
     "JUnit.CafeKioskTest.add.executor": "Run",
+    "JUnit.ProductRepositoryTest.ProductRepositoryTest.executor": "Run",
     "JavaScript Debug.Group.html.executor": "Run",
     "JavaScript Debug.index.html (1).executor": "Run",
     "JavaScript Debug.index.html (2).executor": "Run",
@@ -366,7 +380,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45747125",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "editing.templates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -384,11 +398,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="sample.cafekiosk.spring.domain.product" />
       <recent name="sample.cafekiosk.unit.beverage" />
       <recent name="sample.cafekiosk.unit" />
       <recent name="com.brothergeol" />
       <recent name="com.brothergeol.di" />
-      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="generic.ex3" />
@@ -407,7 +421,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CafeKioskTest.add">
+  <component name="RunManager" selected="JUnit.ProductRepositoryTest.ProductRepositoryTest">
     <configuration name="CafeKioskTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -480,30 +494,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CafeKioskTest.createOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;sample.cafekiosk.unit.CafeKioskTest.createOrder&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="CafeKioskTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
@@ -515,6 +505,22 @@
       <option name="PACKAGE_NAME" value="sample.cafekiosk.unit" />
       <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.unit.CafeKioskTest" />
       <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.ProductRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafekiosk.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.cafekiosk.spring.domain.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.domain.product" />
+      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.domain.product.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="ProductRepositoryTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -553,7 +559,7 @@
       <item itemvalue="Gradle.CafeKioskTest.add" />
       <item itemvalue="Gradle.CafeKioskTest.calculateTotalPrice" />
       <item itemvalue="Gradle.CafeKioskTest" />
-      <item itemvalue="Gradle.CafeKioskTest.createOrder" />
+      <item itemvalue="JUnit.ProductRepositoryTest.ProductRepositoryTest" />
       <item itemvalue="JUnit.CafeKioskTest.add" />
       <item itemvalue="Spring Boot.CafekioskApplication" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
@@ -562,11 +568,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductRepositoryTest.ProductRepositoryTest" />
         <item itemvalue="JUnit.CafeKioskTest.add" />
         <item itemvalue="Gradle.CafeKioskTest.add" />
         <item itemvalue="Gradle.CafeKioskTest.calculateTotalPrice" />
         <item itemvalue="Gradle.CafeKioskTest" />
-        <item itemvalue="Gradle.CafeKioskTest.createOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -664,7 +670,9 @@
       <workItem from="1741877331464" duration="2233000" />
       <workItem from="1741880417221" duration="3263000" />
       <workItem from="1742113704998" duration="11208000" />
-      <workItem from="1742195946134" duration="7621000" />
+      <workItem from="1742195946134" duration="14189000" />
+      <workItem from="1742228646342" duration="4158000" />
+      <workItem from="1742267426347" duration="3455000" />
     </task>
     <servers />
   </component>

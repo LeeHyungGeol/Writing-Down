@@ -65,4 +65,55 @@
 
 ---
 
+# 💡 Persistence Layer 테스트
 
+## 📝 요구사항 추가
+
+- 키오스크 주문을 위한 상품 후보 리스트 조회하기
+- 상품의 판매 상태: 판매중, 판매보류, 판매중지
+  - 판매중, 판매보류인 상태의 상품을 화면에 보여준다.
+- id, 상품 번호, 상품 타입, 판매 상태, 상품 이름, 가격 
+
+## ⚡️ Persistence Layer 테스트를 하는 이유
+
+```java
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Long> {
+
+	List<Product> findAllBySellingStatusIn(List<ProductSellingStatus> sellingStatuses);
+}
+```
+
+### 🤔 이렇게 코드가 간단하고 명확한데 테스트가 필요할까?
+
+- **`Repository`** 를 구현하는 기술, 방법(MyBatis, QueryDSL 등)에 따라 테스트 방법이 달라질 수 있기 때문에 그런 것들을 보장하고자 한다.
+1. **이것도 내가 작성한 코드이기 때문에 제대로 쿼리가 날라가는지 보장하기 위해서 테스트 코드 작성이 필요하다.**
+2. **이 코드가 미래에는 어떠한 형태로 변형될지 모르기 때문에 그거에 대한 보장도 필요하다.**
+
+Persistence Layer 테스트(Repository 테스트)는 사실상 단위 테스트에 가깝다.
+- **DB 에 access 하는 로직만 갖고 있기 때문에 이 기능 단위로 보자면 `단위 테스트`에 가깝다.**
+
+
+```java
+assertThat(products).hasSize(2)
+			.extracting("productNumber", "name", "sellingStatus")
+			.containsExactlyInAnyOrder(
+				tuple("001", "아메리카노", SELLING),
+				tuple("002", "카페라뗴", HOLD)
+			);
+```
+
+- **`List`를 검증할 때 주로 `hasSize`, `extracting`, `containsXxx` 메서드를 사용하자!**
+
+```java
+@ActiveProfiles("test")
+```
+
+- **테스트 코드를 작성할 때는 `@ActiveProfiles` 를 사용하여 `test profile` 을 사용하도록 설정하자!**
+
+```java
+//@SpringBootTest
+@DataJpaTest
+```
+
+- **`@DataJpaTest`**: JPA 관련된 빈만 등록하여 테스트를 진행한다. `@SpringBootTest` 보다 빠르게 테스트를 진행할 수 있다.
