@@ -74,6 +74,14 @@
   - 판매중, 판매보류인 상태의 상품을 화면에 보여준다.
 - id, 상품 번호, 상품 타입, 판매 상태, 상품 이름, 가격 
 
+<img alt="Persistence Layer Test" width="500" src="https://github.com/user-attachments/assets/0953a208-5da3-460d-9fdf-4f9ea1555979"> 
+
+## ⚡️ Persistence Layer 의 역할
+
+> **Data Access 역할**
+> 
+> **비즈니스 가공 로직이 포함되어서는 안된다. Data 에 대한 CRUD 에만 집중한 레이어**
+
 ## ⚡️ Persistence Layer 테스트를 하는 이유
 
 ```java
@@ -96,11 +104,11 @@ Persistence Layer 테스트(Repository 테스트)는 사실상 단위 테스트�
 
 ```java
 assertThat(products).hasSize(2)
-			.extracting("productNumber", "name", "sellingStatus")
-			.containsExactlyInAnyOrder(
-				tuple("001", "아메리카노", SELLING),
-				tuple("002", "카페라뗴", HOLD)
-			);
+        .extracting("productNumber", "name", "sellingStatus")
+        .containsExactlyInAnyOrder(
+		tuple("001", "아메리카노", SELLING),
+                tuple("002", "카페라뗴", HOLD)
+        );
 ```
 
 - **`List`를 검증할 때 주로 `hasSize`, `extracting`, `containsXxx` 메서드를 사용하자!**
@@ -117,3 +125,24 @@ assertThat(products).hasSize(2)
 ```
 
 - **`@DataJpaTest`**: JPA 관련된 빈만 등록하여 테스트를 진행한다. `@SpringBootTest` 보다 빠르게 테스트를 진행할 수 있다.
+
+---
+
+# 💡 Business Layer 테스트
+
+## 📝 요구사항 추가
+- 상품 번호 리스트를 받아 주문 생성하기
+- 주문은 주문 상태, 주문 등록 시간을 가진다.
+- 주문의 총 금액을 계산할 수 있어야 한다.
+
+## ⚡️ Business Layer 의 역할
+
+**비즈니스 로직을 구현하는 역할**
+
+>  **Persistence Layer 와의 상호작용(Data를 읽고 쓰는 행위)을 통해 비즈니스 로직을 전개시킨다.**
+
+### ✅ ***트랜잭션*** 을 보장해야 한다!!!
+
+<img alt="Business Layer Test" width="500" src="https://github.com/user-attachments/assets/66fcee1f-77f2-46f7-937f-8b092d6e90a7"/>
+
+- Service Test 는 Persistence Layer 를 배제하지 않고 Business Layer + Persistence Layer 를 통합적으로 테스트한다.
