@@ -134,6 +134,9 @@ assertThat(products).hasSize(2)
 - 상품 번호 리스트를 받아 주문 생성하기
 - 주문은 주문 상태, 주문 등록 시간을 가진다.
 - 주문의 총 금액을 계산할 수 있어야 한다.
+- 주문 생성 시 재고 확인 및 개수 차감 후 생성하기
+- 재고는 상품번호를 가진다.
+- 재고와 관련 있는 상품 타입은 병 음료, 베이커리이다.
 
 ## ⚡️ Business Layer 의 역할
 
@@ -146,3 +149,40 @@ assertThat(products).hasSize(2)
 <img alt="Business Layer Test" width="500" src="https://github.com/user-attachments/assets/66fcee1f-77f2-46f7-937f-8b092d6e90a7"/>
 
 - Service Test 는 Persistence Layer 를 배제하지 않고 Business Layer + Persistence Layer 를 통합적으로 테스트한다.
+
+## ✅ `@DataJpaTest` vs `@SpringBootTest`
+
+- **`@DataJpaTest`**: `@Transactional` 로 인해서 자동으로 `Rollback` 처리가 된다.
+- **`@SpringBootTest`**: 자동으로 `Rollback` 처리가 되지 않는다.
+
+> **`@SpringBootTest` 를 사용할 때, ***무작정*** `@Transactional` 을 사용하면 안된다.** 비즈니스 로직이 있는 Service Layer 에서 `@Transactional` 와 같은 것을 적용했는지 안했는지 체크를 못할 수가 있다.
+- ***그래서, 아예 사용하지 말자는 것이 아닌, 이러한 부작용을 인지하고 팀내에 공유하면서 사용하자!***
+
+### 🤔 그럼 `Update` 는 변경 감지를 못했는데 어떻게 `Insert`, `Delete` 는 변경감지를 했는가?
+
+> `JpaRepository` 는 `CrudRepository` 를 상속받고 있고, 구현체인 `SimpleJpaRepository` 는 `save`, `delete` 메서드에 `@Transactional` 이 붙어있다.
+
+```java
+@Transactional
+public <S extends T> S save(S entity) {
+	Assert.notNull(entity, "Entity must not be null");
+	if (this.entityInformation.isNew(entity)) {
+		this.entityManager.persist(entity);
+		return entity;
+	} else {
+		return this.entityManager.merge(entity);
+	}
+}
+
+@Transactional
+public void deleteAllById(Iterable<? extends ID> ids) {
+	Assert.notNull(ids, "Ids must not be null");
+	Iterator var3 = ids.iterator();
+	while(var3.hasNext()) {
+		ID id = (Object)var3.next();
+		this.deleteById(id);
+	}
+}
+```
+
+

@@ -4,13 +4,11 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 import static sample.cafekiosk.spring.domain.product.ProductSellingStatus.*;
 import static sample.cafekiosk.spring.domain.product.ProductType.*;
 
@@ -24,7 +22,7 @@ class ProductRepositoryTest {
 
 	@Test
 	@DisplayName("원하는 판매상태를 가진 상품들을 조회한다.")
-	void ProductRepositoryTest() {
+	void findAllBySellingStatusIn() {
 		// given
 		Product product1 = Product.builder()
 			.productNumber("001")
