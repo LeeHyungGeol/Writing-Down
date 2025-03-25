@@ -277,6 +277,13 @@ public class ProductService {
 }
 ```
 
+---
 
+# 💡 키워드 정리
 
+<img width="500" alt="SpringJPA 기반 테스트 키워드 정리1" src="https://github.com/user-attachments/assets/66eb68a2-3620-4cc7-af4a-5b9e29823ea0"/>
+
+<img width="500" alt="SpringJPA 기반 테스트 키워드 정리2" src="https://github.com/user-attachments/assets/ac6e3609-b0db-4aa8-832a-f7230a44fe84"/>
+
+<img width="500" alt="SpringJPA 기반 테스트 키워드 정리3" src="https://github.com/user-attachments/assets/d2f1fa1e-275b-4e46-970a-2da148cade9d"/>
 

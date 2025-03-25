@@ -10,7 +10,6 @@ import sample.cafekiosk.spring.api.ApiResponse;
 import sample.cafekiosk.spring.api.controller.product.request.ProductCreateRequest;
 import sample.cafekiosk.spring.api.service.product.ProductService;
 import sample.cafekiosk.spring.api.service.product.response.ProductResponse;
-import sample.cafekiosk.spring.domain.product.ProductCreateRequest;
 
 import java.util.List;
 
