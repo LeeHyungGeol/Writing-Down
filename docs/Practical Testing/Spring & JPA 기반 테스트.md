@@ -107,7 +107,7 @@ assertThat(products).hasSize(2)
         .extracting("productNumber", "name", "sellingStatus")
         .containsExactlyInAnyOrder(
 		tuple("001", "아메리카노", SELLING),
-                tuple("002", "카페라뗴", HOLD)
+                tuple("002", "카페라떼", HOLD)
         );
 ```
 
@@ -154,11 +154,11 @@ assertThat(products).hasSize(2)
 
 - **`@DataJpaTest`**: `@Transactional` 로 인해서 자동으로 `Rollback` 처리가 된다.
 - **`@SpringBootTest`**: 자동으로 `Rollback` 처리가 되지 않는다.
-
+  
 > **`@SpringBootTest` 를 사용할 때, ***무작정*** `@Transactional` 을 사용하면 안된다.** 비즈니스 로직이 있는 Service Layer 에서 `@Transactional` 와 같은 것을 적용했는지 안했는지 체크를 못할 수가 있다.
 - ***그래서, 아예 사용하지 말자는 것이 아닌, 이러한 부작용을 인지하고 팀내에 공유하면서 사용하자!***
 
-### 🤔 그럼 `Update` 는 변경 감지를 못했는데 어떻게 `Insert`, `Delete` 는 변경감지를 했는가?
+### 🤔 그럼 `Update` 는 변경 감지를 못했는데 어떻게 `Insert`, `Delete` 는 `변경감지(dirty checking)`를 했는가?
 
 > `JpaRepository` 는 `CrudRepository` 를 상속받고 있고, 구현체인 `SimpleJpaRepository` 는 `save`, `delete` 메서드에 `@Transactional` 이 붙어있다.
 
@@ -184,5 +184,99 @@ public void deleteAllById(Iterable<? extends ID> ids) {
 	}
 }
 ```
+
+--- 
+
+# 💡 Presentation Layer 테스트
+
+- 외부 세계의 요청을 가장 먼저 받는 계층
+> **파라미터에 대한 `최소한의 검증`을 수행한다.**
+- **`Presentation Layer` 에서는 `Validation 검증`이 제일 중요하다!**
+
+## 📝 요구사항 추가
+
+- 관리자 페이지에서 신규 상품을 등록할 수 있다.
+- 상품명, 상품 타입, 판매 상태, 가격 등을 입력받는다.
+
+## ⚡️ Presentation Layer 테스트 vs Service Layer 테스트
+
+<img width="500" alt="Presentation Layer 테스트" src="https://github.com/user-attachments/assets/4d2cc721-57fb-4e47-ad52-e4687be1636a"/>
+
+- **`Service Layer 테스트`**: Service Layer 를 테스트할 때는 `Spring Context` 를 띄우고, Persistence Layer 를 **Mocking 하지 않고** `@SpringBootTest` 를 사용하여 `통합 테스트`를 진행한다.
+- **`Presentation Layer 테스트`**: `Spring Context` 를 띄우지 않고, `MockMvc` 를 사용하여 Service Layer, Persistence Layer 를 `Mocking` 해서 `단위 테스트`를 진행한다.
+
+## 📌 MockMvc 테스트 Framework
+
+> **테스트를 하고 싶은데 테스트를 하기 위해서 준비해야 할 것들이 너무 많을 때, 잘 동작할 것이라고 가정하고 처리를 할 때 `Mock`이라는 개념을 사용한다.**
+- **MockMvc**: `Mock`(가짜) 객체를 사용해 스프링 MVC 동작을 재현할 수 있는 테스트 `Framework` 이다.
+
+## 📌 @WebMvcTest, @MockBean
+
+- `@SpringBootTest`:  전체 Spring Bean 컨텍스트를 로드한다.
+- `@WebMvcTest`: 웹 계층(Controller test)에 초점을 맞추어 테스트하기 위해 Controller 관련 Bean 만 로드한다.
+- `Mockito`: `Mock` 객체를 생성하기 위한 `Framework`
+- `@MockBean`: `@WebMvcTest` 에서 사용하며, `Container` 에 `Mockito` 로 만든 `Mock` 객체를 넣어주는 역할
+- String 으로 직렬화되어 들어온 값을 ObjectMapper 를 이용해 역직렬화를 한다. 이때 ObjectMapper 는 class 의 기본 생성자(NoArgsConstructor)를 이용한다.
+
+## ⚡️ @NotNull, @NotEmpty, @NotBlank
+
+- **`@NotNull`**: `null` 이 아닌지 검증, `"", "  " 는 통과`
+- **`@NotEmpty`**: `null` 이거나 `size() == 0` 인지 검증, `"  " 는 통과`
+- **`@NotBlank`**: `null` 이거나 `trim().length() == 0` 인지 검증, `"", "  " 는 실패`
+
+## ✅ Validation 검증 위치
+
+- 기본적인 문자열이라면, 유효한 문자열이라면 가져야할 속성들에 대한 Validation(`@NotNull, @NotEmpty, @NotBlank`)은 `Presentation Layer` 에서 하는 것이 좋다.
+- `도메인 정책에 맞는` (ex: 상품 이름 20자 제한)과 같은 좀 더 특수한 형태의 Validation 을 **구분할 줄 알아야 한다. 고민을 해봐야 한다.** 
+  - **Entity 생성시 생성자에서 혹은 Service Layer 에서 Validation 을 하는 것이 좋다.**
+
+## ✅ `@Transactional` 의 `readOnly = true`에 대하여
+
+- `readOnly = true` : **읽기전용**
+- **CRUD 에서 CUD 동작 X / `only R`**
+- JPA에서 `CUD 스냅샷 저장 X`, `변경감지 X` -> **성능 향상**
+
+> CQRS: Command 랑 Query 를 분리 (2:8) Read 가 보통 더 많다.
+- 여기서 Command 와 Read 를 분리하면 훨씬 더 큰 성능향상을 이룰 수 있다.
+1. Application 단에서 **ReadService, CommandService 를 분리**한다.
+2. **Api Url 을 분리**해서 사용할 수도 있다.
+3. Api Url 을 분리하면서 **DB 도 Master, Slave 로 분리**해서 사용할 수도 있다.
+   1. AWS 의 Aurora DB 의 `Cluster Mode` 는 `readOnly`을 읽어서 자체적으로 Master, Slave 로 구분을 해준다.
+
+> 따라서, `Service`에서 `@Transactional(readOnly = true)`를 `전체 class` 에 선언하고, `CUD`코드에만 `@Transactional` 을 **따로 선언하는 것이 좋다.**
+
+```java
+@Transactional(readOnly = true)
+@RequiredArgsConstructor
+@Service
+public class ProductService {
+
+	private final ProductRepository productRepository;
+
+	// 동시성 이슈
+	// 1. 동시 요청이 엄청 높지는 않는 경우, 시스템 상에서 재시도를 3번 정도 하게 만든다.
+	// 2. 동시 요청이 엄청 높은 경우, 정책을 바꿔서 int 1 증가가 아닌 UUID 로 바꾼다.
+	@Transactional
+	public ProductResponse createProduct(ProductCreateRequest request) {
+		// nextProductNumber
+		String nextProductNumber = createNextProductNumber();
+
+		Product product = request.toEntity(nextProductNumber);
+		Product savedProduct = productRepository.save(product);
+
+		return ProductResponse.of(savedProduct);
+	}
+
+	public List<ProductResponse> getSellingProducts() {
+		List<Product> products = productRepository.findAllBySellingStatusIn(ProductSellingStatus.forDisplay());
+
+		return products.stream()
+			.map(ProductResponse::of)
+			.toList();
+	}
+}
+```
+
+
 
 

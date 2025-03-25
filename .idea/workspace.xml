@@ -5,20 +5,108 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/orderproduct/OrderProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/stock/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/stock/StockRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/domain/product/ProductTypeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/domain/stock/StockRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/domain/stock/StockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/ApiControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/service/order/request/OrderCreateServiceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/config/JpaAuditingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/product/ProductCreateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/controller/order/OrderControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/controller/product/ProductControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/product/ProductServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/CafekioskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/CafekioskApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/controller/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/controller/order/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/controller/order/request/OrderCreateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/controller/order/request/OrderCreateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/controller/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/controller/product/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/service/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/service/order/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/product/ProductType.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/product/ProductType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/order/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/order/OrderServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/service/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/service/product/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/product/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/product/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/domain/product/ProductRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/domain/product/ProductRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/Practical Testing/Spring &amp; JPA 기반 테스트.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Practical Testing/Spring &amp; JPA 기반 테스트.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/annotation-processor/.gradle/8.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-apply/.gradle/8.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/di-containor-sample/.gradle/8.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/dynamic-proxy/.gradle/8.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/jacoco/.gradle/8.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/masulsa-agent/.gradle/8.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-code-manipulation/reflection/.gradle/8.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid1/.gradle/8.2/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid1/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid1/.gradle/8.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid1/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid1/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid1/.gradle/8.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid1/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid1/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid1/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-mid1/.gradle/8.2/gc.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,29 +183,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="annotation-processor" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="annotation-processor" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="annotation-processor" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="annotation-processor" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -129,9 +195,9 @@
       <list>
         <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -350,6 +416,8 @@
     "Gradle.java-mid2 [:ShuttleTest.main()].executor": "Run",
     "Gradle.masulsa-agent [jar].executor": "Run",
     "JUnit.CafeKioskTest.add.executor": "Run",
+    "JUnit.OrderControllerTest.createOrder.executor": "Run",
+    "JUnit.OrderControllerTest.executor": "Run",
     "JUnit.OrderServiceTest.createOrder.executor": "Run",
     "JUnit.OrderServiceTest.createOrderWithDuplicatedProductNumber.executor": "Run",
     "JUnit.OrderServiceTest.createOrderWithNoStock.executor": "Run",
@@ -358,9 +426,20 @@
     "JUnit.OrderTest.calculateTotalPrice.executor": "Run",
     "JUnit.OrderTest.init.executor": "Run",
     "JUnit.OrderTest.registeredDateTime.executor": "Run",
+    "JUnit.ProductControllerTest.createProduct.executor": "Run",
+    "JUnit.ProductControllerTest.createProductWithZeroPrice.executor": "Run",
+    "JUnit.ProductControllerTest.createProductWithoutType.executor": "Run",
+    "JUnit.ProductControllerTest.executor": "Run",
+    "JUnit.ProductControllerTest.getSellingProducts.executor": "Run",
     "JUnit.ProductRepositoryTest.ProductRepositoryTest.executor": "Run",
     "JUnit.ProductRepositoryTest.executor": "Run",
     "JUnit.ProductRepositoryTest.findAllByProductNumberIn.executor": "Run",
+    "JUnit.ProductRepositoryTest.findLatestProductNumber.executor": "Run",
+    "JUnit.ProductRepositoryTest.findLatestProductNumberWhenProductIsEmpty.executor": "Run",
+    "JUnit.ProductServiceTest.createProduct.executor": "Run",
+    "JUnit.ProductServiceTest.createProductWhenProductIsEmpty.executor": "Run",
+    "JUnit.ProductServiceTest.createproduct.executor": "Run",
+    "JUnit.ProductServiceTest.executor": "Run",
     "JUnit.ProductTypeTest.containsStockType.executor": "Run",
     "JUnit.ProductTypeTest.containsStockType2.executor": "Run",
     "JUnit.StockRepositoryTest.findAllByProductNumberIn.executor": "Run",
@@ -419,11 +498,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="sample.cafekiosk.spring.api.controller.order" />
+      <recent name="sample.cafekiosk.spring.api.controller.product" />
+      <recent name="sample.cafekiosk.spring.api.service.product" />
       <recent name="sample.cafekiosk.spring.domain.stock" />
       <recent name="sample.cafekiosk.spring.domain.product" />
-      <recent name="sample.cafekiosk.spring.domain.order" />
-      <recent name="sample.cafekiosk.spring.api.service.order" />
-      <recent name="sample.cafekiosk.unit.beverage" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="generic.ex3" />
@@ -442,80 +521,80 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderServiceTest">
-    <configuration name="OrderServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OrderControllerTest">
+    <configuration name="OrderControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.api.service.order.*" />
+          <option name="PATTERN" value="sample.cafekiosk.spring.api.controller.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.service.order" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.service.order.OrderServiceTest" />
+      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.controller.order" />
+      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.controller.order.OrderControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceTest.createOrderWithNoStock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderControllerTest.createOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.api.service.order.*" />
+          <option name="PATTERN" value="sample.cafekiosk.spring.api.controller.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.service.order" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.service.order.OrderServiceTest" />
-      <option name="METHOD_NAME" value="createOrderWithNoStock" />
+      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.controller.order" />
+      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.controller.order.OrderControllerTest" />
+      <option name="METHOD_NAME" value="createOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceTest.createOrderWithStock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.api.service.order.*" />
+          <option name="PATTERN" value="sample.cafekiosk.spring.api.controller.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.service.order" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.service.order.OrderServiceTest" />
-      <option name="METHOD_NAME" value="createOrderWithStock" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafekiosk.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.domain.stock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.domain.stock" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.domain.stock.StockTest" />
+      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.controller.product" />
+      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.controller.product.ProductControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StockTest.deductQuantity2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductControllerTest.createProductWithZeroPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.domain.stock.*" />
+          <option name="PATTERN" value="sample.cafekiosk.spring.api.controller.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.domain.stock" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.domain.stock.StockTest" />
-      <option name="METHOD_NAME" value="deductQuantity2" />
+      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.controller.product" />
+      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.controller.product.ProductControllerTest" />
+      <option name="METHOD_NAME" value="createProductWithZeroPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTest.getSellingProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafekiosk.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.cafekiosk.spring.api.controller.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.controller.product" />
+      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.controller.product.ProductControllerTest" />
+      <option name="METHOD_NAME" value="getSellingProducts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -551,11 +630,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.OrderServiceTest" />
-      <item itemvalue="JUnit.OrderServiceTest.createOrderWithNoStock" />
-      <item itemvalue="JUnit.OrderServiceTest.createOrderWithStock" />
-      <item itemvalue="JUnit.StockTest" />
-      <item itemvalue="JUnit.StockTest.deductQuantity2" />
+      <item itemvalue="JUnit.OrderControllerTest" />
+      <item itemvalue="JUnit.OrderControllerTest.createOrder" />
+      <item itemvalue="JUnit.ProductControllerTest" />
+      <item itemvalue="JUnit.ProductControllerTest.createProductWithZeroPrice" />
+      <item itemvalue="JUnit.ProductControllerTest.getSellingProducts" />
       <item itemvalue="Spring Boot.CafekioskApplication" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
@@ -563,11 +642,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderServiceTest" />
-        <item itemvalue="JUnit.OrderServiceTest.createOrderWithStock" />
-        <item itemvalue="JUnit.StockTest" />
-        <item itemvalue="JUnit.OrderServiceTest.createOrderWithNoStock" />
-        <item itemvalue="JUnit.StockTest.deductQuantity2" />
+        <item itemvalue="JUnit.OrderControllerTest" />
+        <item itemvalue="JUnit.OrderControllerTest.createOrder" />
+        <item itemvalue="JUnit.ProductControllerTest.getSellingProducts" />
+        <item itemvalue="JUnit.ProductControllerTest" />
+        <item itemvalue="JUnit.ProductControllerTest.createProductWithZeroPrice" />
       </list>
     </recent_temporary>
   </component>
@@ -667,7 +746,7 @@
       <workItem from="1742113704998" duration="11208000" />
       <workItem from="1742195946134" duration="14189000" />
       <workItem from="1742228646342" duration="4158000" />
-      <workItem from="1742267426347" duration="28663000" />
+      <workItem from="1742267426347" duration="60831000" />
     </task>
     <servers />
   </component>
