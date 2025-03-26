@@ -310,6 +310,29 @@ public class BDDMockito extends Mockito {}
 - 대신 `BDDMockito.given()` 을 사용할 수 있다!
 - **BDDMockito 는 Mockito 를 상속받은 것이기 때문에 Mockito 와 똑같이 사용할 수 있다!**
 
-> ***앞으로 Mockito 대신 BDDMockito 를 사용하자!***
+> 앞으로 Mockito 대신 ***`BDDMockito` 를 사용하자!***
+
+# 💡 Classicist vs Mockist
+
+## 📌 Classicist
+
+<img width="500" alt="Repository 테스트" src="https://github.com/user-attachments/assets/bddb4568-4d80-45f9-9072-aaca1748b235"/>
 
 
+<img width="500" alt="Service 테스트" src="https://github.com/user-attachments/assets/130ef71c-88c9-4af1-a94a-ef478259cc0c"/>
+
+
+<img width="500" alt="Controller 테스트" src="https://github.com/user-attachments/assets/20d54012-79c9-44b2-80e3-905ef2c09b95"/>
+
+## 📌 Mockist
+
+<img width="500" alt="Mockist" src="https://github.com/user-attachments/assets/e5b66611-fb62-40d0-8a25-7808a534e7df"/>
+
+
+## ⚡️ 그럼 언제 Mocking 을 사용해야 할까?
+
+> **실제 Production Code 에서 Runtime 시점에 일어날 일을 정확하게 Stubbing 했다고 단언할 수 있는가?**
+
+<img width="500" alt="스크린샷 2024-07-09 오후 4 59 49" src="https://github.com/user-attachments/assets/fad014d7-1a8b-480a-bd30-47169b98eee0"/>
+
+- **`외부 시스템` 같은 우리가 진짜로 어쩔 수 었는 것에 대한 것만 `Mocking` 을 사용하자!**
