@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/controller/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/controller/product/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/service/mail/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/service/order/OrderStatisticsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/client/mail/MailSendClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/history/mail/MailSendHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/history/mail/MailSendHistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/order/OrderStatisticsServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Practical Testing/f. Mock을 마주하는 자세.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/order/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/domain/order/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/controller/product/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/controller/product/ProductControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/order/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/order/OrderServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/product/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/product/ProductServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Practical Testing/Spring &amp; JPA 기반 테스트.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Practical Testing/e. Spring &amp; JPA 기반 테스트.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,8 +108,8 @@
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -322,6 +335,7 @@
     "JUnit.OrderServiceTest.createOrderWithNoStock.executor": "Run",
     "JUnit.OrderServiceTest.createOrderWithStock.executor": "Run",
     "JUnit.OrderServiceTest.executor": "Run",
+    "JUnit.OrderStatisticsServiceTest.sendOrderStatisticsMail.executor": "Run",
     "JUnit.OrderTest.calculateTotalPrice.executor": "Run",
     "JUnit.OrderTest.init.executor": "Run",
     "JUnit.OrderTest.registeredDateTime.executor": "Run",
@@ -397,11 +411,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="sample.cafekiosk.spring.api.service.order" />
       <recent name="sample.cafekiosk.spring.api.controller.order" />
       <recent name="sample.cafekiosk.spring.api.controller.product" />
       <recent name="sample.cafekiosk.spring.api.service.product" />
       <recent name="sample.cafekiosk.spring.domain.stock" />
-      <recent name="sample.cafekiosk.spring.domain.product" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="sample.cafekiosk.spring.api.service.product.request" />
@@ -420,7 +434,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CafekioskApplication">
+  <component name="RunManager" selected="JUnit.OrderStatisticsServiceTest.sendOrderStatisticsMail">
     <configuration name="OrderControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
@@ -436,17 +450,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderControllerTest.createOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.api.controller.order.*" />
+          <option name="PATTERN" value="sample.cafekiosk.spring.api.service.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.controller.order" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.controller.order.OrderControllerTest" />
-      <option name="METHOD_NAME" value="createOrder" />
+      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.service.order" />
+      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.service.order.OrderServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderStatisticsServiceTest.sendOrderStatisticsMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafekiosk.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.cafekiosk.spring.api.service.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.service.order" />
+      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.service.order.OrderStatisticsServiceTest" />
+      <option name="METHOD_NAME" value="sendOrderStatisticsMail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -467,34 +496,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductControllerTest.createProductWithZeroPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.api.controller.product.*" />
+          <option name="PATTERN" value="sample.cafekiosk.spring.api.service.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.controller.product" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.controller.product.ProductControllerTest" />
-      <option name="METHOD_NAME" value="createProductWithZeroPrice" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductControllerTest.getSellingProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafekiosk.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.api.controller.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.controller.product" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.controller.product.ProductControllerTest" />
-      <option name="METHOD_NAME" value="getSellingProducts" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.service.product" />
+      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.service.product.ProductServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -529,11 +541,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.OrderStatisticsServiceTest.sendOrderStatisticsMail" />
+      <item itemvalue="JUnit.OrderServiceTest" />
+      <item itemvalue="JUnit.ProductServiceTest" />
       <item itemvalue="JUnit.OrderControllerTest" />
-      <item itemvalue="JUnit.OrderControllerTest.createOrder" />
       <item itemvalue="JUnit.ProductControllerTest" />
-      <item itemvalue="JUnit.ProductControllerTest.createProductWithZeroPrice" />
-      <item itemvalue="JUnit.ProductControllerTest.getSellingProducts" />
       <item itemvalue="Spring Boot.CafekioskApplication" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
@@ -541,11 +553,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderControllerTest" />
-        <item itemvalue="JUnit.OrderControllerTest.createOrder" />
-        <item itemvalue="JUnit.ProductControllerTest.getSellingProducts" />
+        <item itemvalue="JUnit.OrderStatisticsServiceTest.sendOrderStatisticsMail" />
         <item itemvalue="JUnit.ProductControllerTest" />
-        <item itemvalue="JUnit.ProductControllerTest.createProductWithZeroPrice" />
+        <item itemvalue="JUnit.ProductServiceTest" />
+        <item itemvalue="JUnit.OrderServiceTest" />
+        <item itemvalue="JUnit.OrderControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -646,7 +658,9 @@
       <workItem from="1742195946134" duration="14189000" />
       <workItem from="1742228646342" duration="4158000" />
       <workItem from="1742267426347" duration="60831000" />
-      <workItem from="1742898537626" duration="933000" />
+      <workItem from="1742898537626" duration="7137000" />
+      <workItem from="1742972701639" duration="4768000" />
+      <workItem from="1742986600058" duration="3152000" />
     </task>
     <servers />
   </component>
