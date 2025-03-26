@@ -336,3 +336,8 @@ public class BDDMockito extends Mockito {}
 <img width="500" alt="스크린샷 2024-07-09 오후 4 59 49" src="https://github.com/user-attachments/assets/fad014d7-1a8b-480a-bd30-47169b98eee0"/>
 
 - **`외부 시스템` 같은 우리가 진짜로 어쩔 수 었는 것에 대한 것만 `Mocking` 을 사용하자!**
+
+# 💡 키워드 정리
+
+<img width="500" alt="Mock을 마주하는 자세 키워드 정리" src="https://github.com/user-attachments/assets/ccf4b9b7-03c2-4d8c-9e29-610b9a2e8818"/>
+
