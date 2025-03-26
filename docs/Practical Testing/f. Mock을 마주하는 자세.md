@@ -114,3 +114,165 @@ public class MailSendClient {
   - 어떤 메서드, 어떤 기능에 대한 요청을 했을 때, 이 Stub 이 상태가 어떻게 바뀌었고, 그 상태 검증을 하는 것이다. 내부적인 상태가 어떻게 바뀌었어에 대한 초점이 맞춰져있다.
 - `Mock`: ***`행위` 검증(Behavior Verification)***: 행위에 대한 기대를 명세하고, 그에 따라 동작하도록 만들어진 객체
   - Mock 은 결국 **호출 여부**나 **호출 횟수** 같은 것을 검증한다.
+
+# 💡 순수 Mockito 로 검증하기
+
+@MockBean 자체도 Spring Context 에 있는 Bean 을 우리가 원하는 Mockito 의 Mock 객체로 갈아끼우는 것이다.         
+**그러므로, Spring Context 에서 동작하는 것이 아닌 `순수 Mockito` 로 검증을 해보자!**
+
+```java
+@Slf4j
+@Component
+public class MailSendClient {
+
+
+	public boolean sendEmail(String fromEmail, String toEmail, String subject, String content) {
+		// 메일 전송
+		log.info("메일 전송 from: {}, to: {}, subject: {}, content: {}", fromEmail, toEmail, subject, content);
+		throw new IllegalArgumentException("메일 전송에 실패했습니다.");
+//		return true;
+	}
+}
+```
+
+```java
+Mockito.when(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
+			.thenReturn(true);
+```
+
+```java
+public static MockSettings withSettings() {
+	return (new MockSettingsImpl()).defaultAnswer(RETURNS_DEFAULTS);
+}
+```
+
+- Mock 객체는 내부에서 Exception 을 throw 해도, 별다른 설정을 하지 않았다면 Exception 을 던지지 않고, 기본값을 반환한다.
+
+**AS-IS**
+
+```java
+class MailServiceTest {
+	
+	@Test
+	@DisplayName("메일 전송 테스트")
+	void sendMail() {
+		// given
+		MailSendClient mailSendClient = Mockito.mock(MailSendClient.class);
+		MailSendHistoryRepository mailSendHistoryRepository = Mockito.mock(MailSendHistoryRepository.class);
+
+		MailService mailService = new MailService(mailSendClient, mailSendHistoryRepository);
+
+		Mockito.when(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
+			.thenReturn(true);
+
+		// when
+		boolean result = mailService.sendMail("from", "to", "subject", "content");
+
+		// then
+		assertThat(result).isTrue();
+
+		Mockito.verify(mailSendHistoryRepository, times(1)).save(any(MailSendHistory.class));
+	}
+}
+```
+
+**TO-BE**
+
+```java
+@ExtendWith(MockitoExtension.class)
+class MailServiceTest {
+
+	@Mock
+	private MailSendClient mailSendClient;
+
+	@Mock
+	private MailSendHistoryRepository mailSendHistoryRepository;
+
+	@InjectMocks
+	private MailService mailService;
+
+	@Test
+	@DisplayName("메일 전송 테스트")
+	void sendMail() {
+		// given
+		Mockito.when(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
+			.thenReturn(true);
+
+		// when
+		boolean result = mailService.sendMail("from", "to", "subject", "content");
+
+		// then
+		assertThat(result).isTrue();
+
+		Mockito.verify(mailSendHistoryRepository, times(1)).save(any(MailSendHistory.class));
+	}
+}
+```
+
+- Mockito 로 정의했던 객체들을 `@ExtendWith(MockitoExtension.class)`, `@Mock`, `@InjectMocks` 를 이용해 간단하게 정의할 수 있다.
+
+
+```java
+@RequiredArgsConstructor
+@Service
+public class MailService {
+
+	private final MailSendClient mailSendClient;
+	private final MailSendHistoryRepository mailSendHistoryRepository;
+
+	public boolean sendMail(String fromEmail, String toEmail, String subject, String content) {
+		boolean result = mailSendClient.sendEmail(fromEmail, toEmail, subject, content);
+
+		if (result) {
+			mailSendHistoryRepository.save(MailSendHistory.builder()
+				.fromEmail(fromEmail)
+				.toEmail(toEmail)
+				.subject(subject)
+				.content(content)
+				.build());
+
+			mailSendClient.a();
+			mailSendClient.b();
+			mailSendClient.c();
+			
+			return true;
+		}
+		return false;
+	}
+}
+```
+
+```java
+@ExtendWith(MockitoExtension.class)
+class MailServiceTest {
+	
+	@Spy
+	private MailSendClient mailSendClient;
+	
+	...
+
+	@Test
+	@DisplayName("메일 전송 테스트")
+	void sendMail() {
+		// given
+//		Mockito.when(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
+//			.thenReturn(true);
+		
+		doReturn(true)
+			.when(mailSendClient)
+			.sendEmail(anyString(), anyString(), anyString(), anyString());
+
+		// when
+		boolean result = mailService.sendMail("from", "to", "subject", "content");
+
+		// then
+		assertThat(result).isTrue();
+
+		Mockito.verify(mailSendHistoryRepository, times(1)).save(any(MailSendHistory.class));
+	}
+}
+```
+
+- `@Spy` 는 **실제 객체**의 것을 Mocking 한다. Stubbing 이 되지 않는다.
+- `doReturn(true).when(mailSendClient).sendEmail(anyString(), anyString(), anyString(), anyString());` 로 **Stubbing** 을 해준다.
+- sendEmail 메서드만 Stubbing을 해주고, **나머지 메서드는 실제 객체의 메서드를 호출한다.**
