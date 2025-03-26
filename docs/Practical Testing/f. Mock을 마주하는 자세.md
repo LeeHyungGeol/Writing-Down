@@ -276,3 +276,40 @@ class MailServiceTest {
 - `@Spy` 는 **실제 객체**의 것을 Mocking 한다. Stubbing 이 되지 않는다.
 - `doReturn(true).when(mailSendClient).sendEmail(anyString(), anyString(), anyString(), anyString());` 로 **Stubbing** 을 해준다.
 - sendEmail 메서드만 Stubbing을 해주고, **나머지 메서드는 실제 객체의 메서드를 호출한다.**
+
+# 💡 BDDMockito
+
+```java
+@Test
+@DisplayName("메일 전송 테스트")
+void sendMail() { 
+	//given
+   Mockito.when(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
+           .thenReturn(true);
+   
+   BDDMockito.given(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
+            .willReturn(true);
+   
+//   doReturn(true)
+//           .when(mailSendClient)
+//           .sendEmail(anyString(), anyString(), anyString(), anyString());
+   // when
+   boolean result = mailService.sendMail("from", "to", "subject", "content");
+   
+   // then
+   assertThat(result).isTrue();
+//   Mockito.verify(mailSendHistoryRepository, times(1)).save(any(MailSendHistory.class));
+}
+```
+
+```java
+public class BDDMockito extends Mockito {}
+```
+
+- given 절에 `Mockito.when()` 문법이 있는 것이 매우 어색하다.
+- 대신 `BDDMockito.given()` 을 사용할 수 있다!
+- **BDDMockito 는 Mockito 를 상속받은 것이기 때문에 Mockito 와 똑같이 사용할 수 있다!**
+
+> ***앞으로 Mockito 대신 BDDMockito 를 사용하자!***
+
+

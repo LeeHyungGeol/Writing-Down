@@ -5,6 +5,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.BDDMockito;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -34,12 +35,15 @@ class MailServiceTest {
 	@DisplayName("메일 전송 테스트")
 	void sendMail() {
 		// given
-//		Mockito.when(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
-//			.thenReturn(true);
+		Mockito.when(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
+			.thenReturn(true);
 
-		doReturn(true)
-			.when(mailSendClient)
-			.sendEmail(anyString(), anyString(), anyString(), anyString());
+		BDDMockito.given(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
+			.willReturn(true);
+
+//		doReturn(true)
+//			.when(mailSendClient)
+//			.sendEmail(anyString(), anyString(), anyString(), anyString());
 
 		// when
 		boolean result = mailService.sendMail("from", "to", "subject", "content");
