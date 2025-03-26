@@ -3,7 +3,6 @@ package sample.cafekiosk.spring.api.service.order;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import sample.cafekiosk.spring.api.controller.order.request.OrderCreateRequest;
 import sample.cafekiosk.spring.api.service.order.request.OrderCreateServiceRequest;
 import sample.cafekiosk.spring.api.service.order.response.OrderResponse;
 import sample.cafekiosk.spring.domain.order.Order;
@@ -71,7 +70,7 @@ public class OrderService {
 	private List<String> extractStockProductNumbers(List<Product> products) {
 		// 재고 차감 체크가 필요한 상품들 filter
 		return products.stream()
-			.filter(product -> ProductType.containsProductType(product.getType()))
+			.filter(product -> ProductType.containsStockType(product.getType()))
 			.map(Product::getProductNumber)
 			.toList();
 	}

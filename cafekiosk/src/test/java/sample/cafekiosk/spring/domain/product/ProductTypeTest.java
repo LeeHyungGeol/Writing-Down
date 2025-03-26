@@ -14,7 +14,7 @@ class ProductTypeTest {
 		ProductType givenType = ProductType.HANDMADE;
 
 		// when
-		boolean result = ProductType.containsProductType(givenType);
+		boolean result = ProductType.containsStockType(givenType);
 
 		// then
 		assertThat(result).isFalse();
@@ -27,7 +27,7 @@ class ProductTypeTest {
 		ProductType givenType = ProductType.BAKERY;
 
 		// when
-		boolean result = ProductType.containsProductType(givenType);
+		boolean result = ProductType.containsStockType(givenType);
 
 		// then
 		assertThat(result).isTrue();
