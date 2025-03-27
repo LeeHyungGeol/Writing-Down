@@ -185,3 +185,37 @@ class OrderServiceTest {
 똑같이 관리가 어려워지고 오히려 더 귀찮아진다.
 
 > 이 문제는 kotlin 언어로 가면 문제가 조금은 해소될 수가 있다. kotlin 을 사용하면 lombok도 필요 없다.
+
+# 💡 Test Fixture 클렌징
+
+> **결론! `deleteAllInBatch()` 혹은 `@Transactional` 을 사용하자!**
+- 다만, @Transactional 의 경우는 주의하면서 사용하자!
+- EX) Spring Batch 와 배치 통합 테스트와 같은 것을 사용하면 여러 트랜잭션의 경계가 겹치기 때문에 그럴 때는 deleteAllInBatch() 를 사용하자.
+
+## 📌 deleteAllInBatch() vs deleteAll()
+
+```java
+@AfterEach
+void tearDown() {
+	orderProductRepository.deleteAllInBatch();
+	orderRepository.deleteAllInBatch();
+	productRepository.deleteAllInBatch();
+	stockRepository.deleteAllInBatch();
+}
+```
+
+> `deleteAllInBatch()`: **테이블 전체**를 **bulk delete** 한다. (`truncate table`)
+
+- 대신 `순서`를 잘 고려해야 한다! > **`외래키 조건` 주의!**
+
+```java
+@AfterEach
+void tearDown() {
+	orderRepository.deleteAll();
+	productRepository.deleteAll();
+	stockRepository.deleteAllInBatch();
+}
+```
+
+> `deleteAll()`: 전체 테이블을 select 한 후에, **하나씩 delete** 한다. **성능 차이 발생!**  
+

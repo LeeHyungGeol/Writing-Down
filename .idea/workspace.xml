@@ -422,7 +422,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MailServiceTest.sendMail">
+  <component name="RunManager" selected="JUnit.OrderServiceTest.createOrder">
     <configuration name="MailServiceTest.sendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
@@ -439,7 +439,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceTest.createOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
         <pattern>
@@ -449,7 +449,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.service.order" />
       <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.service.order.OrderServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="createOrder" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -530,9 +531,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.OrderServiceTest.createOrder" />
       <item itemvalue="JUnit.MailServiceTest.sendMail" />
       <item itemvalue="JUnit.OrderStatisticsServiceTest.sendOrderStatisticsMail" />
-      <item itemvalue="JUnit.OrderServiceTest" />
       <item itemvalue="JUnit.ProductServiceTest" />
       <item itemvalue="JUnit.ProductControllerTest" />
       <item itemvalue="Spring Boot.CafekioskApplication" />
@@ -542,11 +543,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderServiceTest.createOrder" />
         <item itemvalue="JUnit.MailServiceTest.sendMail" />
         <item itemvalue="JUnit.OrderStatisticsServiceTest.sendOrderStatisticsMail" />
         <item itemvalue="JUnit.ProductControllerTest" />
         <item itemvalue="JUnit.ProductServiceTest" />
-        <item itemvalue="JUnit.OrderServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -651,6 +652,7 @@
       <workItem from="1742972701639" duration="4768000" />
       <workItem from="1742986600058" duration="21894000" />
       <workItem from="1743056148941" duration="1898000" />
+      <workItem from="1743058102919" duration="2696000" />
     </task>
     <servers />
   </component>
