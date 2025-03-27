@@ -219,3 +219,79 @@ void tearDown() {
 
 > `deleteAll()`: 전체 테이블을 select 한 후에, **하나씩 delete** 한다. **성능 차이 발생!**  
 
+# 💡 @ParameterizedTest
+
+> **단순하게 딱 하나의 test case 인데, 값이나 어떤 환경에 대한 데이터들을 여러 개로 바꿔보면서 테스트하고 싶을 때 사용하자!**
+
+**AS-IS**
+
+```java
+class ProductTypeTest {
+
+	@Test
+	@DisplayName("상품 타입이 재고 관련 타입인지를 체크한다.")
+	void containsStockType2() {
+		// given
+       ProductType givenType1 = ProductType.HANDMADE;
+       ProductType givenType2 = ProductType.BOTTLE;
+       ProductType givenType3 = ProductType.BAKERY;
+
+		// when
+       boolean result1 = ProductType.containsStockType(givenType1);
+       boolean result2 = ProductType.containsStockType(givenType2);
+       boolean result3 = ProductType.containsStockType(givenType3);
+
+		// then
+       assertThat(result1).isFalse();
+       assertThat(result2).isTrue();
+       assertThat(result3).isTrue();
+	}
+}
+```
+
+**TO-BE**
+
+```java
+class ProductTypeTest {
+
+	@CsvSource({"HANDMADE, false", "BOTTLE, true", "BAKERY, true"})
+	@ParameterizedTest
+	@DisplayName("상품 타입이 재고 관련 타입인지를 체크한다.")
+	void containsStockType(ProductType productType, boolean expected) {
+		// when
+		boolean result = ProductType.containsStockType(productType);
+		// then
+		assertThat(result).isEqualTo(expected);
+	}
+}
+```
+
+```java
+private static Stream<Arguments> provideProductTypesForCheckingStockType() {
+	return Stream.of(
+		Arguments.of(ProductType.HANDMADE, false), 
+            Arguments.of(ProductType.BOTTLE, true), 
+            Arguments.of(ProductType.BAKERY, true)
+    );
+}
+
+@DisplayName("상품 타입이 재고 관련 타입인지를 체크한다.") 
+@MethodSource("provideProductTypesForCheckingStockType") 
+@ParameterizedTest 
+void containsStockType5(ProductType productType, boolean expected) {
+	// when
+	boolean result = ProductType.containsStockType(productType);
+	// then
+	assertThat(result).isEqualTo(expected);
+}
+```
+
+- `@ParameterizedTest` 의 source 로 **자주 사용하는 것**은 위의 2개의 예시와 같이 `Csv source` 와 `Method source` 이다.
+
+Spock Framework(테스트 프레임워크?)에도 비슷한 기능을 하는 것이 있다!
+
+### 📝 Reference
+
+- [Junit5 Parameterized Tests](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests)
+- [Spock Data Tables](https://spockframework.org/spock/docs/2.3/data_driven_testing.html#data-tables)
+
