@@ -206,14 +206,14 @@ void tearDown() {
 
 > `deleteAllInBatch()`: **테이블 전체**를 **bulk delete** 한다. (`truncate table`)
 
-- 대신 `순서`를 잘 고려해야 한다! > **`외래키 조건` 주의!**
+- 대신 `순서`를 잘 고려해야 한다! -> **`외래키 조건` 주의!**
 
 ```java
 @AfterEach
 void tearDown() {
 	orderRepository.deleteAll();
 	productRepository.deleteAll();
-	stockRepository.deleteAllInBatch();
+	stockRepository.deleteAll();
 }
 ```
 
@@ -226,25 +226,25 @@ void tearDown() {
 **AS-IS**
 
 ```java
-class ProductTypeTest {
-
+class ProductTypeTest { 
+	
 	@Test
 	@DisplayName("상품 타입이 재고 관련 타입인지를 체크한다.")
 	void containsStockType2() {
 		// given
-       ProductType givenType1 = ProductType.HANDMADE;
-       ProductType givenType2 = ProductType.BOTTLE;
-       ProductType givenType3 = ProductType.BAKERY;
-
+		ProductType givenType1 = ProductType.HANDMADE;
+		ProductType givenType2 = ProductType.BOTTLE;
+		ProductType givenType3 = ProductType.BAKERY;
+		
 		// when
-       boolean result1 = ProductType.containsStockType(givenType1);
-       boolean result2 = ProductType.containsStockType(givenType2);
-       boolean result3 = ProductType.containsStockType(givenType3);
-
+		boolean result1 = ProductType.containsStockType(givenType1);
+		boolean result2 = ProductType.containsStockType(givenType2);
+		boolean result3 = ProductType.containsStockType(givenType3);
+		
 		// then
-       assertThat(result1).isFalse();
-       assertThat(result2).isTrue();
-       assertThat(result3).isTrue();
+		assertThat(result1).isFalse();
+		assertThat(result2).isTrue();
+		assertThat(result3).isTrue();
 	}
 }
 ```
@@ -286,12 +286,50 @@ void containsStockType5(ProductType productType, boolean expected) {
 }
 ```
 
-- `@ParameterizedTest` 의 source 로 **자주 사용하는 것**은 위의 2개의 예시와 같이 `Csv source` 와 `Method source` 이다.
+- `@ParameterizedTest` 의 source 로 **자주 사용하는 것**은 위의 2개의 예시와 같이 `@CsvSource` 와 `@MethodSource` 이다.
 
-Spock Framework(테스트 프레임워크?)에도 비슷한 기능을 하는 것이 있다!
+`Spock Framework`(테스트 프레임워크?)에도 비슷한 기능을 하는 것이 있다!
 
 ### 📝 Reference
 
 - [Junit5 Parameterized Tests](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests)
 - [Spock Data Tables](https://spockframework.org/spock/docs/2.3/data_driven_testing.html#data-tables)
 
+# 💡 @DynamicTest
+
+> `@DynamicTest`: 어떤 환경을 설정해놓고 이 환경에 변화를 주면서 중간중간에 검증을 하고 또 이런 행위를 했을 때 이런 검증이 되고 하는 일련의 시나리오를 테스트할 때 사용한다. 어떤 하나의 환경을 설정하고 사용자 시나리오를 테스트할 때 사용한다. 
+
+> **일련의 시나리오가 있을 때 사용하자!**
+
+```java
+@DisplayName("재고 차감 시나리오")
+@TestFactory
+Collection<DynamicTest> stockDeductionDynamicTest() {
+	// given
+	Stock stock = Stock.create("001", 1);
+
+	return List.of(
+		DynamicTest.dynamicTest("재고를 주어진 개수만큼 차감할 수 있다.", () -> {
+			// given
+			int quantity = 1;
+
+			// when
+			stock.deductQuantity(quantity);
+
+			// then
+			assertThat(stock.getQuantity()).isZero();
+		}),
+		DynamicTest.dynamicTest("재고보다 많은 수의 수량으로 차감 시도하는 경우 예외가 발생한다.", () -> {
+			// given
+			int quantity = 1;
+
+			// when // then
+			assertThatThrownBy(() -> stock.deductQuantity(quantity))
+				.isInstanceOf(IllegalStateException.class)
+				.hasMessage("차감할 재고 수량이 없습니다.");
+		})
+	);
+}
+```
+
+- 어떤 시나리오를 기반으로 상태를 공유하면서 환경을 공유하면서 테스트를 작성할 수 있다.
