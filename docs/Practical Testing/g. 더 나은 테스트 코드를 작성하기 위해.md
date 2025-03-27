@@ -107,3 +107,81 @@ private static final Stock stock = Stock.create("001", 1);
 
 - 만약, 하나의 인스턴스가 변화하는 모습을 테스트 하고 싶다면 `@DynamixTest` 를 사용하자!
 
+# 💡 한 눈에 들어오는 Test Fixture 구성하기
+
+> `Test Fixture`: 테스트를 위해 원하는 상태로 고정시킨 일련의 객체
+
+- 보통 given 절을 구성할 때 사용한다.
+
+## ⚡️ @BeforeAll, @BeforeEach 사용하지 않기!
+
+```java
+@BeforeAll
+static void beforeAll() {
+	// before class
+}
+
+@BeforeEach
+void setUp() {
+  // before method
+}
+
+// 1. 각 테스트 입장에서 봤을 때, 아예 몰라도 내용을 이해하는데 문제가 없는가?
+// 2. 수정해도 모든 테스트에 영향을 주지 않는가?
+```
+
+- setUp 의 경우, 각 메서드 간에 동일한 자원을 공유하는 효과를 갖게 된다. **이렇게 되면 테스트 간 독립성을 보장하지 못하게 된다!**
+1. setUp 에 있는 fixture 를 수정할 경우에 **모든 메서드에 영향을 미치게 된다!**
+2. 앞서 말했듯이, 테스트는 `문서`다! 그런데, beforeAll(), setUp() 을 사용하게 되면 **정보가 파편화**가 되어 **가독성이 떨어지고, 흐름을 파악하기 번거롭게 된다!**
+
+> **fixture들은 웬만하면 given 절에 구성하는 것이 좋다!** _given 절이 많이 길어질 수도 있지만_ `문서`로서의 **테스트 코드 기능이 더 중요**하다는 것을 명심하자!
+
+
+## ⚡️ data.sql 로 테스트 데이터 구성하지 말기! 굉장히 추천하지 않는 방법이다!!
+
+> 마찬가지로, `정보의 파편화`가 일어나기 때문이다!
+
+- 또한, 서비스가 커지면 커질수록 다루는 데이터 및 엔티티도 많아지게 되는데, 그때마다 data.sql 을 관리할 수 있나?에 대한 문제이다. 또 다른 관리 포인트가 생긴다.
+
+## ⚡️ 빌더를 만들 때 각 테스트 클래스에 `꼭 필요한 필드`만 명시하기!
+
+```java
+@ActiveProfiles("test")
+@SpringBootTest
+class ProductServiceTest {
+
+	private Product createProduct(String productNumber, ProductType type, ProductSellingStatus sellingStatus, String name, int price) {
+		return Product.builder()
+			.productNumber(productNumber)
+			.type(type)
+			.sellingStatus(sellingStatus)
+			.name(name)
+			.price(price)
+			.build();
+	}
+}
+```
+
+```java
+@ActiveProfiles("test")
+@SpringBootTest
+class OrderServiceTest {
+
+	private Product createProduct(String productNumber, ProductType type, int price) {
+		return Product.builder()
+			.productNumber(productNumber)
+			.type(type)
+			.sellingStatus(SELLING)
+			.name("메뉴 이름")
+			.price(price)
+			.build();
+	}
+}
+```
+
+## ⚡️ 귀찮지만 테스트 클래스 마다 빌더를 구성해서 fixture를 만들자!
+
+마찬가지로, 하나의 클래스에서 빌더를 구성하는 것을 담당할 시에 빌더의 필드 순서만 다르거나 하나의 필드만 달라도 종류가 수십가지로 불어나게 된다.    
+똑같이 관리가 어려워지고 오히려 더 귀찮아진다.
+
+> 이 문제는 kotlin 언어로 가면 문제가 조금은 해소될 수가 있다. kotlin 을 사용하면 lombok도 필요 없다.
