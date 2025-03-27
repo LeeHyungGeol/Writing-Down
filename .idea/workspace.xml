@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/mail/MailServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/service/mail/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/api/service/mail/MailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/client/mail/MailSendClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/cafekiosk/spring/client/mail/MailSendClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Practical Testing/f. Mock을 마주하는 자세.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Practical Testing/f. Mock을 마주하는 자세.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Practical Testing/g. 더 나은 테스트 코드를 작성하기 위해.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Practical Testing/g. 더 나은 테스트 코드를 작성하기 위해.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -653,7 +649,7 @@
       <workItem from="1742267426347" duration="60831000" />
       <workItem from="1742898537626" duration="7137000" />
       <workItem from="1742972701639" duration="4768000" />
-      <workItem from="1742986600058" duration="12624000" />
+      <workItem from="1742986600058" duration="21894000" />
     </task>
     <servers />
   </component>

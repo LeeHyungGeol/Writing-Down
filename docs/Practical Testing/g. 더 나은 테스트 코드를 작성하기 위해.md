@@ -19,3 +19,43 @@
 - 어느 계층까지 분리하여도 비즈니스 로직의 맥락이 깨지지 않는지, 어느 수준까지 테스트 가능하도록 만들 것인지 고민이 필요하다!
 - 보통 자연스러운 맥락 안에서는, Controller에서 현재 시간값을 생성하여 Service에 넘겨주도록 하거나, 가능하다면 아예 외부에서 요청이 들어올 때 시간값을 받도록 고민하며 설계한다!
 
+# 💡 테스트 환경의 독립성을 보장하자
+
+```java
+@Test
+@DisplayName("재고가 부족한 상품으로 주문을 생성하려는 경우 예외가 발생한다.")
+void createOrderWithNoStock() {
+	// given
+	LocalDateTime registeredDateTime = LocalDateTime.now();
+	
+	Product product1 = createProduct("001", BOTTLE, 1000);
+	Product product2 = createProduct("002", BAKERY, 3000);
+	Product product3 = createProduct("003", HANDMADE, 5000);
+	productRepository.saveAll(List.of(product1, product2, product3));
+	
+	Stock stock1 = Stock.create("001", 2);
+	Stock stock2 = Stock.create("002", 2);
+	stock1.deductQuantity(1); // todo: 이런식으로 테스트하는게 맞을까?
+	stockRepository.saveAll(List.of(stock1, stock2));
+	
+	OrderCreateServiceRequest request = OrderCreateServiceRequest.builder()
+            .productNumbers(List.of("001", "001", "002", "003"))
+            .build();	
+	
+	// when // then
+	assertThatThrownBy(() -> orderService.createOrder(request, registeredDateTime))
+            .isInstanceOf(IllegalArgumentException.class)
+            .hasMessage("재고가 부족한 상품이 있습니다.");
+}
+```
+
+위의 테스트 코드에서 given 절을 읽을 때
+1. `stock.deductQuantity(1);` 라는 코드 때문에 논리 구조가 생겨서 테스트 코드의 맥락을 한번 더 이해해야 하는 상황이 발생한다.
+2. `stock.deductQuantity(3);` 만약에 다음과 같이 3 으로 변경한다면 테스트에 실패하게 되는데 원래 테스트는 실패를 해도 when 절, then 절에서 실패해야 한다. 하지만, given 절에서 실패하게 된 것이다.
+  - 즉, 이런 경우는 테스트 주제와 맞지 않는 부분에서 테스트가 실패한 것이다!
+
+> **따라서, 최대한 테스트 환경을 조성할 때는 `순수 생성자 기반`으로 조성하는 것이 좋다!**
+- **팩토리 메서드도 가급적이면 지양한다!**
+  - 생성자가 아닌 굳이 팩토리 메서드를 만들었다는 얘기는 팩토리 메서드 내에서 **검증을 하거나 필요한 인자만 받아서 구성을 하는** 등 `목적이 들어간 생성 구문`이기 때문이다.
+- **`순수 Builder` 패턴을 사용하는 것도 좋은 방법이다!**
+- 검증 대상인 when절에서 팩토리 메서드를 사용하지 말라는 것이 아니라, `given절의 fixture`를 만들 때 **그러지 않기를 이야기하는 것이다.**
