@@ -59,3 +59,51 @@ void createOrderWithNoStock() {
   - 생성자가 아닌 굳이 팩토리 메서드를 만들었다는 얘기는 팩토리 메서드 내에서 **검증을 하거나 필요한 인자만 받아서 구성을 하는** 등 `목적이 들어간 생성 구문`이기 때문이다.
 - **`순수 Builder` 패턴을 사용하는 것도 좋은 방법이다!**
 - 검증 대상인 when절에서 팩토리 메서드를 사용하지 말라는 것이 아니라, `given절의 fixture`를 만들 때 **그러지 않기를 이야기하는 것이다.**
+
+# 💡 2개 이상의 테스트 간 독립성을 보장하자
+
+```java
+class StockTest {
+	
+	private static final Stock stock = Stock.create("001", 1);
+
+	@Test
+	@DisplayName("재고의 수량이 제공된 수량보다 작은지 확인한다.")
+	void isQuantityLessThan() {
+		// given
+		int quantity = 2;
+
+		// when
+		boolean result = stock.isQuantityLessThan(quantity);
+
+		// then
+		assertThat(result).isTrue();
+	}
+
+	@Test
+	@DisplayName("재고를 주어진 개수만큼 차감할 수 있다.")
+	void deductQuantity() {
+		// given
+		int quantity = 1;
+
+		// when
+		stock.deductQuantity(quantity);
+
+		// then
+		assertThat(stock.getQuantity()).isZero();
+	}
+}
+```
+
+```java
+private static final Stock stock = Stock.create("001", 1);
+```
+
+> 2개 이상의 테스트가 공유 자원인 static 변수를 공유한다!
+
+- 이렇게 공유 자원을 사용하는 경우 기본적으로 `테스트 간에 순서`라는 것이 발생해버린다!
+
+> 하지만, 테스트 간에 순서라는 것 자체가 없어야 되고, 각각 독립적으로 언제 수행되든 항상 같은 결과를 내야 한다.
+
+- 만약, 하나의 인스턴스가 변화하는 모습을 테스트 하고 싶다면 `@DynamixTest` 를 사용하자!
+
