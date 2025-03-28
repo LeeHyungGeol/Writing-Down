@@ -489,3 +489,6 @@ public class ProductService {
 
 > getter, 기본 생성자, 생성자 빌더, 사이즈 등 **즉, 어떤 객체가 마땅히 가져도 되는 행위라고 생각 되면서 미래에 충분히 사용될 수 있는 성격의 메소드라면 사용해도 된다.**
 
+# 💡 키워드 정리
+
+<img width="500" alt="" src="https://github.com/user-attachments/assets/6bf997b3-9b70-4f32-8113-32319896ec5e"/>
