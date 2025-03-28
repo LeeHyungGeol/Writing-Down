@@ -24,6 +24,7 @@ import java.util.List;
 public class ProductService {
 
 	private final ProductRepository productRepository;
+	private final ProductNumberFactory productNumberFactory;
 
 	// 동시성 이슈
 	// 1. 동시 요청이 엄청 높지는 않는 경우, 시스템 상에서 재시도를 3번 정도 하게 만든다.
@@ -31,7 +32,7 @@ public class ProductService {
 	@Transactional
 	public ProductResponse createProduct(ProductCreateServiceRequest request) {
 		// nextProductNumber
-		String nextProductNumber = createNextProductNumber();
+		String nextProductNumber = productNumberFactory.createNextProductNumber();
 
 		Product product = request.toEntity(nextProductNumber);
 		Product savedProduct = productRepository.save(product);
@@ -45,17 +46,6 @@ public class ProductService {
 		return products.stream()
 			.map(ProductResponse::of)
 			.toList();
-	}
-
-	private String createNextProductNumber() {
-		String latestProductNumber = productRepository.findLatestProductNumber();
-		if (latestProductNumber == null) {
-			return "001";
-		}
-
-		int nextProductNumberInt = Integer.parseInt(latestProductNumber) + 1;
-
-		return String.format("%03d", nextProductNumberInt);
 	}
 
 }

@@ -401,3 +401,75 @@ public abstract class ControllerTestSupport {
 
 }
 ```
+
+# 💡 private 메서드의 테스트는 어떻게 하나?
+
+## 📌 private 메서드는 테스트할 필요가 없다!
+
+> 다만, private 메서드를 테스트 하고 싶은 시점에 고민할 포인트가 있다. **객체를 분리할 시점인가?**
+
+어떤 클래스가 public 메서드를 가지고 있다는 것은, 해당 클래스를 사용하는 client 입장에서는 그 public 메서드 즉, `public api`만 알고 있으면 된다는 의미이다. private 메서드는 내부 구현 세부사항으로, client가 알 필요도 없고, 알아서도 안 된다.
+
+**AS-IS**
+
+```java
+public class ProductService {
+
+	private final ProductRepository productRepository;
+	
+	public ProductResponse createProduct(ProductCreateServiceRequest request) {
+		// nextProductNumber
+		String nextProductNumber = productNumberFactory.createNextProductNumber();
+		
+		// ...
+	}
+
+	private String createNextProductNumber() {
+		String latestProductNumber = productRepository.findLatestProductNumber();
+		if (latestProductNumber == null) {
+			return "001";
+		}
+
+		int nextProductNumberInt = Integer.parseInt(latestProductNumber) + 1;
+
+		return String.format("%03d", nextProductNumberInt);
+	}
+}
+
+```
+
+**TO-BE**
+
+```java
+@RequiredArgsConstructor
+@Component
+public class ProductNumberFactory {
+	
+	private final ProductRepository productRepository;
+
+	public String createNextProductNumber() {
+		String latestProductNumber = productRepository.findLatestProductNumber();
+		if (latestProductNumber == null) {
+			return "001";
+		}
+
+		int nextProductNumberInt = Integer.parseInt(latestProductNumber) + 1;
+
+		return String.format("%03d", nextProductNumberInt);
+	}
+}
+```
+
+```java
+public class ProductService { 
+	
+	private final ProductRepository productRepository;
+	private final ProductNumberFactory productNumberFactory;
+	
+	public ProductResponse createProduct(ProductCreateServiceRequest request) {
+		String nextProductNumber = productNumberFactory.createNextProductNumber();
+	}
+}
+```
+
+- `createNextNumber` 에 대한 `책임`을 `ProductService` 에서 담당할 책임이 아니라고 보고 `ProductNumberFactory` 를 **객체를 따로 분리하였다.**
