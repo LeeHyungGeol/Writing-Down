@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/IntegrationTestSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/docs/asciidoc/api/product/product.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/docs/asciidoc/index.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/docs/RestDocsSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/docs/product/ProductControllerDocsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/resources/org/springframework/restdocs/templates/request-fields.snippet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/resources/org/springframework/restdocs/templates/response-fields.snippet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Practical Testing/h. 학습 테스트, Spring REST Docs.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/CafekioskApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/mail/MailServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/mail/MailServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Practical Testing/g. 더 나은 테스트 코드를 작성하기 위해.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Practical Testing/g. 더 나은 테스트 코드를 작성하기 위해.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +99,18 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="cafekiosk" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cafekiosk" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cafekiosk" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -215,6 +231,9 @@
     "Gradle.SampleRepositoryTest.di_test.executor": "Run",
     "Gradle.SampleServiceTest.di_test.executor": "Run",
     "Gradle.cafekiosk [:CafeKioskRunner.main()].executor": "Run",
+    "Gradle.cafekiosk [asciidoctor].executor": "Run",
+    "Gradle.cafekiosk [build].executor": "Run",
+    "Gradle.cafekiosk [clean].executor": "Run",
     "Gradle.cafekiosk [test].executor": "Run",
     "Gradle.di-containor-apply [:Main.main()].executor": "Run",
     "Gradle.di-containor-sample [jar].executor": "Run",
@@ -349,6 +368,7 @@
     "JUnit.OrderTest.calculateTotalPrice.executor": "Run",
     "JUnit.OrderTest.init.executor": "Run",
     "JUnit.OrderTest.registeredDateTime.executor": "Run",
+    "JUnit.ProductControllerDocsTest.createProduct.executor": "Run",
     "JUnit.ProductControllerTest.createProduct.executor": "Run",
     "JUnit.ProductControllerTest.createProductWithZeroPrice.executor": "Run",
     "JUnit.ProductControllerTest.createProductWithoutType.executor": "Run",
@@ -400,7 +420,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45747125",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -413,6 +433,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cafekiosk/src/test/resources" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/docs/java-basic" />
       <recent name="$PROJECT_DIR$" />
@@ -445,26 +466,63 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MailServiceTest.sendMail">
-    <configuration name="/Users/ihyeong-geol/Desktop/workspace/Writing-Down/docs/Practical Testing [&gt; application(cafekiosk) &gt; Tasks &gt; verification &gt; test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="JUnit.ProductControllerDocsTest.createProduct">
+    <configuration name="cafekiosk [asciidoctor]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/docs/Practical Testing" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="&gt;" />
-            <option value="application(cafekiosk)" />
-            <option value="&gt;" />
-            <option value="Tasks" />
-            <option value="&gt;" />
-            <option value="verification" />
-            <option value="&gt;" />
-            <option value="test" />
+            <option value="asciidoctor" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="cafekiosk [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="cafekiosk [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -497,49 +555,17 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MailServiceTest.sendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductControllerDocsTest.createProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.api.service.mail.*" />
+          <option name="PATTERN" value="sample.cafekiosk.spring.docs.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.service.mail" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.service.mail.MailServiceTest" />
-      <option name="METHOD_NAME" value="sendMail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderServiceTest.createOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafekiosk.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.api.service.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.service.order" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.service.order.OrderServiceTest" />
-      <option name="METHOD_NAME" value="createOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StockTest.stockDeductionDynamicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafekiosk.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.domain.stock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.domain.stock" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.domain.stock.StockTest" />
-      <option name="METHOD_NAME" value="stockDeductionDynamicTest" />
+      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.docs.product" />
+      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.docs.product.ProductControllerDocsTest" />
+      <option name="METHOD_NAME" value="createProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -575,11 +601,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle./Users/ihyeong-geol/Desktop/workspace/Writing-Down/docs/Practical Testing [&gt; application(cafekiosk) &gt; Tasks &gt; verification &gt; test]" />
+      <item itemvalue="Gradle.cafekiosk [asciidoctor]" />
+      <item itemvalue="Gradle.cafekiosk [build]" />
+      <item itemvalue="Gradle.cafekiosk [clean]" />
       <item itemvalue="Gradle.cafekiosk [test]" />
-      <item itemvalue="JUnit.OrderServiceTest.createOrder" />
-      <item itemvalue="JUnit.StockTest.stockDeductionDynamicTest" />
-      <item itemvalue="JUnit.MailServiceTest.sendMail" />
+      <item itemvalue="JUnit.ProductControllerDocsTest.createProduct" />
       <item itemvalue="Spring Boot.CafekioskApplication" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
@@ -587,11 +613,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MailServiceTest.sendMail" />
-        <item itemvalue="Gradle./Users/ihyeong-geol/Desktop/workspace/Writing-Down/docs/Practical Testing [&gt; application(cafekiosk) &gt; Tasks &gt; verification &gt; test]" />
+        <item itemvalue="JUnit.ProductControllerDocsTest.createProduct" />
+        <item itemvalue="Gradle.cafekiosk [build]" />
+        <item itemvalue="Gradle.cafekiosk [asciidoctor]" />
+        <item itemvalue="Gradle.cafekiosk [clean]" />
         <item itemvalue="Gradle.cafekiosk [test]" />
-        <item itemvalue="JUnit.StockTest.stockDeductionDynamicTest" />
-        <item itemvalue="JUnit.OrderServiceTest.createOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -697,6 +723,9 @@
       <workItem from="1742986600058" duration="21894000" />
       <workItem from="1743056148941" duration="1898000" />
       <workItem from="1743058102919" duration="11412000" />
+      <workItem from="1743083563328" duration="14093000" />
+      <workItem from="1743151161646" duration="120000" />
+      <workItem from="1743155588316" duration="9628000" />
     </task>
     <servers />
   </component>
