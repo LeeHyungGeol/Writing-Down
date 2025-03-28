@@ -22,7 +22,7 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 class MailServiceTest {
 
-	@Spy
+	@Mock
 	private MailSendClient mailSendClient;
 
 	@Mock
@@ -35,8 +35,8 @@ class MailServiceTest {
 	@DisplayName("메일 전송 테스트")
 	void sendMail() {
 		// given
-		Mockito.when(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
-			.thenReturn(true);
+//		Mockito.when(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
+//			.thenReturn(true);
 
 		BDDMockito.given(mailSendClient.sendEmail(anyString(), anyString(), anyString(), anyString()))
 			.willReturn(true);

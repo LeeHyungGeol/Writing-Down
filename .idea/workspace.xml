@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea771bc-164b-4461-b3c4-a48fbef9f95c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/domain/stock/StockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/domain/stock/StockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/IntegrationTestSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/CafekioskApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/mail/MailServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/cafekiosk/spring/api/service/mail/MailServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/Practical Testing/g. 더 나은 테스트 코드를 작성하기 위해.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Practical Testing/g. 더 나은 테스트 코드를 작성하기 위해.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +86,23 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cafekiosk" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cafekiosk" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cafekiosk" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -96,8 +115,8 @@
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -152,6 +171,7 @@
     "Application.PublicClassInnerMain.executor": "Run",
     "Application.RectangleOopMain.executor": "Run",
     "Application.ShoppingCartMain.executor": "Run",
+    "Gradle./Users/ihyeong-geol/Desktop/workspace/Writing-Down/docs/Practical Testing [> application(cafekiosk) > Tasks > verification > test].executor": "Run",
     "Gradle.AmericanoTest.executor": "Run",
     "Gradle.AmericanoTest.getName.executor": "Run",
     "Gradle.Build cafekiosk.executor": "Run",
@@ -195,6 +215,7 @@
     "Gradle.SampleRepositoryTest.di_test.executor": "Run",
     "Gradle.SampleServiceTest.di_test.executor": "Run",
     "Gradle.cafekiosk [:CafeKioskRunner.main()].executor": "Run",
+    "Gradle.cafekiosk [test].executor": "Run",
     "Gradle.di-containor-apply [:Main.main()].executor": "Run",
     "Gradle.di-containor-sample [jar].executor": "Run",
     "Gradle.jacoco [:Magician.main()].executor": "Run",
@@ -379,7 +400,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45747125",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "editing.templates",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -424,7 +445,58 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StockTest.stockDeductionDynamicTest">
+  <component name="RunManager" selected="JUnit.MailServiceTest.sendMail">
+    <configuration name="/Users/ihyeong-geol/Desktop/workspace/Writing-Down/docs/Practical Testing [&gt; application(cafekiosk) &gt; Tasks &gt; verification &gt; test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/docs/Practical Testing" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="&gt;" />
+            <option value="application(cafekiosk)" />
+            <option value="&gt;" />
+            <option value="Tasks" />
+            <option value="&gt;" />
+            <option value="verification" />
+            <option value="&gt;" />
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="cafekiosk [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="MailServiceTest.sendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafekiosk.test" />
       <extension name="coverage">
@@ -453,37 +525,6 @@
       <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.service.order.OrderServiceTest" />
       <option name="METHOD_NAME" value="createOrder" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderStatisticsServiceTest.sendOrderStatisticsMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafekiosk.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.api.service.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.service.order" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.service.order.OrderStatisticsServiceTest" />
-      <option name="METHOD_NAME" value="sendOrderStatisticsMail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafekiosk.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sample.cafekiosk.spring.api.controller.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sample.cafekiosk.spring.api.controller.product" />
-      <option name="MAIN_CLASS_NAME" value="sample.cafekiosk.spring.api.controller.product.ProductControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -534,11 +575,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle./Users/ihyeong-geol/Desktop/workspace/Writing-Down/docs/Practical Testing [&gt; application(cafekiosk) &gt; Tasks &gt; verification &gt; test]" />
+      <item itemvalue="Gradle.cafekiosk [test]" />
       <item itemvalue="JUnit.OrderServiceTest.createOrder" />
       <item itemvalue="JUnit.StockTest.stockDeductionDynamicTest" />
       <item itemvalue="JUnit.MailServiceTest.sendMail" />
-      <item itemvalue="JUnit.OrderStatisticsServiceTest.sendOrderStatisticsMail" />
-      <item itemvalue="JUnit.ProductControllerTest" />
       <item itemvalue="Spring Boot.CafekioskApplication" />
       <item itemvalue="Spring Boot.DynamicProxyApplication" />
       <item itemvalue="Spring Boot.SpringDiApplication" />
@@ -546,11 +587,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MailServiceTest.sendMail" />
+        <item itemvalue="Gradle./Users/ihyeong-geol/Desktop/workspace/Writing-Down/docs/Practical Testing [&gt; application(cafekiosk) &gt; Tasks &gt; verification &gt; test]" />
+        <item itemvalue="Gradle.cafekiosk [test]" />
         <item itemvalue="JUnit.StockTest.stockDeductionDynamicTest" />
         <item itemvalue="JUnit.OrderServiceTest.createOrder" />
-        <item itemvalue="JUnit.MailServiceTest.sendMail" />
-        <item itemvalue="JUnit.OrderStatisticsServiceTest.sendOrderStatisticsMail" />
-        <item itemvalue="JUnit.ProductControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -655,7 +696,7 @@
       <workItem from="1742972701639" duration="4768000" />
       <workItem from="1742986600058" duration="21894000" />
       <workItem from="1743056148941" duration="1898000" />
-      <workItem from="1743058102919" duration="8834000" />
+      <workItem from="1743058102919" duration="11412000" />
     </task>
     <servers />
   </component>

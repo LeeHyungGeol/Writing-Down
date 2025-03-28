@@ -11,6 +11,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import sample.cafekiosk.spring.ControllerTestSupport;
 import sample.cafekiosk.spring.api.controller.product.request.ProductCreateRequest;
 import sample.cafekiosk.spring.api.service.product.ProductService;
 import sample.cafekiosk.spring.api.service.product.response.ProductResponse;
@@ -23,17 +24,7 @@ import static org.mockito.Mockito.*;
 
 // @SpringBootTest 는 전체 Spring Bean 컨텍스트를 로드한다.
 // @WebMvcTest 는 웹 계층(Controller test)에 초점을 맞추어 테스트하기 위해 Controller 관련 Bean 만 로드한다.
-@WebMvcTest(controllers = ProductController.class)
-class ProductControllerTest {
-
-	@Autowired
-	private MockMvc mockMvc;
-
-	@Autowired
-	private ObjectMapper objectMapper;
-
-	@MockBean
-	private ProductService productService;
+class ProductControllerTest extends ControllerTestSupport {
 
 	@Test
 	@DisplayName("신규 상품을 등록한다.")
